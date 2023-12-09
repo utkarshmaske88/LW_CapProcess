@@ -9,8 +9,8 @@ Position X=0 Y=0 Width=0 Height=0 TabWidth Name=177 Type=0 Scope=0 Force=0 Index
                                      DIs                           CapPushDIs_typ    0 "                                                               *"    1   24    1    0    0    1         
                                PusherLBK                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
                                PusherLFR                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
-                               PickUp_IR                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
-                       MagznPosnEmpty_IR                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                               PickUp_IR                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                       MagznPosnEmpty_IR                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
                                      DOs                           CapPushDOs_typ    0 "                                                               *"    1   24    1    0    0    1         
                                  PushFWD                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
                                   Status                        StatusCapPush_typ    0 "                                                               *"    1   24    1    0    0    1         

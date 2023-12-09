@@ -1,3 +1,4 @@
 VAR
 	iLogoConv : LogoConv_typ;
+	sLogoConvStep : sStep_LogoConv;
 END_VAR

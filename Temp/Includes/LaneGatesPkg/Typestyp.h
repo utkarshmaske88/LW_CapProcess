@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1702118596_1_
-#define _BUR_1702118596_1_
+#ifndef _BUR_1702145457_1_
+#define _BUR_1702145457_1_
 
 #include <bur/plctypes.h>
 
@@ -11,6 +11,7 @@ typedef struct CmdLineGates_typ
 {	plcbit Start;
 	plcbit Stop;
 	plcbit Estop;
+	plcbit ErrorReset;
 } CmdLineGates_typ;
 
 typedef struct StatusLineGates_typ
@@ -53,5 +54,5 @@ __asm__(".ascii \"iecfile \\\"Logical/LaneGatesPkg/Types.typ\\\" scope \\\"globa
 __asm__(".previous");
 
 
-#endif /* _BUR_1702118596_1_ */
+#endif /* _BUR_1702145457_1_ */
 

@@ -26,5 +26,6 @@ TYPE
 		Start : BOOL; (*starting the line gates*)
 		Stop : BOOL; (*stopping the linegate*)
 		Estop : BOOL; (*emergency stop for line gate*)
+		ErrorReset : BOOL;
 	END_STRUCT;
 END_TYPE

@@ -1,2 +1,3 @@
 $(AS_PROJECT_PATH)/Logical/SortConvPkg/SortConv/Variables.var
 $(AS_PROJECT_PATH)/Logical/SortConvPkg/SortTyp.typ
+$(AS_PROJECT_PATH)/Logical/SortConvPkg/SortConv/Types.typ

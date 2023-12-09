@@ -18,6 +18,7 @@ TYPE
 		Start : BOOL; (*starting*)
 		Stop : BOOL; (*stopping*)
 		Estop : BOOL; (*emergency stop pressed*)
+		ErrorReset : BOOL;
 	END_STRUCT;
 	StatusClrDetect_typ : 	STRUCT  (*status for color structure*)
 		Running : BOOL; (*running *)

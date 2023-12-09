@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1702057554_2_
-#define _BUR_1702057554_2_
+#ifndef _BUR_1702123434_1_
+#define _BUR_1702123434_1_
 
 #include <bur/plctypes.h>
 
@@ -21,6 +21,7 @@ typedef struct LogoConvCmd
 {	plcbit Start;
 	plcbit Stop;
 	plcbit Estop;
+	plcbit ErrorReset;
 } LogoConvCmd;
 
 typedef struct LogoConvStatus
@@ -50,5 +51,5 @@ __asm__(".ascii \"iecfile \\\"Logical/LogoConvPkg/LogoTyp.typ\\\" scope \\\"rest
 __asm__(".previous");
 
 
-#endif /* _BUR_1702057554_2_ */
+#endif /* _BUR_1702123434_1_ */
 

@@ -1,3 +1,4 @@
 VAR
 	iLineGates : LineGates_typ; (*main strcuture for line gate*)
+	sLineGateStep : sStep_LineGates;
 END_VAR

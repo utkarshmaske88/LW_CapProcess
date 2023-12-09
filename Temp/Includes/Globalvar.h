@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1702031063_2_
-#define _BUR_1702031063_2_
+#ifndef _BUR_1702143599_1_
+#define _BUR_1702143599_1_
 
 #include <bur/plctypes.h>
 
@@ -13,6 +13,7 @@
 
 
 /* Variables */
+_GLOBAL plcwstring gColorCap[81];
 _GLOBAL struct ACP10AXIS_typ gAxis02;
 _GLOBAL struct ACP10AXIS_typ gAxis01;
 
@@ -30,5 +31,5 @@ __asm__(".ascii \"iecfile \\\"Logical/Global.var\\\" scope \\\"global\\\"\\n\"")
 __asm__(".previous");
 
 
-#endif /* _BUR_1702031063_2_ */
+#endif /* _BUR_1702143599_1_ */
 

@@ -27,4 +27,5 @@ VAR_CONFIG
 	::PickupArm:iPickupArm.DIs.PArm_FWD AT %Q.::ComTotal_SimOutputs.PickupArm_FWD; (*Insert your comment here...*)
 	::PickupArm:iPickupArm.DIs.PArm_BWD AT %Q.::ComTotal_SimOutputs.PickupArm_BWD; (*Insert your comment here...*)
 	::PickupArm:iPickupArm.DIs.CapGripper_PICK AT %Q.::ComTotal_SimOutputs.CapGripper_PICK; (*Insert your comment here...*)
+	::ClrDetect:iClrDetect.DOs.CapStopperFWD AT %Q.::ComTotal_SimOutputs.CapStopper_FWD; (*Insert your comment here...*)
 END_VAR

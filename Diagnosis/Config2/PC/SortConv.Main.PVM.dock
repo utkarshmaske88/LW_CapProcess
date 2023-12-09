@@ -1,0 +1,17 @@
+WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=SortConv 
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=114 Type=0 Scope=0 Force=0 Index=4 ASCIIString=0
+                                    name                                     type force                                                            value level type len format place expand specs
+                               iSortConv                        SortBasicConv_typ    0 "                                                               *"    0   24    1    0    1    1         
+                                     DIs                     SortBasicConvDIs_typ    0 "                                                               *"    1   24    1    0    0    1         
+                   SortBasicConvStart_IR                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                     AOs                     SortBasicConvAOs_typ    0 "                                                               *"    1   24    1    0    0    1         
+                      SortBasicConvSpeed                                     REAL    0 "                                                            0.05"    2    8    1   10    0    0         
+                                  Status                  SortBasicConvStatus_typ    0 "                                                               *"    1   24    1    0    0    1         
+                                 Running                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                   Error                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                     Cmd                     SortBasicConvCmd_typ    0 "                                                               *"    1   24    1    0    0    1         
+                                   Start                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                    Stop                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                   Estop                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                           sSortConvStep                                     DINT    0 "                                                               0"    0    4    1   10    1    0 e,0,enWA
+

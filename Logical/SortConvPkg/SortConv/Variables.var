@@ -1,3 +1,4 @@
 VAR
 	iSortConv : SortBasicConv_typ;
+	sSortConvStep : sStep_SortConv;
 END_VAR

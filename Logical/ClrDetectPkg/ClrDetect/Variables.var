@@ -1,3 +1,4 @@
 VAR
 	iClrDetect : ClrDetect_typ; (*main color detect strcutre*)
+	sClrDetectStep : sStep_ClrDetect;
 END_VAR

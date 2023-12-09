@@ -41,5 +41,6 @@ TYPE
 		Start : BOOL; (*starting commadnd*)
 		Stop : BOOL; (*stopping*)
 		Estop : BOOL; (*emergency stop*)
+		ErrorReset : BOOL;
 	END_STRUCT;
 END_TYPE

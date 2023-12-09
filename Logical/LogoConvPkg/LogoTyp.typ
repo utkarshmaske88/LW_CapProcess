@@ -43,5 +43,6 @@ TYPE
 		Start : BOOL; (*stating the conv*)
 		Stop : BOOL; (*stopping*)
 		Estop : BOOL; (*emergency stop*)
+		ErrorReset : BOOL;
 	END_STRUCT;
 END_TYPE

@@ -1,7 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BuildReasons>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\pickuparm\main.st.o">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\logical\pickuparmpkg\pickuparm\main.st" differs.
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\clrdetect\main.st.o">
+    <BuildReason>Target "main.st.o" does not exist</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\.mappview\dialog_sass._markerfile">
+    <BuildReason>Target "dialog_sass._markerfile" does not exist</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\iat_media.job._markerfile">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config2\pc\iat_media.job" differs.
 </BuildReason>
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\.mappview\data\wwwroot\0_visulist.json">
@@ -11,15 +17,8 @@
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\.mappview\type_sass._markerfile">
     <BuildReason>Target "type_sass._markerfile" does not exist</BuildReason>
   </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\.mappview\dialog_sass._markerfile">
-    <BuildReason>Target "dialog_sass._markerfile" does not exist</BuildReason>
-  </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\.mappview\content_sass._markerfile">
     <BuildReason>Target "content_sass._markerfile" does not exist</BuildReason>
-  </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\iat_media.job._markerfile">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config2\pc\iat_media.job" differs.
-</BuildReason>
   </Rule>
   <Rule ID=".mappView_Build">
     <BuildReason>Rule contains a phony target. </BuildReason>
@@ -27,27 +26,27 @@
   <Rule ID=".mappView_IntegrationBuild">
     <BuildReason>Rule contains a phony target. </BuildReason>
   </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\pickuparm\_bur_pvdef.st.o">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config2\pc\pickuparm\main.st.o" differs.
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\clrdetect\_bur_pvdef.st.o">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config2\pc\clrdetect\main.st.o" differs.
 </BuildReason>
   </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\pickuparm\a.out">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config2\pc\pickuparm\main.st.o" differs.
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\clrdetect\a.out">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config2\pc\clrdetect\main.st.o" differs.
 </BuildReason>
   </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\pickuparm\pickuparm.ox">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config2\pc\pickuparm\a.out" differs.
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\clrdetect\clrdetect.ox">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config2\pc\clrdetect\a.out" differs.
 </BuildReason>
   </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\pickuparm.br">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config2\pc\pickuparm\pickuparm.ox" differs.
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\clrdetect.br">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config2\pc\clrdetect\clrdetect.ox" differs.
 </BuildReason>
   </Rule>
   <Rule ID="#cpu_tp.mak">
     <BuildReason>Rule is forced.</BuildReason>
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\binaries\config2\pc\transfer.lst">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config2\pc\pickuparm.br" differs.
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config2\pc\clrdetect.br" differs.
 </BuildReason>
   </Rule>
 </BuildReasons>

@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1702057554_4_
-#define _BUR_1702057554_4_
+#ifndef _BUR_1702144314_1_
+#define _BUR_1702144314_1_
 
 #include <bur/plctypes.h>
 
@@ -21,6 +21,7 @@ typedef struct CmdClrDetect_typ
 {	plcbit Start;
 	plcbit Stop;
 	plcbit Estop;
+	plcbit ErrorReset;
 } CmdClrDetect_typ;
 
 typedef struct StatusClrDetect_typ
@@ -50,5 +51,5 @@ __asm__(".ascii \"iecfile \\\"Logical/ClrDetectPkg/ClrDetTyp.typ\\\" scope \\\"r
 __asm__(".previous");
 
 
-#endif /* _BUR_1702057554_4_ */
+#endif /* _BUR_1702144314_1_ */
 

@@ -264,4 +264,8 @@
 <Prod Device="TC#1-CPYDEV" DPName="::PickupArm:iPickupArm.DIs.CapGripper_PICK" Kind="pv"/>
 <Cons Device="TC#1-CPYDEV" DPName="::ComTotal_SimOutputs.CapGripper_PICK" Kind="pv"/>
 </LN>
+<LN ID="::ComTotal_SimOutputs.CapStopper_FWD/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::ClrDetect:iClrDetect.DOs.CapStopperFWD" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::ComTotal_SimOutputs.CapStopper_FWD" Kind="pv"/>
+</LN>
 </Links></IO>

@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1702057554_3_
-#define _BUR_1702057554_3_
+#ifndef _BUR_1702143599_2_
+#define _BUR_1702143599_2_
 
 #include <bur/plctypes.h>
 
@@ -24,6 +24,7 @@ typedef struct SortBasicConvCmd_typ
 {	plcbit Start;
 	plcbit Stop;
 	plcbit Estop;
+	plcbit ErrorReset;
 } SortBasicConvCmd_typ;
 
 typedef struct SortBasicConv_typ
@@ -48,5 +49,5 @@ __asm__(".ascii \"iecfile \\\"Logical/SortConvPkg/SortTyp.typ\\\" scope \\\"rest
 __asm__(".previous");
 
 
-#endif /* _BUR_1702057554_3_ */
+#endif /* _BUR_1702143599_2_ */
 
