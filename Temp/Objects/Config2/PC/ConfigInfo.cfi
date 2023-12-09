@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.12.4.107 SP"?>
+<ConfigInfo xmlns="http://br-automation.co.at/AS/BuildInfo">
+  <TaskClass
+    Name="Cyclic#1">
+    <Task
+      Name="AlarmsX"
+      Disable="false"
+      Source="AlarmsPkg.AlarmsX"
+      Language="IEC">
+      <InternalFile
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Temp\Objects\Config2\PC\AlarmsX\Main.st.var" />
+      <File
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\AlarmsPkg\AlarmsX\Types.typ" />
+      <File
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\AlarmsPkg\AlarmsX\Variables.var" />
+    </Task>
+    <Task
+      Name="CapPush"
+      Disable="false"
+      Source="CapPushPkg.CapPush"
+      Language="IEC">
+      <InternalFile
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Temp\Objects\Config2\PC\CapPush\Main.st.var" />
+      <File
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\CapPushPkg\CapPush\Types.typ" />
+      <File
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\CapPushPkg\CapPush\Variables.var" />
+    </Task>
+    <Task
+      Name="PickupArm"
+      Disable="false"
+      Source="PickupArmPkg.PickupArm"
+      Language="IEC">
+      <InternalFile
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Temp\Objects\Config2\PC\PickupArm\Main.st.var" />
+      <File
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\PickupArmPkg\PickupArm\Types.typ" />
+      <File
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\PickupArmPkg\PickupArm\Variables.var" />
+    </Task>
+    <Task
+      Name="LogoCOnv"
+      Disable="false"
+      Source="LogoConvPkg.LogoCOnv"
+      Language="IEC">
+      <InternalFile
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Temp\Objects\Config2\PC\LogoCOnv\Main.st.var" />
+      <File
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\LogoConvPkg\LogoCOnv\Types.typ" />
+      <File
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\LogoConvPkg\LogoCOnv\Variables.var" />
+    </Task>
+    <Task
+      Name="ClrDetect"
+      Disable="false"
+      Source="ClrDetectPkg.ClrDetect"
+      Language="IEC">
+      <InternalFile
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Temp\Objects\Config2\PC\ClrDetect\Main.st.var" />
+      <File
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\ClrDetectPkg\ClrDetect\Types.typ" />
+      <File
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\ClrDetectPkg\ClrDetect\Variables.var" />
+    </Task>
+    <Task
+      Name="LineGates"
+      Disable="false"
+      Source="LaneGatesPkg.LineGates"
+      Language="IEC">
+      <InternalFile
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Temp\Objects\Config2\PC\LineGates\Main.st.var" />
+      <File
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\LaneGatesPkg\LineGates\Types.typ" />
+      <File
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\LaneGatesPkg\LineGates\Variables.var" />
+    </Task>
+    <Task
+      Name="AutoCtrl"
+      Disable="false"
+      Source="AutoCtrlPkg.AutoCtrl"
+      Language="IEC">
+      <InternalFile
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Temp\Objects\Config2\PC\AutoCtrl\Main.st.var" />
+      <File
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\AutoCtrlPkg\AutoCtrl\Types.typ" />
+      <File
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\AutoCtrlPkg\AutoCtrl\Variables.var" />
+    </Task>
+    <Task
+      Name="SortConv"
+      Disable="false"
+      Source="SortConvPkg.SortConv"
+      Language="IEC">
+      <InternalFile
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Temp\Objects\Config2\PC\SortConv\Main.st.var" />
+      <File
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\SortConvPkg\SortConv\Types.typ" />
+      <File
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\SortConvPkg\SortConv\Variables.var" />
+    </Task>
+    <Task
+      Name="ComTotal_P"
+      Disable="false"
+      Source="Libraries.ComTotal.ComTotal_P"
+      Language="ANSIC">
+      <File
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\Libraries\ComTotal\ComTotal_P\Types.typ" />
+      <File
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\Libraries\ComTotal\ComTotal_P\Variables.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#2" />
+  <TaskClass
+    Name="Cyclic#3" />
+  <TaskClass
+    Name="Cyclic#4" />
+  <TaskClass
+    Name="Cyclic#5" />
+  <TaskClass
+    Name="Cyclic#6" />
+  <TaskClass
+    Name="Cyclic#7" />
+  <TaskClass
+    Name="Cyclic#8" />
+</ConfigInfo>

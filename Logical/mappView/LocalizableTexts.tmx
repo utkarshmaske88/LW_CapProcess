@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/TextSystem</prop>
+  </header>
+  <body>
+    <tu tuid="Samples.HELLO_WORLD">
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Servus Welt!</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Hello world!</seg>
+      </tuv>
+    </tu>
+    <tu tuid="2">
+      <tuv xml:lang="en">
+        <seg>Message</seg>
+      </tuv>
+    </tu>
+    <tu tuid="3">
+      <tuv xml:lang="en">
+        <seg>Name</seg>
+      </tuv>
+    </tu>
+    <tu tuid="4">
+      <tuv xml:lang="en">
+        <seg>TimeStamp</seg>
+      </tuv>
+    </tu>
+    <tu tuid="5">
+      <tuv xml:lang="en">
+        <seg>Last Login</seg>
+      </tuv>
+    </tu>
+    <tu tuid="6">
+      <tuv xml:lang="en">
+        <seg>LastLogin</seg>
+      </tuv>
+    </tu>
+    <tu tuid="7">
+      <tuv xml:lang="en">
+        <seg>UserName</seg>
+      </tuv>
+    </tu>
+    <tu tuid="8">
+      <tuv xml:lang="en">
+        <seg>isAdmin</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

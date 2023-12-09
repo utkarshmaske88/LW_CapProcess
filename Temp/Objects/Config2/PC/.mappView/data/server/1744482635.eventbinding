@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingDefinition xmlns="http://www.br-automation.com/iat2014/eventbinding/runtime/v2">
+  <Content id="NavBarContent">
+    <EventBinding id="NavBarContent.cmdHome.Click">
+      <Source type="widgets.brease.ToggleButton.Event" event="Click" refId="NavBarContent_cmdHome" />
+      <EventHandler>
+        <Action>
+          <Target type="clientSystem.Action">
+            <Method type="clientSystem.Action.LoadContentInArea"><Parameter name="contentId" xsi:type="ANY_STRING" value="BodyContent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /><Parameter name="pageId" xsi:type="ANY_STRING" value="MainPage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /><Parameter name="areaId" xsi:type="ANY_STRING" value="area3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /></Method>
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Content>
+  <Content id="NavBarContent">
+    <EventBinding id="EventBinding_1">
+      <Source type="widgets.brease.ToggleButton.Event" event="Click" refId="NavBarContent_cmdAlarm" />
+      <EventHandler>
+        <Action>
+          <Target type="clientSystem.Action">
+            <Method type="clientSystem.Action.LoadContentInArea"><Parameter name="contentId" xsi:type="ANY_STRING" value="AlarmsContent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /><Parameter name="pageId" xsi:type="ANY_STRING" value="MainPage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /><Parameter name="areaId" xsi:type="ANY_STRING" value="area3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /></Method>
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Content>
+  <Content id="NavBarContent">
+    <EventBinding id="NavBarContent.cmdParams.Click">
+      <Source type="widgets.brease.ToggleButton.Event" event="Click" refId="NavBarContent_cmdParams" />
+      <EventHandler>
+        <Action>
+          <Target type="clientSystem.Action">
+            <Method type="clientSystem.Action.LoadContentInArea"><Parameter name="contentId" xsi:type="ANY_STRING" value="AlarmsContent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /><Parameter name="pageId" xsi:type="ANY_STRING" value="MainPage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /><Parameter name="areaId" xsi:type="ANY_STRING" value="area3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /></Method>
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Content>
+  <Content id="NavBarContent">
+    <EventBinding id="NavBarContent.cmdUsers.Click">
+      <Source type="widgets.brease.ToggleButton.Event" event="Click" refId="NavBarContent_cmdUsers" />
+      <EventHandler>
+        <Action>
+          <Target type="clientSystem.Action">
+            <Method type="clientSystem.Action.LoadContentInArea"><Parameter name="contentId" xsi:type="ANY_STRING" value="UserMgtContent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /><Parameter name="pageId" xsi:type="ANY_STRING" value="MainPage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /><Parameter name="areaId" xsi:type="ANY_STRING" value="area3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /></Method>
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Content>
+</EventBindingDefinition>

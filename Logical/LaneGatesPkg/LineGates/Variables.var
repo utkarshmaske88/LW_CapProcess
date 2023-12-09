@@ -1,0 +1,3 @@
+VAR
+	iLineGates : LineGates_typ; (*main strcuture for line gate*)
+END_VAR

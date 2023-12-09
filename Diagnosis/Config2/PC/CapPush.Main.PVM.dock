@@ -1,0 +1,21 @@
+WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=CapPush 
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=177 Type=0 Scope=0 Force=0 Index=2 ASCIIString=0
+                                    name                                     type force                                                            value level type len format place expand specs
+                                iCapPush                              CapPush_typ    0 "                                                               *"    0   24    1    0    1    1         
+                                     Cmd                           CmdCapPush_typ    0 "                                                               *"    1   24    1    0    0    1         
+                                   Start                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                   Estop                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                    Stop                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                     DIs                           CapPushDIs_typ    0 "                                                               *"    1   24    1    0    0    1         
+                               PusherLBK                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
+                               PusherLFR                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                               PickUp_IR                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
+                       MagznPosnEmpty_IR                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                     DOs                           CapPushDOs_typ    0 "                                                               *"    1   24    1    0    0    1         
+                                 PushFWD                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                  Status                        StatusCapPush_typ    0 "                                                               *"    1   24    1    0    0    1         
+                                 Pushing                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                 Running                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                 Backing                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                            sCapPushStep                                     DINT    0 "                                                               0"    0    4    1   10    1    0 e,0,enWA
+

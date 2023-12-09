@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="UserMgtContent" height="518" width="688" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Button" id="AddUser" top="330" left="378" width="108" height="46" zIndex="0" text="Add user" cornerRadius="5px" backColor="rgba(255, 224, 192, 1)" disabledBackColor="rgba(255, 224, 192, 1)" borderColor="rgba(0, 0, 0, 1)" disabledTextColor="rgba(255, 224, 192, 1)" fontSize="15px" fontName="Arial Unicode" italic="false" />
+    <Widget xsi:type="widgets.brease.Button" id="ModUser" top="396" left="378" width="108" height="46" zIndex="1" text="Modify User" cornerRadius="5px" backColor="rgba(255, 224, 192, 1)" disabledBackColor="rgba(255, 224, 192, 1)" borderColor="rgba(0, 0, 0, 1)" disabledTextColor="rgba(255, 224, 192, 1)" fontSize="15px" fontName="Arial Unicode" italic="false" />
+    <Widget xsi:type="widgets.brease.Login" id="Login" top="323" left="19" width="314" height="118" zIndex="2" />
+    <Widget xsi:type="widgets.brease.LogoutButton" id="Logout" top="462" left="528" width="142" height="46" zIndex="3" image="Media/SymbolLib/User/Logout.svg" text="Logout" cornerRadius="5px" backColor="rgba(255, 224, 192, 1)" disabledBackColor="rgba(255, 224, 192, 1)" borderColor="rgba(0, 0, 0, 1)" disabledTextColor="rgba(255, 224, 192, 1)" fontSize="15px" fontName="Arial Unicode" />
+    <Widget xsi:type="widgets.brease.Button" id="DeltUser" top="462" left="378" width="108" height="46" zIndex="4" text="Delete user" cornerRadius="5px" backColor="rgba(255, 224, 192, 1)" disabledBackColor="rgba(255, 224, 192, 1)" borderColor="rgba(0, 0, 0, 1)" disabledTextColor="rgba(255, 224, 192, 1)" fontSize="15px" fontName="Arial Unicode" italic="false" />
+    <Widget xsi:type="widgets.brease.UserList" id="UserList" top="2" left="2" width="684" zIndex="5">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.UserListItem" id="UserListItem" zIndex="0" text="$IAT/TextSystem/7" />
+        <Widget xsi:type="widgets.brease.UserListItem" id="UserListItem1" zIndex="1" columnType="Roles" text="$IAT/TextSystem/8" />
+        <Widget xsi:type="widgets.brease.UserListItem" id="UserListItem2" zIndex="2" columnType="LastLogin" text="$IAT/TextSystem/6" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

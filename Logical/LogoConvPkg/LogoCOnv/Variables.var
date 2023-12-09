@@ -1,0 +1,3 @@
+VAR
+	iLogoConv : LogoConv_typ;
+END_VAR

@@ -1,0 +1,15 @@
+@import "mixins.scss";
+#HeaderContent_Label1 {	@include elemAutoHeight(30);
+}
+#HeaderContent_Label1 {	@include elemTop(23);
+}
+#HeaderContent_Label1 {	@include elemLeft(208);
+}
+#HeaderContent_Label1 {	@include elemAutoWidth(252);
+}
+#HeaderContent_Label1 {	z-index: 0;
+}
+#HeaderContent_Label1 {	@include text-alignment-all('center');
+}
+#HeaderContent_Label1 {	font-size: 25px;
+}

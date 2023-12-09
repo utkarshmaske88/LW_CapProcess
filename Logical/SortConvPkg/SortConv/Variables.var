@@ -1,0 +1,3 @@
+VAR
+	iSortConv : SortBasicConv_typ;
+END_VAR

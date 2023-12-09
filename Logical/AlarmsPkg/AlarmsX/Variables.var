@@ -1,0 +1,8 @@
+VAR
+	MpAlarmXHistory_0 : MpAlarmXHistory;
+	MpAlarmXHistoryUI_0 : MpAlarmXHistoryUI;
+	UiConnectHostory : MpAlarmXHistoryUIConnectType := (0); (*String which defines language and unit for display and export*)
+	iFb_AlarmX : MpAlarmXCore;
+	iFb_AlarmUI : MpAlarmXListUI;
+	UIConnectCore : MpAlarmXListUIConnectType;
+END_VAR

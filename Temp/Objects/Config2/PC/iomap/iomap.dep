@@ -1,0 +1,14 @@
+$(AS_PROJECT_PATH)/logical/libraries/comtotal/mng_package.var
+$(AS_PROJECT_PATH)/logical/libraries/comtotal/mng_package.typ
+$(AS_PROJECT_PATH)/logical/cappushpkg/cappush/variables.var
+$(AS_PROJECT_PATH)/logical/cappushpkg/cappushtyp.typ
+$(AS_PROJECT_PATH)/logical/logoconvpkg/logoconv/variables.var
+$(AS_PROJECT_PATH)/logical/logoconvpkg/logotyp.typ
+$(AS_PROJECT_PATH)/logical/clrdetectpkg/clrdetect/variables.var
+$(AS_PROJECT_PATH)/logical/clrdetectpkg/clrdettyp.typ
+$(AS_PROJECT_PATH)/logical/sortconvpkg/sortconv/variables.var
+$(AS_PROJECT_PATH)/logical/sortconvpkg/sorttyp.typ
+$(AS_PROJECT_PATH)/logical/lanegatespkg/linegates/variables.var
+$(AS_PROJECT_PATH)/logical/lanegatespkg/types.typ
+$(AS_PROJECT_PATH)/logical/pickuparmpkg/pickuparm/variables.var
+$(AS_PROJECT_PATH)/logical/pickuparmpkg/pickuptyp.typ

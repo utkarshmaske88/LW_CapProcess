@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.12.4.107 FileVersion="4.9"?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="5LS189.6-1" Type="5LS189.6-1" Version="1.5.0.0">
+    <Connection Connector="SL" TargetModule="PC" TargetConnector="SL1" />
+  </Module>
+  <Module Name="80VD100PD.C000-01" Type="80VD100PD.C000-01" Version="2.5.0.0">
+    <Connection Connector="PLK1" TargetModule="5LS189.6-1" TargetConnector="IF2" NodeNumber="1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="EC1" TargetModule="8LVA13.B1015D000-0" TargetConnector="EC" />
+    <Connection Connector="EC2" TargetModule="8LVA13.B1015D000-0a" TargetConnector="EC" />
+    <Connection Connector="MT2" TargetModule="8LVA13.B1015D000-0a" TargetConnector="MT" />
+    <Parameter ID="MotionTP" Value="Acp10Arnc0" />
+    <Parameter ID="Simulate" Value="standard" />
+    <Parameter ID="ActiveMotorSimulation_r1" Value="on" />
+    <Parameter ID="BothEndSwitchesAreNormallyOpen_r1" Value="on" />
+    <Parameter ID="ActiveMotorSimulation_r2" Value="on" />
+    <Parameter ID="BothEndSwitchesAreNormallyOpen_r2" Value="on" />
+  </Module>
+  <Module Name="8LVA13.B1015D000-0" Type="8LVA13.B1015D000-0" Version="2.2.0.3">
+    <Connection Connector="EC" TargetModule="80VD100PD.C000-01" TargetConnector="EC1" />
+    <Connection Connector="MT" TargetModule="80VD100PD.C000-01" TargetConnector="MT1" />
+  </Module>
+  <Module Name="8LVA13.B1015D000-0a" Type="8LVA13.B1015D000-0" Version="2.2.0.3">
+    <Connection Connector="EC" TargetModule="80VD100PD.C000-01" TargetConnector="EC2" />
+    <Connection Connector="MT" TargetModule="80VD100PD.C000-01" TargetConnector="MT2" />
+  </Module>
+  <Module Name="PC" Type="PC_any" Version="1.1.1.0" OrderNumber="PC">
+    <Parameter ID="ConfigurationID" Value="CapProcess_Config1" />
+    <Parameter ID="Cyclic1Duration" Value="10000" />
+    <Group ID="FileDevice1" />
+    <Parameter ID="FileDeviceName1" Value="USER" />
+    <Parameter ID="FileDevicePath1" Value="USER_PATH" />
+    <Parameter ID="ActivateOpcUa" Value="1" />
+    <Parameter ID="OpcUaInformationModels_PV_Version" Value="1" />
+  </Module>
+</Hardware>

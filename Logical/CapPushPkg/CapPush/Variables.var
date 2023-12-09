@@ -1,0 +1,4 @@
+VAR
+	iCapPush : CapPush_typ;
+	sCapPushStep : sStep_CapPush;
+END_VAR

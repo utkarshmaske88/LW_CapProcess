@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="NavBarContent" height="600" width="110" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.ButtonBar" id="ButtonBar" top="86" left="1" width="111" height="514" zIndex="0" selectedIndex="4" tabIndex="0">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.ToggleButton" id="cmdAlarm" top="151" left="3" width="104" height="58" zIndex="0" image="Media/alarm.png" text="Alarm" imageHeight="40" imageWidth="40" borderWidth="0px" cornerRadius="5px" backColor="rgba(169, 206, 244, 1)" fontSize="11px" bold="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="cmdParams" top="234" left="2" width="107" height="58" zIndex="1" image="Media/adjust.png" text="Params" imageHeight="40" imageWidth="40" borderWidth="0px" cornerRadius="5px" backColor="rgba(169, 206, 244, 1)" fontSize="11px" bold="false" permissionOperate="['Administrators']" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="cmdHome" top="68" left="3" width="104" height="58" zIndex="2" image="Media/home.png" text="Home" imageHeight="40" imageWidth="40" borderWidth="0px" cornerRadius="5px" backColor="rgba(169, 206, 244, 1)" fontSize="11px" bold="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="cmdUsers" top="318" left="2" width="104" height="58" zIndex="3" image="Media/login.png" text="Users" imageHeight="40" imageWidth="40" borderWidth="0px" cornerRadius="5px" backColor="rgba(169, 206, 244, 1)" fontSize="11px" bold="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="cmdDiagn" top="400" left="4" width="104" height="58" zIndex="4" image="Media/SymbolLib/Diagnostic/Diagnostics.svg" text="Diagnos" imageHeight="40" imageWidth="40" borderWidth="0px" cornerRadius="5px" backColor="rgba(169, 206, 244, 1)" fontSize="11px" bold="false" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Image" id="Image1" top="-1" left="-3" width="112" height="86" zIndex="1" image="Media/Logo.png" borderWidth="0px" />
+  </Widgets>
+</Content>
