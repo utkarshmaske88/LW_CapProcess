@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio Version=3.0?>
 <Transfer xmlns="http://br-automation.co.at/AS/Transfer">
-  <OperatingSystem Version="B4.92"/>
+  <OperatingSystem Version="B4.91"/>
   <Hardware Target="SG4"/>
   <Operation Delete="ComTotal_P.br"/>
   <Operation Delete="SortConv.br"/>
@@ -14,9 +14,9 @@
   <Operation Delete="AlarmsX.br"/>
   <Operation Delete="ArEventLog.br"/>
   <Operation Delete="MpServer.br"/>
-  <Operation Delete="MpAxis.br"/>
   <Operation Delete="mvLoader.br"/>
   <Operation Delete="AsTCP.br"/>
+  <Operation Delete="MpAxis.br"/>
   <Operation Delete="MpAlarmX.br"/>
   <Operation Delete="MpCom.br"/>
   <Operation Delete="arssl.br"/>
@@ -77,6 +77,7 @@
   <Operation Download="MpCom.br" Memory="UserROM"/>
   <Operation Download="AsBrStr.br" Memory="UserROM"/>
   <Operation Download="MpAlarmX.br" Memory="UserROM"/>
+  <Operation Download="MpAxis.br" Memory="UserROM"/>
   <Operation Download="standard.br" Memory="UserROM"/>
   <Operation Download="AsTCP.br" Memory="UserROM"/>
   <Operation Download="udbdef.br" Memory="UserROM"/>
@@ -85,17 +86,17 @@
   <Operation Download="TCLang.br" Memory="UserROM"/>
   <Operation Download="FWRules.br" Memory="UserROM"/>
   <Operation Download="iomap.br" Memory="UserROM"/>
-  <Operation Download="Axis01.br" Memory="UserROM"/>
   <Operation Download="UserMgt.br" Memory="UserROM"/>
   <Operation Download="Alarms.br" Memory="UserROM"/>
   <Operation Download="Role.br" Memory="UserROM"/>
   <Operation Download="ashwac.br" Memory="UserROM"/>
   <Operation Download="TC.br" Memory="UserROM"/>
   <Operation Download="User.br" Memory="UserROM"/>
-  <Operation Download="MpAxis.br" Memory="UserROM"/>
+  <Operation Download="LogoAxis.br" Memory="UserROM"/>
   <Operation Download="MpServer.br" Memory="UserROM"/>
   <Operation Download="operator.br" Memory="UserROM"/>
   <Operation Download="ArEventLog.br" Memory="UserROM"/>
+  <Operation Download="SortAxis.br" Memory="UserROM"/>
   <Operation Download="AlarmsX.br" Memory="UserROM"/>
   <Operation Download="CapPush.br" Memory="UserROM"/>
   <Operation Download="PickupArm.br" Memory="UserROM"/>

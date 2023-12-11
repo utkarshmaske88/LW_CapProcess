@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1702144314_1_
-#define _BUR_1702144314_1_
+#ifndef _BUR_1702277351_1_
+#define _BUR_1702277351_1_
 
 #include <bur/plctypes.h>
 
@@ -27,6 +27,9 @@ typedef struct CmdClrDetect_typ
 typedef struct StatusClrDetect_typ
 {	plcbit Running;
 	plcbit Error;
+	unsigned char iNoOfRed;
+	unsigned char iNoOfBlack;
+	unsigned char iNoOfMetallic;
 } StatusClrDetect_typ;
 
 typedef struct ClrDetect_typ
@@ -44,12 +47,12 @@ typedef struct ClrDetect_typ
 __asm__(".section \".plc\"");
 
 /* Used IEC files */
-__asm__(".ascii \"iecfile \\\"Logical/ClrDetectPkg/ClrDetTyp.typ\\\" scope \\\"restricted\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/ClrDetectPkg/ClrDetTyp.typ\\\" scope \\\"global\\\"\\n\"");
 
 /* Exported library functions and function blocks */
 
 __asm__(".previous");
 
 
-#endif /* _BUR_1702144314_1_ */
+#endif /* _BUR_1702277351_1_ */
 

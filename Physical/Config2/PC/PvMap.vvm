@@ -20,7 +20,6 @@ VAR_CONFIG
 	::ComTotal_SimInputs.LaneTop_IR AT %Q.::LineGates:iLineGates.DIs.LaneTopIR; (*Insert your comment here...*)
 	::CapPush:iCapPush.DOs.PushFWD AT %Q.::ComTotal_SimOutputs.CapPusher_FWD; (*Insert your comment here...*)
 	::SortConv:iSortConv.AOs.SortBasicConvSpeed AT %Q.::ComTotal_SimOutputs.SortingConveyor_SETSPEED; (*Insert your comment here...*)
-	::SortConv:iSortConv.DIs.SortBasicConvStart_IR AT %Q.::ComTotal_SimOutputs.SortingConveyor_CLEAR; (*Insert your comment here...*)
 	::LogoCOnv:iLogoConv.AOs.LogoConvSpeed AT %Q.::ComTotal_SimOutputs.LogoConveyor_SETSPEED; (*Insert your comment here...*)
 	::LineGates:iLineGates.DOs.LG1FWD AT %Q.::ComTotal_SimOutputs.LaneGate1_FWD; (*Insert your comment here...*)
 	::LineGates:iLineGates.DOs.LW2FWD AT %Q.::ComTotal_SimOutputs.LaneGate2_FWD; (*Insert your comment here...*)

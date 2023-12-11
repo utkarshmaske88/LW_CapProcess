@@ -13,6 +13,7 @@ PROGRAM _CYCLIC
 		enWAIT:
 			IF iLineGates.Cmd.Start=TRUE THEN
 				iLineGates.Cmd.Start:=FALSE;
+				iLineGates.Status.Running:=TRUE;
 				sLineGateStep:=enOPERATION;
 			END_IF;
 		  
@@ -45,6 +46,7 @@ PROGRAM _CYCLIC
 			
 			IF iLineGates.DIs.LG1_LBK=TRUE AND  iLineGates.DIs.LG2_LBK=TRUE THEN
 				sLineGateStep:=enWAIT;
+				iLineGates.Status.Running:=FALSE;
 			END_IF;
 		
 			//error mode

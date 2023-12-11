@@ -1,37 +1,38 @@
 
 PROGRAM _INIT
-	(* Insert code here *)
-	 
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	(* Insert code here *)
-	iCapPush;
+	
 	CASE sCapPushStep OF
+	
 		//wait state if statred will move in next state
 		enWAIT:
-			
+		//	iCapPush.DOs.PushFWD:=FALSE;
+			iCapPush.Status.Running:=FALSE;
 			IF iCapPush.Cmd.Start=TRUE THEN
 				iCapPush.Cmd.Start:=FALSE; 
 				sCapPushStep:=enPUSH;
 			END_IF;
-			//pushing the ca
-		enPUSH:
 			
+			//pushing the cap
+		enPUSH:
+			iCapPush.Status.Running:=TRUE;
 			IF iCapPush.DIs.MagznPosnEmpty_IR=FALSE AND iCapPush.DIs.PickUp_IR=FALSE THEN
 				iCapPush.DOs.PushFWD:=TRUE ;
-			END_IF;
-			
-			IF iCapPush.DIs.PusherLFR=TRUE  THEN
 				sCapPushStep:=enOPERATION;
 			END_IF;
+
+			
 			//OPERATION Mode
-		enOPERATION:
-			iCapPush.DOs.PushFWD:=FALSE; 
+		enOPERATION:		
+			IF iCapPush.DOs.PushFWD=FALSE  THEN
+				sCapPushStep:=enWAIT;
+	
+			END_IF;
 			sCapPushStep:=enWAIT;
 			
 			//error mode
-		
 		enERROR:
 			iCapPush.DOs.PushFWD:=FALSE ;
 			iCapPush.Cmd.Start:=FALSE; 
@@ -45,7 +46,6 @@ PROGRAM _CYCLIC
 END_PROGRAM
 
 PROGRAM _EXIT
-	(* Insert code here *)
-	 
+	
 END_PROGRAM
 

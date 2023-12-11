@@ -1,10 +1,20 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1702031063_1_
-#define _BUR_1702031063_1_
+#ifndef _BUR_1702271142_1_
+#define _BUR_1702271142_1_
 
 #include <bur/plctypes.h>
+
+/* Datatypes and datatypes of function blocks */
+typedef struct gMainCmd_Str
+{	plcbit Stop;
+	plcbit EStop;
+	plcbit ErrorReset;
+	plcbit Start;
+} gMainCmd_Str;
+
+
 
 
 
@@ -19,5 +29,5 @@ __asm__(".ascii \"iecfile \\\"Logical/Global.typ\\\" scope \\\"global\\\"\\n\"")
 __asm__(".previous");
 
 
-#endif /* _BUR_1702031063_1_ */
+#endif /* _BUR_1702271142_1_ */
 

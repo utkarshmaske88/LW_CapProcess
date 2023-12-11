@@ -1,5 +1,5 @@
 WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=LogoCOnv 
-Position X=0 Y=0 Width=0 Height=0 TabWidth Name=158 Type=0 Scope=0 Force=0 Index=8 ASCIIString=0
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=125 Type=0 Scope=0 Force=0 Index=15 ASCIIString=0
                                     name                                     type force                                                            value level type len format place expand specs
                                iLogoConv                             LogoConv_typ    0 "                                                               *"    0   24    1    0    1    1         
                                      DIs                              LogoConvDIs    0 "                                                               *"    1   24    1    0    0    1         
@@ -7,13 +7,40 @@ Position X=0 Y=0 Width=0 Height=0 TabWidth Name=158 Type=0 Scope=0 Force=0 Index
                          LogoConvExit_IR                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
                               LogoActPos                                     REAL    0 "                                                             0.0"    2    8    1   10    0    0         
                                      AOs                              LogoConvAOs    0 "                                                               *"    1   24    1    0    0    1         
-                           LogoConvSpeed                                     REAL    0 "                                                             0.0"    2    8    1   10    0    0         
+                           LogoConvSpeed                                     REAL    0 "                                                             1.0"    2    8    1   10    0    0         
                                      Cmd                              LogoConvCmd    0 "                                                               *"    1   24    1    0    0    1         
                                    Start                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
                                     Stop                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
                                    Estop                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                              ErrorReset                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
                                   Status                           LogoConvStatus    0 "                                                               *"    1   24    1    0    0    1         
                                  Running                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
                                    Error                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
                            sLogoConvStep                                     DINT    0 "                                                               0"    0    4    1   10    1    0 e,0,enWA
 
+                   iFb_MC_MoveVelocity_0                          MC_MoveVelocity    0 "                                                               *"    0   24    1    0    1    0         
+                                    Axis                                    UDINT    0 "                                                               *"    1    7    1   10    0    0         
+                                 Execute                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                Velocity                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
+                            Acceleration                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
+                            Deceleration                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
+                               Direction                                    USINT    0 "                                                               *"    1    5    1   10    0    0         
+                              InVelocity                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                    Busy                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                          CommandAborted                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                   Error                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                 ErrorID                                     UINT    0 "                                                               *"    1    6    1   10    0    0         
+                                  C_Axis                                    UDINT    0 "                                                               *"    1    7    1   10    0    0         
+                               C_Execute                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                              cmdExecute                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                              C_Velocity                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
+                          C_Acceleration                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
+                          C_Deceleration                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
+                             C_Direction                                    USINT    0 "                                                               *"    1    5    1   10    0    0         
+                               LockIDPar                                    USINT    0 "                                                               *"    1    5    1   10    0    0         
+                            C_InVelocity                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                        C_CommandAborted                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                 C_Error                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                               C_ErrorID                                     UINT    0 "                                                               *"    1    6    1   10    0    0         
+                                   state                                    USINT    0 "                                                               *"    1    5    1   10    0    0         
+                                  MoveID                                    USINT    0 "                                                               *"    1    5    1   10    0    0         

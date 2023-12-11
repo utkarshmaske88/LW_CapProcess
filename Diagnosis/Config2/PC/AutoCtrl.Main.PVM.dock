@@ -1,0 +1,10 @@
+WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=AutoCtrl 
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=158 Type=0 Scope=0 Force=0 Index=4 ASCIIString=0
+                                    name                                     type force                                                            value level type len format place expand specs
+                                gMainCmd                             gMainCmd_Str    0 "                                                               *"    0   24    1    0    0    1         
+                                    Stop                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                   EStop                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                              ErrorReset                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                   Start                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                               sAutoStep                                     DINT    0 "                                                               6"    0    4    1   10    1    0 e,0,enWA
+

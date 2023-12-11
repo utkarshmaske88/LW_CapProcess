@@ -23,9 +23,14 @@ PROGRAM _CYCLIC
 		enPICKING:
 			
 			iPickupArm.DIs.PArm_FWD:=TRUE;
-			
-			iPickupArm.DIs.CapGripper_PICK:=TRUE;
-			IF iPickupArm.DOs.PArmLFR=TRUE AND iPickupArm.DOs.CapGripVaccum=TRUE THEN
+			IF iPickupArm.DOs.PArmLFR = TRUE THEN
+				IF gManuelMode=TRUE THEN
+					
+				ELSE
+					iPickupArm.DIs.CapGripper_PICK:=TRUE;
+				END_IF;
+			END_IF;
+			IF iPickupArm.DOs.CapGripVaccum=TRUE THEN
 				iPickupArm.DIs.PArm_FWD:=FALSE;
 				sPArmStep:=enDROPPING;
 			END_IF;
@@ -35,8 +40,14 @@ PROGRAM _CYCLIC
 			iPickupArm.DIs.PArm_BWD:=TRUE;
 			IF iPickupArm.DOs.PArmLBK=TRUE THEN
 				iPickupArm.DIs.PArm_BWD:=FALSE;
-				iPickupArm.DIs.CapGripper_PICK:=FALSE;
-				sPArmStep:=enWAIT;
+				IF gManuelMode=TRUE THEN
+					
+				ELSE
+					iPickupArm.DIs.CapGripper_PICK:=FALSE;
+				END_IF;
+				IF iPickupArm.DIs.CapGripper_PICK=FALSE THEN	
+					sPArmStep:=enWAIT;
+				END_IF;
 			END_IF;
 		
 			//error mode

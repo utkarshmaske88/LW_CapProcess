@@ -1,3 +1,4 @@
 $(AS_PROJECT_PATH)/Logical/PickupArmPkg/PickupArm/Variables.var
 $(AS_PROJECT_PATH)/Logical/PickupArmPkg/PickupArm/Types.typ
+$(AS_PROJECT_PATH)/Logical/Global.var
 $(AS_PROJECT_PATH)/Logical/PickupArmPkg/Pickuptyp.typ

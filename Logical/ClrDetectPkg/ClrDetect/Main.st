@@ -27,12 +27,15 @@ PROGRAM _CYCLIC
 			//running mode
 		enRUNNING:
 			IF iClrDetect.DIs.ColorDtectMetallic=TRUE THEN
+				iClrDetect.Status.iNoOfMetallic:=iClrDetect.Status.iNoOfMetallic+1;
 				gColorCap:="Metallic";
 				sClrDetectStep:=enEXIT;
 			ELSIF iClrDetect.DIs.ColorDtectNotBlack =FALSE AND iClrDetect.DIs.ColorDtectMetallic=FALSE THEN 
+				iClrDetect.Status.iNoOfBlack:=iClrDetect.Status.iNoOfBlack+1;
 				gColorCap:="Black";	
 				sClrDetectStep:=enEXIT;
 			ELSIF iClrDetect.DIs.ColorDtectNotBlack =TRUE AND iClrDetect.DIs.ColorDtectMetallic=FALSE THEN 
+				iClrDetect.Status.iNoOfRed:=iClrDetect.Status.iNoOfRed+1;
 				gColorCap:="RED";	
 				sClrDetectStep:=enEXIT;
 			END_IF;

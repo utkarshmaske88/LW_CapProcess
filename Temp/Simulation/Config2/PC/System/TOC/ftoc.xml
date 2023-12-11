@@ -5,6 +5,8 @@
   <ITEM ID="FILE" CLASS="Os" OS="1" NAME="ar000loader.exe" DIR="" WRITECMD="3"/>
   <ITEM ID="FILE" CLASS="Os" OS="1" NAME="ar000stop.exe" DIR="" WRITECMD="3"/>
   <ITEM ID="FILE" CLASS="Os" OS="1" NAME="InaFrm.dll" DIR="" WRITECMD="3"/>
+  <ITEM ID="FILE" CLASS="Os" OS="1" NAME="wpcap.dll" DIR="" WRITECMD="3"/>
+  <ITEM ID="FILE" CLASS="Os" OS="1" NAME="Packet.dll" DIR="" WRITECMD="3"/>
   <ITEM ID="FILE" CLASS="Os" OS="1" NAME="PviLog.dll" DIR="" WRITECMD="3"/>
   <ITEM ID="FILE" CLASS="Os" OS="1" NAME="arUpd.bat" DIR="" WRITECMD="3"/>
   

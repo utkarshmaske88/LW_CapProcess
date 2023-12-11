@@ -42,6 +42,9 @@ $(AS_TEMP_PATH)/includes/libraries/comtotal/mng_packagevar.h
 $(AS_TEMP_PATH)/includes/mng_globaltyp.h
 $(AS_TEMP_PATH)/includes/cappushpkg/cappushtyptyp.h
 $(AS_TEMP_PATH)/includes/pickuparmpkg/pickuptyptyp.h
+$(AS_TEMP_PATH)/includes/logoconvpkg/logotyptyp.h
+$(AS_TEMP_PATH)/includes/sortconvpkg/sorttyptyp.h
+$(AS_TEMP_PATH)/includes/clrdetectpkg/clrdettyptyp.h
 $(AS_TEMP_PATH)/includes/lanegatespkg/typestyp.h
 $(AS_TEMP_PATH)/includes/libraries/comtotal/comtotal_p/typestyp.h
 $(AS_TEMP_PATH)/includes/libraries/comtotal/comtotal_p/variablesvar.h

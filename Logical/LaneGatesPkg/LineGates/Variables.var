@@ -1,4 +1,7 @@
 VAR
 	iLineGates : LineGates_typ; (*main strcuture for line gate*)
 	sLineGateStep : sStep_LineGates;
+	iNoOfBlack : USINT;
+	iNoOfMetallic : USINT;
+	iNoOfRed : USINT;
 END_VAR

@@ -1,4 +1,6 @@
 VAR
+	gManuelMode : BOOL;
+	gMainCmd : gMainCmd_Str;
 	gAxis01 : ACP10AXIS_typ;
 	gAxis02 : ACP10AXIS_typ;
 	gColorCap : WSTRING[80];

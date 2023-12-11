@@ -1,5 +1,5 @@
 WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=ClrDetect 
-Position X=0 Y=0 Width=0 Height=0 TabWidth Name=169 Type=0 Scope=0 Force=0 Index=15 ASCIIString=0
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index=4 ASCIIString=0
                                     name                                     type force                                                            value level type len format place expand specs
                               iClrDetect                            ClrDetect_typ    0 "                                                               *"    0   24    1    0    1    1         
                                      DIs                          DIClrDetect_typ    0 "                                                               *"    1   24    1    0    0    1         
@@ -7,14 +7,15 @@ Position X=0 Y=0 Width=0 Height=0 TabWidth Name=169 Type=0 Scope=0 Force=0 Index
                       ColorDtectNotBlack                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
                       ColorDtectMetallic                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
                                      DOs                          DOClrDetect_typ    0 "                                                               *"    1   24    1    0    0    1         
-                           CapStopperFWD                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
+                           CapStopperFWD                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
                                      Cmd                         CmdClrDetect_typ    0 "                                                               *"    1   24    1    0    0    1         
                                    Start                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
                                     Stop                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
                                    Estop                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                              ErrorReset                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
                                   Status                      StatusClrDetect_typ    0 "                                                               *"    1   24    1    0    0    1         
                                  Running                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
                                    Error                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
-                               gColorCap                              WSTRING[80]    0 "                                                      "Metallic""    0   21  162    1    0    0         
-                          sClrDetectStep                                     DINT    0 "                                                               0"    0    4    1   10    1    0 e,0,enWA
-
+                                iNoOfRed                                    USINT    0 "                                                               0"    2    5    1   10    0    0         
+                              iNoOfBlack                                    USINT    0 "                                                               0"    2    5    1   10    0    0         
+                           iNoOfMetallic                                    USINT    0 "                                                               0"    2    5    1   10    0    0         

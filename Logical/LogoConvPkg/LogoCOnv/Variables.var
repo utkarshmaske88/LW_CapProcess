@@ -1,4 +1,18 @@
 VAR
 	iLogoConv : LogoConv_typ;
 	sLogoConvStep : sStep_LogoConv;
+	BasicParameters : MpAxisBasicParType;
+	iFb_MpAxisBasic_0 : MpAxisBasic;
+	cmdPower : BOOL;
+	cmdHome : BOOL;
+	cmdMoveVelocity : BOOL;
+	cmdMoveAdditive : BOOL;
+	cmdUpdate : BOOL;
+	cmdStop : BOOL;
+	cmdErrorReset : BOOL;
+	iFb_MC_MoveVelocity_0 : MC_MoveVelocity;
+	cmdMoveVelocity_ACP10_MC : BOOL;
+	strStep : Step;
+	ERROR : BOOL;
+	iVl_OldVelocity : REAL;
 END_VAR

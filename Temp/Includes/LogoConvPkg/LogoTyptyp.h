@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1702123434_1_
-#define _BUR_1702123434_1_
+#ifndef _BUR_1702271142_9_
+#define _BUR_1702271142_9_
 
 #include <bur/plctypes.h>
 
@@ -44,12 +44,12 @@ typedef struct LogoConv_typ
 __asm__(".section \".plc\"");
 
 /* Used IEC files */
-__asm__(".ascii \"iecfile \\\"Logical/LogoConvPkg/LogoTyp.typ\\\" scope \\\"restricted\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/LogoConvPkg/LogoTyp.typ\\\" scope \\\"global\\\"\\n\"");
 
 /* Exported library functions and function blocks */
 
 __asm__(".previous");
 
 
-#endif /* _BUR_1702123434_1_ */
+#endif /* _BUR_1702271142_9_ */
 

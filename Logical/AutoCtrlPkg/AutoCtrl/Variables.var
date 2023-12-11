@@ -1,8 +1,29 @@
-
 VAR
-
-END_VAR
-
-VAR CONSTANT
-
+	sAutoStep : Step_AutoCtrl;
+	StatusCapPush : UINT;
+	CapPushAddress : UDINT;
+	SizeCapPush : UDINT;
+	StatusPickupArm : UINT;
+	PickupArmAddress : UDINT;
+	SizePickupArm : UDINT;
+	StatusLogoCOnv : UINT;
+	LogoConvAddress : UDINT;
+	SizeLogoConv : UDINT;
+	StatusSortConv : UINT;
+	SortConvAddress : UDINT;
+	SizeSortConv : UDINT;
+	StatusClrDetect : UINT;
+	ClrDetectAddress : UDINT;
+	SizeClrDetect : UDINT;
+	StatusLineGates : UINT;
+	LineGatesAddress : UDINT;
+	SizeLineGates : UDINT;
+	pCapPush : REFERENCE TO CapPush_typ;
+	pPickupArm : REFERENCE TO PickupArm_typ;
+	pLogoConv : REFERENCE TO LogoConv_typ;
+	pSortConv : REFERENCE TO SortBasicConv_typ;
+	pClrDetect : REFERENCE TO ClrDetect_typ;
+	pLineGate : REFERENCE TO LineGates_typ;
+	iTimeOut : TON;
+	iMi_MoveText : WSTRING[80];
 END_VAR

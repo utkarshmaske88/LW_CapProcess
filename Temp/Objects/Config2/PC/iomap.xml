@@ -236,10 +236,6 @@
 <Prod Device="TC#1-CPYDEV" DPName="::SortConv:iSortConv.AOs.SortBasicConvSpeed" Kind="pv"/>
 <Cons Device="TC#1-CPYDEV" DPName="::ComTotal_SimOutputs.SortingConveyor_SETSPEED" Kind="pv"/>
 </LN>
-<LN ID="::ComTotal_SimOutputs.SortingConveyor_CLEAR/1" Type="BOOL">
-<Prod Device="TC#1-CPYDEV" DPName="::SortConv:iSortConv.DIs.SortBasicConvStart_IR" Kind="pv"/>
-<Cons Device="TC#1-CPYDEV" DPName="::ComTotal_SimOutputs.SortingConveyor_CLEAR" Kind="pv"/>
-</LN>
 <LN ID="::ComTotal_SimOutputs.LogoConveyor_SETSPEED/4" Type="REAL">
 <Prod Device="TC#1-CPYDEV" DPName="::LogoCOnv:iLogoConv.AOs.LogoConvSpeed" Kind="pv"/>
 <Cons Device="TC#1-CPYDEV" DPName="::ComTotal_SimOutputs.LogoConveyor_SETSPEED" Kind="pv"/>

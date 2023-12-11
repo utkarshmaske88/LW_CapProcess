@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1702143599_2_
-#define _BUR_1702143599_2_
+#ifndef _BUR_1702271142_10_
+#define _BUR_1702271142_10_
 
 #include <bur/plctypes.h>
 
@@ -42,12 +42,12 @@ typedef struct SortBasicConv_typ
 __asm__(".section \".plc\"");
 
 /* Used IEC files */
-__asm__(".ascii \"iecfile \\\"Logical/SortConvPkg/SortTyp.typ\\\" scope \\\"restricted\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/SortConvPkg/SortTyp.typ\\\" scope \\\"global\\\"\\n\"");
 
 /* Exported library functions and function blocks */
 
 __asm__(".previous");
 
 
-#endif /* _BUR_1702143599_2_ */
+#endif /* _BUR_1702271142_10_ */
 

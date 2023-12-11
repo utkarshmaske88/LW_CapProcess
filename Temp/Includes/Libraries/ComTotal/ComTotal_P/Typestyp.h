@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1702031063_7_
-#define _BUR_1702031063_7_
+#ifndef _BUR_1702271142_13_
+#define _BUR_1702271142_13_
 
 #include <bur/plctypes.h>
 
@@ -19,5 +19,5 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/ComTotal/ComTotal_P/Types.typ\\\
 __asm__(".previous");
 
 
-#endif /* _BUR_1702031063_7_ */
+#endif /* _BUR_1702271142_13_ */
 

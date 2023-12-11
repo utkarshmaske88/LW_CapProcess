@@ -40,5 +40,8 @@ extern "C"
 #include <mng_globalTYP.h>
 #include <cappushpkg/cappushtypTYP.h>
 #include <pickuparmpkg/pickuptypTYP.h>
+#include <logoconvpkg/logotypTYP.h>
+#include <sortconvpkg/sorttypTYP.h>
+#include <clrdetectpkg/clrdettypTYP.h>
 #include <lanegatespkg/typesTYP.h>
 #endif

@@ -3,6 +3,6 @@
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
     <Object Type="Program" Language="IEC">ClrDetect</Object>
-    <Object Type="File" Private="true">ClrDetTyp.typ</Object>
+    <Object Type="File">ClrDetTyp.typ</Object>
   </Objects>
 </Package>

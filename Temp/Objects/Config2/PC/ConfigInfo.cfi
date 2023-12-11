@@ -50,6 +50,8 @@
         Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\LogoConvPkg\LogoCOnv\Types.typ" />
       <File
         Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\LogoConvPkg\LogoCOnv\Variables.var" />
+      <InternalFile
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Temp\Objects\Config2\PC\LogoCOnv\LogoAxis.st.var" />
     </Task>
     <Task
       Name="ClrDetect"
@@ -98,6 +100,8 @@
         Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\SortConvPkg\SortConv\Types.typ" />
       <File
         Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\SortConvPkg\SortConv\Variables.var" />
+      <InternalFile
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Temp\Objects\Config2\PC\SortConv\SortAxisA.st.var" />
     </Task>
     <Task
       Name="ComTotal_P"

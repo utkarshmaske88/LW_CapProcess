@@ -3,6 +3,6 @@
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
     <Object Type="Program" Language="IEC">LogoCOnv</Object>
-    <Object Type="File" Private="true">LogoTyp.typ</Object>
+    <Object Type="File">LogoTyp.typ</Object>
   </Objects>
 </Package>

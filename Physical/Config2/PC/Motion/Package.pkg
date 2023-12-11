@@ -5,6 +5,7 @@
     <Object Type="File" Description="NC mapping">Acp10map.ncm</Object>
     <Object Type="File" Description="NC manager configuration">Acp10cfg.ncc</Object>
     <Object Type="File" Description="NC operating system">Acp10sys.br</Object>
-    <Object Type="File">Axis01.mpaxisbasic</Object>
+    <Object Type="File">LogoAxis.mpaxisbasic</Object>
+    <Object Type="File">SortAxis.mpaxisbasic</Object>
   </Objects>
 </Package>

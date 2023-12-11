@@ -8,4 +8,13 @@ TYPE
 		enEXIT,
 		enERROR
 		);
+	Step : 
+		(
+		enINITA,
+		enSTARTA,
+		enPOWER_ONA,
+		enHOMEA,
+		enOPERATIONA,
+		enERRORA
+		);
 END_TYPE

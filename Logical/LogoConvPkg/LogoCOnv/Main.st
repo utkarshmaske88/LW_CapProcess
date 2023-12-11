@@ -2,15 +2,18 @@
 PROGRAM _INIT
 	(* Insert code here *)
 //	 iLogoConv.AOs.LogoConvSpeed:=0.1;
+	BasicParameters.Velocity:= 100;
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	(* Insert code here *)
+	
+	//axis action file
+	LogoAxis;
 	
 	CASE sLogoConvStep OF
 		//waiting for commands
 		enWAIT:
-			
+			iLogoConv.AOs.LogoConvSpeed:=0;
 			IF iLogoConv.Cmd.Start=TRUE THEN
 				iLogoConv.Cmd.Start:=FALSE;
 				sLogoConvStep:=enOPERATION;
@@ -18,14 +21,14 @@ PROGRAM _CYCLIC
 			
 			//operation mode cap is on
 		enOPERATION:
-			iLogoConv.AOs.LogoConvSpeed:=0;
+			
 			IF iLogoConv.DIs.LogoConvStart_IR=TRUE THEN
 				sLogoConvStep:=enRUNNING;
 			END_IF;
 			
 			//running the conveyor
 		enRUNNING:
-			iLogoConv.AOs.LogoConvSpeed:=500;
+			iLogoConv.AOs.LogoConvSpeed:=BasicParameters.Velocity/100;
 			IF iLogoConv.DIs.LogoConvExit_IR=TRUE THEN
 				sLogoConvStep:=enEXIT;	
 			END_IF;
@@ -33,9 +36,9 @@ PROGRAM _CYCLIC
 			//exit cap from conveyor
 		enEXIT:
 			
-			IF iLogoConv.DIs.LogoConvExit_IR=FALSE THEN
+			IF iLogoConv.Status.Running=FALSE THEN
 				sLogoConvStep:=enEXIT;	
-				iLogoConv.AOs.LogoConvSpeed:=0;
+				//iLogoConv.AOs.LogoConvSpeed:=0;
 				sLogoConvStep:=enWAIT;
 			END_IF;
 			

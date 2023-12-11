@@ -23,5 +23,8 @@ TYPE
 	StatusClrDetect_typ : 	STRUCT  (*status for color structure*)
 		Running : BOOL; (*running *)
 		Error : BOOL; (*error mode*)
+		iNoOfRed : USINT;
+		iNoOfBlack : USINT;
+		iNoOfMetallic : USINT;
 	END_STRUCT;
 END_TYPE

@@ -9,4 +9,13 @@ TYPE
 		enERROR,
 		enSTOP
 		);
+	Step : 
+		(
+		enINITA,
+		enSTARTA,
+		enPOWER_ONA,
+		enHOMEA,
+		enOPERATIONA,
+		enERRORA
+		);
 END_TYPE
