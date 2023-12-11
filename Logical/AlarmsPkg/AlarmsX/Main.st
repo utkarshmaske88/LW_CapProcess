@@ -40,14 +40,13 @@ PROGRAM _CYCLIC
 	iFb_AlarmUI();
 	
 	
-	MpAlarmXSet(gAlarmXCore, 'Test');
 END_PROGRAM
 
 PROGRAM _EXIT
 	(* Insert code here *)
 	 
-	iFb_AlarmUI.Enable:=TRUE;
-	iFb_AlarmX.Enable:=TRUE;
+	iFb_AlarmUI.Enable:=FALSE;
+	iFb_AlarmX.Enable:=FALSE;
 	iFb_AlarmX();
 	iFb_AlarmUI();
 END_PROGRAM

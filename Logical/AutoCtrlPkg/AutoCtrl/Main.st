@@ -47,7 +47,7 @@ PROGRAM _CYCLIC
 		enCAPPUSH:
 			
 			iTimeOut.IN:=TRUE;
-			IF pCapPush.DIs.PusherLFR=TRUE THEN
+			IF pCapPush.DIs.PickUp_IR=TRUE THEN
 				sAutoStep:=enPICKARM;
 				pPickupArm.Cmd.Start:=TRUE;
 				iTimeOut.IN:=FALSE;
@@ -66,13 +66,11 @@ PROGRAM _CYCLIC
 			//logo conveyor is on
 		enLOGOCONV:
 			iTimeOut.IN:=TRUE;
-			//IF pLogoConv.DIs.LogoConvExit_IR=TRUE THEN
-				IF pLogoConv.DIs.LogoConvExit_IR=TRUE THEN
+			IF pLogoConv.DIs.LogoConvExit_IR=TRUE THEN
 					sAutoStep:=enSORTCONV;	
 					pSortConv.Cmd.Start:=TRUE;
 					iTimeOut.IN:=FALSE;
 				END_IF;
-//END_IF;
 		
 			
 			//sorting conveyor is on
@@ -89,6 +87,7 @@ PROGRAM _CYCLIC
 			IF pClrDetect.DOs.CapStopperFWD=FALSE THEN
 				sAutoStep:=enLANEGATE;		
 				pLineGate.Cmd.Start:=TRUE;
+				pLineGate.Status.Running:=TRUE;
 				iTimeOut.IN:=FALSE;
 			END_IF;
 		
@@ -96,7 +95,7 @@ PROGRAM _CYCLIC
 		enLANEGATE:
 			
 			iTimeOut.IN:=TRUE;
-			IF pLineGate.Status.Running=FALSE THEN
+			IF pLineGate.DIs.LaneTopIR=TRUE THEN
 				pSortConv.Status.Running:=FALSE;
 				IF pLineGate.Cmd.Stop=TRUE OR pClrDetect.Status.iNoOfBlack=9 OR pClrDetect.Status.iNoOfMetallic=9 OR pClrDetect.Status.iNoOfRed=9 THEN
 					iMi_MoveText:="Remove the Cap then only start";
@@ -108,6 +107,22 @@ PROGRAM _CYCLIC
 				iTimeOut.IN:=FALSE;	
 			END_IF;
 		
+		enERROR:
+			pCapPush.Status.Error:=TRUE;
+			pPickupArm.Status.Error:=TRUE; 
+			pLogoConv.Status.Error:=TRUE;  
+			pSortConv.Status.Error:=TRUE; 
+			pClrDetect.Status.Error:=TRUE;  
+			pLineGate.Status.Error:=TRUE;  
+			IF gMainCmd.ErrorReset=TRUE THEN
+				sAutoStep:=enWAIT;
+				pCapPush.Cmd.ErrorReset:=TRUE;
+				pPickupArm.Cmd.ErrorReset:=TRUE;
+				pLogoConv.Cmd.ErrorReset:=TRUE;
+				pSortConv.Cmd.ErrorReset:=TRUE;
+				pClrDetect.Cmd.ErrorReset:=TRUE; 
+				pLineGate.Cmd.ErrorReset:=TRUE;
+			END_IF;
 	END_CASE;
 	
 	iTimeOut();

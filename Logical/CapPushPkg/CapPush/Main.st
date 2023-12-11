@@ -3,7 +3,15 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
+	//calling alrms
+	AlarmsCP;
 	
+	//if any errror will go into error state
+	IF iCapPush.Status.Error=TRUE THEN
+		sCapPushStep:=enERROR;
+	END_IF;
+	
+	//state machine of case step
 	CASE sCapPushStep OF
 	
 		//wait state if statred will move in next state
@@ -37,7 +45,8 @@ PROGRAM _CYCLIC
 			iCapPush.DOs.PushFWD:=FALSE ;
 			iCapPush.Cmd.Start:=FALSE; 
 			IF  iCapPush.Cmd.ErrorReset=TRUE THEN
-				iCapPush.Cmd.ErrorReset:=TRUE ;
+				iCapPush.Status.Error:=FALSE;
+				iCapPush.Cmd.ErrorReset:=FALSE ;
 				sCapPushStep:=enWAIT;
 			END_IF;
 		

@@ -5,8 +5,11 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	(* Insert code here *)
-	iClrDetect;
+	
+	//alarms of clr detect file
+	AlarmsCD;
+	
+	
 	CASE sClrDetectStep OF
 		
 		//waiting for start
@@ -51,6 +54,7 @@ PROGRAM _CYCLIC
 			
 			iClrDetect.DOs.CapStopperFWD:=TRUE;
 			IF iClrDetect.Cmd.ErrorReset=TRUE THEN
+				iClrDetect.Status.Error:=FALSE;
 				iClrDetect.Cmd.ErrorReset:=FALSE; 
 				sClrDetectStep:=enWAIT;
 			END_IF;

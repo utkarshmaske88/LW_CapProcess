@@ -2,12 +2,79 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Configuration>
   <Element ID="gAlarmXCore" Type="mpalarmxcore">
+    <Group ID="mapp.AlarmX.Core">
+      <Group ID="BySeverity">
+        <Group ID="[0]">
+          <Property ID="Severity" Value="50" />
+          <Selector ID="[0]" Value="Reaction">
+            <Property ID="Name" Value="Warning" />
+          </Selector>
+        </Group>
+        <Group ID="[1]">
+          <Property ID="Severity" Value="100" />
+          <Selector ID="[0]" Value="Reaction">
+            <Property ID="Name" Value="EStop" />
+          </Selector>
+        </Group>
+      </Group>
+    </Group>
     <Group ID="mapp.AlarmX.Core.Configuration">
       <Group ID="[0]">
-        <Property ID="Name" Value="Test" />
-        <Property ID="Message" Value="Test" />
+        <Property ID="Name" Value="CapPush" />
+        <Property ID="Message" Value="Magzine for cap is empty" />
+        <Property ID="Severity" Value="10" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[1]">
+        <Property ID="Name" Value="PArmError" />
+        <Property ID="Message" Value="Both Arms are on please disable one of it" />
+        <Property ID="Severity" Value="100" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[2]">
+        <Property ID="Name" Value="VaccumError" />
+        <Property ID="Message" Value="Arm is forward but no cap available to pick\" />
+        <Property ID="Severity" Value="50" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[3]">
+        <Property ID="Name" Value="ConvLogoErr" />
+        <Property ID="Message" Value="Cap is on the belt but velocity is zero" />
+        <Property ID="Severity" Value="100" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[4]">
+        <Property ID="Name" Value="ConvSortErr" />
+        <Property ID="Message" Value="Cap is on the belt but velocity is zero" />
+        <Property ID="Severity" Value="100" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[5]">
+        <Property ID="Name" Value="EStopCD" />
+        <Property ID="Message" Value="Estop for Color detect is pressed" />
+        <Property ID="Severity" Value="100" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[6]">
+        <Property ID="Name" Value="CapsFull" />
+        <Property ID="Message" Value="Maximum no of caps are filled please remove" />
+        <Property ID="Severity" Value="100" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[7]">
+        <Property ID="Name" Value="EStopLG" />
+        <Property ID="Message" Value="Emergency stop for line gate" />
+        <Property ID="Severity" Value="100" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[8]">
+        <Property ID="Name" Value="EStopAC" />
+        <Property ID="Message" Value="Emergency stop for main control has been pressed" />
+        <Property ID="Severity" Value="100" />
         <Selector ID="Behavior" Value="PersistentAlarm" />
       </Group>
     </Group>
   </Element>
+  <Element ID="gAlarmXCore_1" Type="mpalarmxcore" />
+  <Element ID="gAlarmXCore_2" Type="mpalarmxcore" />
 </Configuration>

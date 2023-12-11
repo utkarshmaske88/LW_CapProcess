@@ -6,7 +6,13 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	(* Insert code here *)
+	//if any error will go into error mode
+	AlarmsPA;
+	IF iPickupArm.Status.Error=TRUE THEN
+		sPArmStep:=enERROR;
+	END_IF;
 	
+	//case step for p-arm
 	CASE sPArmStep OF
 		
 		//wait state 
@@ -59,6 +65,8 @@ PROGRAM _CYCLIC
 				iPickupArm.DIs.CapGripper_PICK:=FALSE;
 			END_IF;
 			IF iPickupArm.Cmd.ErrorReset=TRUE THEN
+				iPickupArm.Status.Error:=FALSE;
+				iPickupArm.Cmd.Estop:=FALSE;
 				iPickupArm.Cmd.ErrorReset:=FALSE; 
 				sPArmStep:=enWAIT;
 			END_IF;

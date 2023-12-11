@@ -6,5 +6,6 @@
     <File Description="Local data types" Private="true">Types.typ</File>
     <File Description="Local variables" Private="true">Variables.var</File>
     <File>LogoAxis.st</File>
+    <File>AlarmsLC.st</File>
   </Files>
 </Program>

@@ -2,3 +2,6 @@ VAR
 	iClrDetect : ClrDetect_typ; (*main color detect strcutre*)
 	sClrDetectStep : sStep_ClrDetect;
 END_VAR
+VAR CONSTANT
+	MAXNOCAP : USINT := 9;
+END_VAR

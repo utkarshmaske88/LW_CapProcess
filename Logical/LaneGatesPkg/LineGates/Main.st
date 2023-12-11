@@ -6,7 +6,9 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	(* Insert code here *)
-	iLineGates;
+	IF iLineGates.Status.Error=TRUE THEN
+	
+		END_IF;
 	
 	CASE sLineGateStep OF
 		//waiting for the start

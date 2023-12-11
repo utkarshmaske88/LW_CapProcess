@@ -6,13 +6,13 @@ ACTION SortAxisA:
 	iFb_MpAxisBasic_0.Enable := 1;
 	iFb_MpAxisBasic_0.Parameters := ADR(BasicParameters);
 	iFb_MpAxisBasic_0();
-//	
-//	BasicParameters.Velocity := 1000; 
-//	BasicParameters.Distance := 1000; 
-//		
-//	iFb_MC_MoveVelocity_0.Velocity := 1000;
-//	iFb_MC_MoveVelocity_0.Acceleration := 2000;
-//	iFb_MC_MoveVelocity_0.Deceleration := 2000;
+	//	
+	//	BasicParameters.Velocity := 1000; 
+	//	BasicParameters.Distance := 1000; 
+	//		
+	//	iFb_MC_MoveVelocity_0.Velocity := 1000;
+	//	iFb_MC_MoveVelocity_0.Acceleration := 2000;
+	//	iFb_MC_MoveVelocity_0.Deceleration := 2000;
 	
 	iFb_MC_MoveVelocity_0.Axis := ADR(gAxis02);
 	iFb_MpAxisBasic_0.Power := cmdPower;
@@ -26,8 +26,9 @@ ACTION SortAxisA:
 	
 	IF cmdStop=TRUE THEN
 		iFb_MpAxisBasic_0.Stop:=TRUE;
-		cmdStop:=FALSE;
 		IF iFb_MpAxisBasic_0.Stopped=TRUE THEN
+			cmdMoveVelocity:=FALSE;
+			cmdStop:=FALSE;
 			iFb_MpAxisBasic_0.Stop:=FALSE;
 		END_IF;
 	END_IF;

@@ -9,6 +9,12 @@ PROGRAM _CYCLIC
 	
 	//axis action file
 	LogoAxis;
+	//alarms file for the logo conveyor
+	AlarmsLC;
+	
+	IF iLogoConv.Status.Error=TRUE THEN
+		sLogoConvStep:=enERROR;
+	END_IF;
 	
 	CASE sLogoConvStep OF
 		//waiting for commands
@@ -38,7 +44,7 @@ PROGRAM _CYCLIC
 			
 			IF iLogoConv.Status.Running=FALSE THEN
 				sLogoConvStep:=enEXIT;	
-				//iLogoConv.AOs.LogoConvSpeed:=0;
+				iLogoConv.AOs.LogoConvSpeed:=0;
 				sLogoConvStep:=enWAIT;
 			END_IF;
 			
@@ -47,6 +53,8 @@ PROGRAM _CYCLIC
 			iLogoConv.AOs.LogoConvSpeed:=0;
 			IF iLogoConv.Cmd.ErrorReset=TRUE THEN
 				iLogoConv.Cmd.ErrorReset:=FALSE;
+				iLogoConv.Status.Error:=FALSE;
+				iLogoConv.Cmd.Estop:=FALSE;
 				sLogoConvStep:=enWAIT;
 			END_IF;
 	END_CASE;
