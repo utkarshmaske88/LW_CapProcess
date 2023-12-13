@@ -1,0 +1,52 @@
+﻿//@import "../libs/view/AlarmLineView/AlarmLineView.scss";
+
+.breaseAlarmLine {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #a3a3a3;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    .AlarmLineHeaderWrapper {
+        height: 100%;
+        box-sizing: border-box;
+        background-color: transparent;
+        position: absolute;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        flex-direction: row;
+
+        > div {
+            top: 0px;
+            left: 0px;
+            position: relative !important;
+        }
+    }
+    
+    .AlarmLineWrapper {
+        overflow: hidden;
+        position: absolute;
+        display: flex;
+        height: 100%;
+        
+        > div {
+            box-sizing: border-box;
+
+            img {
+                max-height: 100%;
+            }
+        }
+    }
+
+    &.editMode {
+        .AlarmLineHeaderWrapper {
+            display: flex;
+        }
+    }
+    &:not(.editMode) {
+        .AlarmLineHeaderWrapper {
+            display: none;
+        }
+    }
+}

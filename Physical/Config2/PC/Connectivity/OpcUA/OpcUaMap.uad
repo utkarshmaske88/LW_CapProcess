@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<OpcUaSource FileVersion="9" ArVersion="B4.91">
+  <Aliases>
+    <ACLAliases />
+    <EURangeViolationAliases />
+    <EURangesAliases />
+    <EngineeringUnitAliases />
+  </Aliases>
+  <DefaultView>
+    <Module Name="&lt;Default&gt;">
+      <GlobalVariables Name="Global Variables">
+        <Variable Name="gMainCmd" RecursiveEnable="2" />
+      </GlobalVariables>
+      <Task Name="CapPush">
+        <Variable Name="iCapPush">
+          <Variable Name="DOs">
+            <Variable Name="PushFWD" />
+          </Variable>
+          <Variable Name="Status">
+            <Variable Name="Running" />
+          </Variable>
+        </Variable>
+      </Task>
+      <Task Name="PickupArm">
+        <Variable Name="iPickupArm">
+          <Variable Name="DIs">
+            <Variable Name="CapGripper_PICK" />
+            <Variable Name="PArm_FWD" />
+          </Variable>
+          <Variable Name="Status">
+            <Variable Name="Running" />
+          </Variable>
+        </Variable>
+      </Task>
+      <Task Name="LogoCOnv">
+        <Variable Name="cmdMoveAdditive" />
+        <Variable Name="cmdMoveVelocity" />
+        <Variable Name="iLogoConv">
+          <Variable Name="Status">
+            <Variable Name="Running" />
+          </Variable>
+        </Variable>
+      </Task>
+      <Task Name="ClrDetect">
+        <Variable Name="iClrDetect">
+          <Variable Name="DOs">
+            <Variable Name="CapStopperFWD" />
+          </Variable>
+          <Variable Name="Status">
+            <Variable Name="Running" />
+          </Variable>
+        </Variable>
+      </Task>
+      <Task Name="LineGates">
+        <Variable Name="iLineGates">
+          <Variable Name="DOs">
+            <Variable Name="LW2FWD" />
+            <Variable Name="LG1FWD" />
+          </Variable>
+          <Variable Name="Status">
+            <Variable Name="Running" />
+          </Variable>
+        </Variable>
+      </Task>
+      <Task Name="AutoCtrl">
+        <Variable Name="iMi_MoveText" />
+        <Variable Name="sAutoStep" />
+      </Task>
+      <Task Name="SortConv">
+        <Variable Name="cmdMoveVelocity" />
+        <Variable Name="iSortConv">
+          <Variable Name="Status">
+            <Variable Name="Running" />
+          </Variable>
+        </Variable>
+      </Task>
+    </Module>
+  </DefaultView>
+</OpcUaSource>

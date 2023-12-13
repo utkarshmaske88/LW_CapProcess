@@ -1,0 +1,7 @@
+$(AS_PROJECT_PATH)/Logical/Libraries/MpAlarmX/MpAlarmX.fun
+$(AS_PROJECT_PATH)/Logical/ClrDetectPkg/ClrDetect/Variables.var
+$(AS_PROJECT_PATH)/Logical/ClrDetectPkg/ClrDetTyp.typ
+$(AS_PROJECT_PATH)/Logical/Global.var
+$(AS_PROJECT_PATH)/Physical/Config2/PC/mappServices/Alarms.mpalarmxcore
+$(AS_PROJECT_PATH)/Logical/Libraries/MpBase/MpBase.typ
+$(AS_PROJECT_PATH)/Logical/ClrDetectPkg/ClrDetect/Types.typ

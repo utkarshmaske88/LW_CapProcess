@@ -43,16 +43,19 @@
 				<Folder Name="server" ProjectDependent="1">
 					<File Name="-1275084005.binding" Size="507" HashValue="810B5F660B296FF08F7C986D7CB90ABB" ProjectDependent="1"/>
 					<File Name="-1442750172.eventbinding" Size="1640" HashValue="02D8896A88645E54AB5098396C82A17C" ProjectDependent="1"/>
+					<File Name="-2003565413.binding" Size="3455" HashValue="6AABA0C83BC4144078F3B44AB31BE749" ProjectDependent="1"/>
+					<File Name="-486405665.binding" Size="2590" HashValue="DD3A41FB6F34C0CFC635F92B70AD0782" ProjectDependent="1"/>
+					<File Name="1484524715.eventbinding" Size="753" HashValue="CB64E697211BD6375B3DA4F233BB76C8" ProjectDependent="1"/>
 					<File Name="1744482635.eventbinding" Size="3412" HashValue="51611AB6DA73BC9A6293492BCE6F9455" ProjectDependent="1"/>
 					<File Name="__SystemVariables.sessionVar" Size="3679" HashValue="47F4015152DC77A4E81EB725C733FBD6" ProjectDependent="1"/>
 					<File Name="Config.mappviewcfg" Size="1582" HashValue="EE2F8DF68D5D69A690DF2443F5DB24A7" ProjectDependent="1"/>
-					<File Name="vis_0.vis" Size="1135" HashValue="63F314062F013850FBDAA6018F60C6BC" ProjectDependent="1"/>
+					<File Name="vis_0.vis" Size="1297" HashValue="DB677F9EBDBFA23542D8B294F8D82945" ProjectDependent="1"/>
 				</Folder>
 				<Folder Name="wwwRoot" ProjectDependent="1">
 					<File Name="0_visulist.json" Size="9" HashValue="AA22B0A6B40EAA026CD7BC41E9BACC57" ProjectDependent="1"/>
 					<File Name="favicon.ico" Size="1406" HashValue="B3D2122594565CE5AF565BE898EF539A" ProjectDependent="1"/>
 					<File Name="index.html" Size="4385" HashValue="BC3ED7AA954B2FBC318B1E291F29D2CE" ProjectDependent="1"/>
-					<File Name="vis_0.json" Size="1238" HashValue="B672187DF0DB64B8C00661844062F185" ProjectDependent="1"/>
+					<File Name="vis_0.json" Size="1338" HashValue="3B376A576397490CAE9E2F3D3AC67AEF" ProjectDependent="1"/>
 					<Folder Name="BRVisu" ProjectDependent="1">
 						<File Name="bootstrapper.min.js" Size="15653" HashValue="B6639108276524CCFD2503B0704C2536" ProjectDependent="1"/>
 						<File Name="jquery.js" Size="258648" HashValue="AACC43D6F308FA362AC85E3F4FB2B30C" ProjectDependent="1"/>
@@ -543,7 +546,6 @@
 							<File Name="check.png" Size="16796" HashValue="263DBC016CA95CAB0027B227E04DBB94" ProjectDependent="1"/>
 							<File Name="checked.png" Size="14518" HashValue="DA188CCB78F1017E9645542BB5E52D6B" ProjectDependent="1"/>
 							<File Name="Estop.png" Size="20660" HashValue="FFE904945A2489EDB7903F5A07FDCCD8" ProjectDependent="1"/>
-							<File Name="gear.gif" Size="23102" HashValue="DE1D146A50F1DC63F57BE30BADE582E9" ProjectDependent="1"/>
 							<File Name="home.png" Size="27496" HashValue="D4BF5E0A948B50D0386BCCD0B1A46A64" ProjectDependent="1"/>
 							<File Name="login.png" Size="12635" HashValue="9644843C6A9E901550F17BFC0C23A603" ProjectDependent="1"/>
 							<File Name="Logo.png" Size="1147" HashValue="392EC9A6BC1E062B0867A34881EE825F" ProjectDependent="1"/>
@@ -731,8 +733,8 @@
 							</Folder>
 						</Folder>
 						<Folder Name="release" ProjectDependent="1">
-							<File Name="brease.js" Size="1275105" HashValue="59D4DC8350B23503FF4E4A056E9DBB28" ProjectDependent="1"/>
-							<File Name="brease_core.min.css" Size="414688" HashValue="96856E443C1F2BEC745FCCE68C8E05B0" ProjectDependent="1"/>
+							<File Name="brease.js" Size="1328678" HashValue="278B2F94FB7A5A31E9E7D818658A404C" ProjectDependent="1"/>
+							<File Name="brease_core.min.css" Size="423243" HashValue="1FE121E3A34E3E6F0C2B8F887E95FBB2" ProjectDependent="1"/>
 						</Folder>
 						<Folder Name="system" ProjectDependent="1">
 							<Folder Name="brease" ProjectDependent="1">
@@ -890,6 +892,112 @@
 						</Folder>
 						<Folder Name="widgets" ProjectDependent="1">
 							<Folder Name="brease" ProjectDependent="1">
+								<Folder Name="AlarmLine" ProjectDependent="1">
+									<File Name="AlarmLine.html" Size="81" HashValue="76DD5B1326D2D9438884406428D30FEF" ProjectDependent="1"/>
+									<File Name="AlarmLine.js" Size="40939" HashValue="0ECF7675766E36407675539C10AB1293" ProjectDependent="1"/>
+									<Folder Name="assets" ProjectDependent="1">
+										<File Name="cat1.svg" Size="1044" HashValue="6AC851D16C0CC1ADE95046AAA3AA9AD3" ProjectDependent="1"/>
+										<File Name="cat2.svg" Size="1442" HashValue="9BD100A3F4D8EE914C0B23FD99B6B472" ProjectDependent="1"/>
+									</Folder>
+									<Folder Name="css" ProjectDependent="1">
+										<File Name="AlarmLine.sass.css" Size="748" HashValue="528F78B6D2D802233B113E3258CF79B8" ProjectDependent="1"/>
+										<File Name="AlarmLine.scss" Size="1115" HashValue="4BBB32923882C6112A0FE0A8D2F2AE17" ProjectDependent="1"/>
+									</Folder>
+									<Folder Name="designer" ProjectDependent="1">
+										<File Name="ClassInfo.js" Size="3893" HashValue="DFC5B2698BC56DFAEC4E00FFFC7225D6" ProjectDependent="1"/>
+									</Folder>
+									<Folder Name="libs" ProjectDependent="1">
+										<Folder Name="config" ProjectDependent="1">
+											<File Name="Config.js" Size="4523" HashValue="65B4C5BEB87D88DB23C5C803CA52FB98" ProjectDependent="1"/>
+											<File Name="InitState.js" Size="5643" HashValue="52D93D1266C3712A10CD356D1D47AA27" ProjectDependent="1"/>
+										</Folder>
+										<Folder Name="reducer" ProjectDependent="1">
+											<File Name="AlarmLineMainActions.js" Size="783" HashValue="F30F60BEF34E77917E98EBFAB4EA86DF" ProjectDependent="1"/>
+											<File Name="AlarmLineMainReducer.js" Size="1255" HashValue="7759D86E9CFEA0024B74A5C5D5998155" ProjectDependent="1"/>
+											<Folder Name="AlarmLineConfigReducer" ProjectDependent="1">
+												<File Name="AlarmLineConfigAction.js" Size="711" HashValue="E30E97318843DCDA74C9DA7B08D1F1B8" ProjectDependent="1"/>
+												<File Name="AlarmLineConfigReducer.js" Size="574" HashValue="978AD10E318048D6920E90CE415B40C6" ProjectDependent="1"/>
+											</Folder>
+											<Folder Name="AlarmLineReducer" ProjectDependent="1">
+												<File Name="AlarmLineAction.js" Size="7867" HashValue="672ED79CEBCACCABC3D5B99A2F595C22" ProjectDependent="1"/>
+												<File Name="AlarmLineReducer.js" Size="9089" HashValue="B594B2DA96FF1333A6573E80710BF3AB" ProjectDependent="1"/>
+											</Folder>
+										</Folder>
+										<Folder Name="utils" ProjectDependent="1">
+											<File Name="Dialogue.js" Size="2480" HashValue="5E71CB634528FE0AAFB0C70A340DE5E5" ProjectDependent="1"/>
+											<File Name="DialogueTexts.js" Size="2217" HashValue="404930C0349CB76DA8415B6DE4C87275" ProjectDependent="1"/>
+											<File Name="EditorBehavior.js" Size="1917" HashValue="4ED0E9ABFA284ED8AC3DF846AA1F7219" ProjectDependent="1"/>
+											<File Name="EditorHandles.js" Size="1956" HashValue="8E0195968109CBC04CBC78DD131F3D85" ProjectDependent="1"/>
+											<Folder Name="UtilsAlarm" ProjectDependent="1">
+												<File Name="UtilsAlarm.js" Size="16899" HashValue="9683F29FABB56C011FDE271DC3184C46" ProjectDependent="1"/>
+											</Folder>
+										</Folder>
+										<Folder Name="view" ProjectDependent="1">
+											<Folder Name="AlarmLineView" ProjectDependent="1">
+												<File Name="AlarmLineView.js" Size="8692" HashValue="176CA0ACC7D6999109C0FD872A65CBCA" ProjectDependent="1"/>
+											</Folder>
+										</Folder>
+									</Folder>
+									<Folder Name="meta" ProjectDependent="1">
+										<File Name="AlarmLine.json" Size="37844" HashValue="D6D0F6EDE34E1CCD16EF0ED128FF24D4" ProjectDependent="1"/>
+										<File Name="AlarmLine.style" Size="9661" HashValue="EE158D139CDE9569DA8A307D7254F776" ProjectDependent="1"/>
+										<File Name="AlarmLine.widget" Size="32407" HashValue="F81E5E39CE52C68CDBCD1A2CED8E60AE" ProjectDependent="1"/>
+										<File Name="AlarmLine.xsd" Size="4901" HashValue="6CD824CB77D5FCBC02762FF106F4185D" ProjectDependent="1"/>
+										<File Name="AlarmLine_base.scss" Size="1750" HashValue="F459592A888203722FC34C67AE9AB999" ProjectDependent="1"/>
+										<File Name="AlarmLine_Copied.markerFile" Size="0" HashValue="D41D8CD98F00B204E9800998ECF8427E" ProjectDependent="1"/>
+										<File Name="AlarmLine_default.sass.css" Size="1631" HashValue="DBB1B9336A07224682ECD1BA78EC0E86" ProjectDependent="1"/>
+										<File Name="AlarmLine_default.scss" Size="1833" HashValue="48E35B0788889E344441332CA8818EE0" ProjectDependent="1"/>
+										<File Name="AlarmLine_doc.html" Size="40580" HashValue="BF930DA0DCE85533BCF814C8373D7624" ProjectDependent="1"/>
+										<File Name="AlarmLine_EventsActions.xsd" Size="6050" HashValue="718C78BE86AAFAD293915D8B4362E092" ProjectDependent="1"/>
+										<File Name="AlarmLine_Styles.xsd" Size="2421" HashValue="13027376056F098EF25BB7F6017D6426" ProjectDependent="1"/>
+									</Folder>
+								</Folder>
+								<Folder Name="AlarmLineItem" ProjectDependent="1">
+									<File Name="AlarmLineItem.html" Size="85" HashValue="BA6E9B28EB8B736FEE4E9BBF1EBAE4AD" ProjectDependent="1"/>
+									<File Name="AlarmLineItem.js" Size="7241" HashValue="DD37BACED543866807584D3BE60B3A85" ProjectDependent="1"/>
+									<Folder Name="css" ProjectDependent="1">
+										<File Name="AlarmLineItem.sass.css" Size="259" HashValue="A2616209011927D5C565D1B2F0D47A4E" ProjectDependent="1"/>
+										<File Name="AlarmLineItem.scss" Size="300" HashValue="909ED317387673B077928BAEFA2C5216" ProjectDependent="1"/>
+									</Folder>
+									<Folder Name="designer" ProjectDependent="1">
+										<File Name="ClassInfo.js" Size="1302" HashValue="39897D12FBBB9FB029E4448D67AB877B" ProjectDependent="1"/>
+									</Folder>
+									<Folder Name="libs" ProjectDependent="1">
+										<File Name="EditorHandles.js" Size="2806" HashValue="B673156F618D374336D05CF1EA542EBA" ProjectDependent="1"/>
+									</Folder>
+									<Folder Name="meta" ProjectDependent="1">
+										<File Name="AlarmLineItem.json" Size="5840" HashValue="AEC567773D878E9637220491E931A559" ProjectDependent="1"/>
+										<File Name="AlarmLineItem.style" Size="839" HashValue="45BCBBFD151935BD00DEF58BFC869279" ProjectDependent="1"/>
+										<File Name="AlarmLineItem.widget" Size="4049" HashValue="8649A8D0FC5368E2433EA889A4B3A72A" ProjectDependent="1"/>
+										<File Name="AlarmLineItem.xsd" Size="1826" HashValue="A6739A683DAA20111B04921F1C39D9C5" ProjectDependent="1"/>
+										<File Name="AlarmLineItem_base.scss" Size="96" HashValue="6F0C10AEEF8239A2B77443878E9F3D45" ProjectDependent="1"/>
+										<File Name="AlarmLineItem_Copied.markerFile" Size="0" HashValue="D41D8CD98F00B204E9800998ECF8427E" ProjectDependent="1"/>
+										<File Name="AlarmLineItem_default.sass.css" Size="57" HashValue="10D64401D05E50A9381A5329043C78EC" ProjectDependent="1"/>
+										<File Name="AlarmLineItem_default.scss" Size="187" HashValue="F2BBAB35C2A398264138FDA466B83DC4" ProjectDependent="1"/>
+										<File Name="AlarmLineItem_doc.html" Size="5807" HashValue="B4A11FE271CD243AB6A399747252AAB5" ProjectDependent="1"/>
+										<File Name="AlarmLineItem_EventsActions.xsd" Size="941" HashValue="11E2628058D8A198DE0814474C389F31" ProjectDependent="1"/>
+									</Folder>
+								</Folder>
+								<Folder Name="AlarmLineStyle" ProjectDependent="1">
+									<File Name="AlarmLineStyle.html" Size="85" HashValue="0E01494456D1F5839670E8D61603BF84" ProjectDependent="1"/>
+									<File Name="AlarmLineStyle.js" Size="575" HashValue="69066813DC2F6157AF56189001F7B228" ProjectDependent="1"/>
+									<Folder Name="designer" ProjectDependent="1">
+										<File Name="ClassInfo.js" Size="1288" HashValue="A19ADFEA8F13C03B9CF172242ADB31FA" ProjectDependent="1"/>
+									</Folder>
+									<Folder Name="meta" ProjectDependent="1">
+										<File Name="AlarmLineStyle.json" Size="11947" HashValue="35B522FB04AAC2ECC15D2FF9BE06920B" ProjectDependent="1"/>
+										<File Name="AlarmLineStyle.style" Size="2566" HashValue="FEC0D23B566D0E6AD2E01F71630A37F1" ProjectDependent="1"/>
+										<File Name="AlarmLineStyle.widget" Size="9930" HashValue="40CC46AD6FD3F21FEE461E8A10D9D7B9" ProjectDependent="1"/>
+										<File Name="AlarmLineStyle.xsd" Size="1473" HashValue="2061493175C585C49F8BF5E94DFB0291" ProjectDependent="1"/>
+										<File Name="AlarmLineStyle_base.scss" Size="617" HashValue="0474A542D2700AB569B3A9AE588A8843" ProjectDependent="1"/>
+										<File Name="AlarmLineStyle_Copied.markerFile" Size="0" HashValue="D41D8CD98F00B204E9800998ECF8427E" ProjectDependent="1"/>
+										<File Name="AlarmLineStyle_default.sass.css" Size="592" HashValue="B0898F50869139428AD0A664533BBF5B" ProjectDependent="1"/>
+										<File Name="AlarmLineStyle_default.scss" Size="710" HashValue="798C242E405D3AD20A5459AF9353FF6A" ProjectDependent="1"/>
+										<File Name="AlarmLineStyle_doc.html" Size="15714" HashValue="AFCAAFE236153240AD3B75B0CDCCE7F2" ProjectDependent="1"/>
+										<File Name="AlarmLineStyle_EventsActions.xsd" Size="3127" HashValue="2FCBC62704038C86A5F0964BFA330DC3" ProjectDependent="1"/>
+										<File Name="AlarmLineStyle_Styles.xsd" Size="976" HashValue="67A47AA588A443B1ACF7F2189309B220" ProjectDependent="1"/>
+									</Folder>
+								</Folder>
 								<Folder Name="AlarmList" ProjectDependent="1">
 									<File Name="AlarmList.html" Size="78" HashValue="F2B41E65873F8324E30DADCA7584E38A" ProjectDependent="1"/>
 									<File Name="AlarmList.js" Size="8923" HashValue="DA692F4A24B2991AD7690ECCA517243D" ProjectDependent="1"/>
@@ -1678,6 +1786,34 @@
 										<File Name="Label_Styles.xsd" Size="2111" HashValue="6C6FAA70681F8AD3BE554FDE04B63F20" ProjectDependent="1"/>
 									</Folder>
 								</Folder>
+								<Folder Name="Line" ProjectDependent="1">
+									<File Name="Line.html" Size="68" HashValue="E4E5971C0DE346DB93E5900F3FF9DA84" ProjectDependent="1"/>
+									<File Name="Line.js" Size="6097" HashValue="7BA4627F1CA96F23BA9A209C9715EB4E" ProjectDependent="1"/>
+									<Folder Name="css" ProjectDependent="1">
+										<File Name="Line.sass.css" Size="30" HashValue="FB053EA8CBD118B02DDACE91A882CF6D" ProjectDependent="1"/>
+										<File Name="Line.scss" Size="84" HashValue="82C0EEFDDE11E8D30A1F147826167D08" ProjectDependent="1"/>
+									</Folder>
+									<Folder Name="designer" ProjectDependent="1">
+										<File Name="ClassExtension.js" Size="465" HashValue="7B79D01A49EE0C7AC268F70EB18C8561" ProjectDependent="1"/>
+										<File Name="ClassInfo.js" Size="1624" HashValue="76D950DFB1978D6B5D83FDEEA905BDBE" ProjectDependent="1"/>
+									</Folder>
+									<Folder Name="libs" ProjectDependent="1">
+										<File Name="EditorHandles.js" Size="7077" HashValue="1F0D7AB15B4622C4F516AD2BB4CFB72B" ProjectDependent="1"/>
+									</Folder>
+									<Folder Name="meta" ProjectDependent="1">
+										<File Name="Line.json" Size="10807" HashValue="D3040C8C7F4D9B19A70749A0BFB9D26B" ProjectDependent="1"/>
+										<File Name="Line.style" Size="1918" HashValue="C35DBBFAABA2F457F640A9036BB628E8" ProjectDependent="1"/>
+										<File Name="Line.widget" Size="10131" HashValue="6E55DCEDB61D375BF4A9627C69DD997F" ProjectDependent="1"/>
+										<File Name="Line.xsd" Size="1895" HashValue="08373C0DF6BBD06F756004C06FE74A3F" ProjectDependent="1"/>
+										<File Name="Line_base.scss" Size="197" HashValue="A482DC6FFBC9F333BCCE72E4A57708E0" ProjectDependent="1"/>
+										<File Name="Line_Copied.markerFile" Size="0" HashValue="D41D8CD98F00B204E9800998ECF8427E" ProjectDependent="1"/>
+										<File Name="Line_default.sass.css" Size="269" HashValue="9A585B36987C80CF920B7A57A8882180" ProjectDependent="1"/>
+										<File Name="Line_default.scss" Size="270" HashValue="1E5BD8FBE3B21845766153567DF2AC46" ProjectDependent="1"/>
+										<File Name="Line_doc.html" Size="15147" HashValue="D13079F8CBA5B7BDA289FB8A5C3CEE4A" ProjectDependent="1"/>
+										<File Name="Line_EventsActions.xsd" Size="2752" HashValue="A867C0A1DE680ED7679A7A0EA5E21430" ProjectDependent="1"/>
+										<File Name="Line_Styles.xsd" Size="959" HashValue="E4AA5566AF6DEDB1D7EFA7F229BAB8CA" ProjectDependent="1"/>
+									</Folder>
+								</Folder>
 								<Folder Name="Login" ProjectDependent="1">
 									<File Name="Login.html" Size="1019" HashValue="704737497F2139419D1E8E3C71DB64D9" ProjectDependent="1"/>
 									<File Name="Login.js" Size="26495" HashValue="0DC3C79B040D66B88B11BA66860415A2" ProjectDependent="1"/>
@@ -1992,6 +2128,26 @@
 										<File Name="TextInput_Styles.xsd" Size="2985" HashValue="4EEC566CF1EFD9BCCABE06923E3A61C9" ProjectDependent="1"/>
 									</Folder>
 								</Folder>
+								<Folder Name="TextOutput" ProjectDependent="1">
+									<File Name="TextOutput.html" Size="85" HashValue="93AD9D8CF16759B4EF20ED0D8576D023" ProjectDependent="1"/>
+									<File Name="TextOutput.js" Size="2442" HashValue="008EBE9CD5809D96D7A322456344C9F9" ProjectDependent="1"/>
+									<Folder Name="designer" ProjectDependent="1">
+										<File Name="ClassInfo.js" Size="2152" HashValue="F2AADC7EB51F2BC1AC720BAF26D4EF87" ProjectDependent="1"/>
+									</Folder>
+									<Folder Name="meta" ProjectDependent="1">
+										<File Name="TextOutput.json" Size="22512" HashValue="3A4F86F073CF85948D158C4C48D659AA" ProjectDependent="1"/>
+										<File Name="TextOutput.style" Size="1976" HashValue="7ED8F3A260A1D92E8C555B7902390C1E" ProjectDependent="1"/>
+										<File Name="TextOutput.widget" Size="19325" HashValue="824DF6777C24157504E803612E1A1349" ProjectDependent="1"/>
+										<File Name="TextOutput.xsd" Size="3656" HashValue="6C1EBFC43B363DCA9BEA1B4478919974" ProjectDependent="1"/>
+										<File Name="TextOutput_base.scss" Size="917" HashValue="5D93FC65FD10D6B95460A0845BE0F75F" ProjectDependent="1"/>
+										<File Name="TextOutput_Copied.markerFile" Size="0" HashValue="D41D8CD98F00B204E9800998ECF8427E" ProjectDependent="1"/>
+										<File Name="TextOutput_default.sass.css" Size="889" HashValue="5248882C3567AAF19C0D0CF0E8CAA718" ProjectDependent="1"/>
+										<File Name="TextOutput_default.scss" Size="1002" HashValue="CBC662FDFDDA834ED62EB7A35A20EABF" ProjectDependent="1"/>
+										<File Name="TextOutput_doc.html" Size="28736" HashValue="779A2B8EE9892C24B1078AF71596270F" ProjectDependent="1"/>
+										<File Name="TextOutput_EventsActions.xsd" Size="3645" HashValue="076E928F1FB53351E9BFA48E351B4D27" ProjectDependent="1"/>
+										<File Name="TextOutput_Styles.xsd" Size="2116" HashValue="79B7546ADEB78B26DD28ED07B447D1E8" ProjectDependent="1"/>
+									</Folder>
+								</Folder>
 								<Folder Name="ToggleButton" ProjectDependent="1">
 									<File Name="ToggleButton.html" Size="83" HashValue="737327F7F29AFAF805DC0738D7030A8F" ProjectDependent="1"/>
 									<File Name="ToggleButton.js" Size="9268" HashValue="6647153E3A1366E644A25DDC71BDF71F" ProjectDependent="1"/>
@@ -2155,9 +2311,10 @@
 					<Folder Name="contents" ProjectDependent="1">
 						<Folder Name="mappView" ProjectDependent="1">
 							<File Name="AlarmsContent.html" Size="1165" HashValue="F19C405584858A16F976170D76D9036F" ProjectDependent="1"/>
-							<File Name="BodyContent.html" Size="17" HashValue="977FD571D75951006FEE6224E29EECC7" ProjectDependent="1"/>
+							<File Name="BodyContent.html" Size="5195" HashValue="9F5F9911EB1DC2677D29F14299B031CD" ProjectDependent="1"/>
 							<File Name="Diagnostic.html" Size="277" HashValue="BE3ED395B1AB65679E7182F41668D9C5" ProjectDependent="1"/>
 							<File Name="HeaderContent.html" Size="340" HashValue="2A55482CED144873855B330CD0AC2C65" ProjectDependent="1"/>
+							<File Name="ManualMode.html" Size="6847" HashValue="2EA08009BAFDB02A3049EEC763A0BB6D" ProjectDependent="1"/>
 							<File Name="NavBarContent.html" Size="3013" HashValue="57CE125B36E9CF5ABD987B5F1F189D52" ProjectDependent="1"/>
 							<File Name="UserMgtContent.html" Size="4583" HashValue="BD4EA56086C584774E29BC5DBCCB8F02" ProjectDependent="1"/>
 						</Folder>
@@ -2235,6 +2392,9 @@
 			</Folder>
 			<Folder Name="OPCUA" ProjectDependent="1">
 				<Folder Name="NodeSet" ProjectDependent="1" IsGroup="1">
+					<Folder Name="Generated" ProjectDependent="1" IsGroup="1">
+						<File Name="OpcUaMap.uar.gz" Size="711" HashValue="61EB1388CDF88452B7C4A3749682D0EC" ProjectDependent="1"/>
+					</Folder>
 					<Folder Name="Vendor" ProjectDependent="1" IsGroup="1">
 						<File Name="plc.aprol.uanodeset" Size="6712" HashValue="08ADF5B15D3AF0566E164F0E4D4FB418" ProjectDependent="1"/>
 						<File Name="plc.br.pv.uanodeset" Size="7103" HashValue="682E7CDF6F09940F70D6CA1CC158D516" ProjectDependent="1"/>

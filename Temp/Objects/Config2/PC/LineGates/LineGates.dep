@@ -1,0 +1,4 @@
+$(AS_PROJECT_PATH)/Logical/LaneGatesPkg/LineGates/Variables.var
+$(AS_PROJECT_PATH)/Logical/LaneGatesPkg/Types.typ
+$(AS_PROJECT_PATH)/Logical/Global.var
+$(AS_PROJECT_PATH)/Logical/LaneGatesPkg/LineGates/Types.typ

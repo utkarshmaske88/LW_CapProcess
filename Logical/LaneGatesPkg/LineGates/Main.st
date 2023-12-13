@@ -8,11 +8,12 @@ PROGRAM _CYCLIC
 	(* Insert code here *)
 	IF iLineGates.Status.Error=TRUE THEN
 	
-		END_IF;
+	END_IF;
 	
 	CASE sLineGateStep OF
 		//waiting for the start
 		enWAIT:
+			iLineGates.Status.Running:=FALSE;
 			IF iLineGates.Cmd.Start=TRUE THEN
 				iLineGates.Cmd.Start:=FALSE;
 				iLineGates.Status.Running:=TRUE;
@@ -21,21 +22,28 @@ PROGRAM _CYCLIC
 		  
 			//operating the linegagtes
 		enOPERATION:
-			IF gColorCap="Black" THEN
-				iLineGates.DOs.LG1FWD:=TRUE;
-				IF iLineGates.DIs.LG1_LFR=TRUE THEN
+			
+			IF gManuelMode= TRUE THEN
+				
+			ELSE	
+				IF gColorCap="Black" THEN
+					iLineGates.DOs.LG1FWD:=TRUE;
+					IF iLineGates.DIs.LG1_LFR=TRUE THEN
+						sLineGateStep:=enRUNNING;
+					END_IF;
+				ELSIF gColorCap="Metallic" THEN
+					iLineGates.DOs.LW2FWD :=TRUE;
+					IF iLineGates.DIs.LG2_LFR=TRUE THEN
+						sLineGateStep:=enRUNNING;
+					END_IF;
+				ELSE
+					iLineGates.DOs.LG1FWD:=FALSE;
+					iLineGates.DOs.LW2FWD:=FALSE;
 					sLineGateStep:=enRUNNING;
 				END_IF;
-			ELSIF gColorCap="Metallic" THEN
-				iLineGates.DOs.LW2FWD :=TRUE;
-				IF iLineGates.DIs.LG2_LFR=TRUE THEN
-					sLineGateStep:=enRUNNING;
-				END_IF;
-			ELSE
-				iLineGates.DOs.LG1FWD:=FALSE;
-				iLineGates.DOs.LW2FWD:=FALSE;
-				sLineGateStep:=enRUNNING;
+				
 			END_IF;
+
 
 			//running mode
 		enRUNNING:

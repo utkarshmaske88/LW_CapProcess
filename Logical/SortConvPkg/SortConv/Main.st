@@ -15,14 +15,19 @@ PROGRAM _CYCLIC
 	IF iSortConv.Status.Error=TRUE THEN
 		sSortConvStep:=enERROR;
 	END_IF;
-	
+		
+	iSortConv.AOs.SortBasicConvSpeed:=iFb_MpAxisBasic_0.Velocity/100;
+		
 	//alarms file for conveyor of sorting
 	AlarmsSC;
 	CASE sSortConvStep OF
-		
+	
 		//waiting for start command
 		enWAIT:
+			iSortConv.Status.Running:=FALSE;
 			IF iSortConv.Cmd.Start=TRUE THEN
+				iSortConv.Status.Running:=TRUE;
+				cmdMoveVelocity:=FALSE;
 				iSortConv.Cmd.Start:=FALSE;
 				sSortConvStep:=enOPERATION;
 			END_IF;
@@ -31,15 +36,21 @@ PROGRAM _CYCLIC
 		enOPERATION:
 			iSortConv.Status.Running:=TRUE;
 			IF iSortConv.DIs.SortBasicConvStart_IR=TRUE THEN
-				iSortConv.AOs.SortBasicConvSpeed:=BasicParameters.Velocity/100;
+				//cmdMoveVelocity:=TRUE;
 				sSortConvStep:=enRUNNING;
 			END_IF;
 			
 			//running mode
 		enRUNNING:
+			IF gManuelMode=TRUE THEN
+				
+			ELSE
+				cmdMoveVelocity:=TRUE;
+			END_IF;
 			IF iSortConv.Status.Running=FALSE THEN
 				sSortConvStep:=enWAIT;	
-				iSortConv.AOs.SortBasicConvSpeed:=0;
+				cmdMoveVelocity:=FALSE;
+				cmdStop:=TRUE;
 			END_IF;
 			
 			//error mode

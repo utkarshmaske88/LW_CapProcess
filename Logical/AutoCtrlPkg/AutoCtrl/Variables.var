@@ -1,5 +1,7 @@
-VAR
+VAR RETAIN
 	sAutoStep : Step_AutoCtrl;
+END_VAR
+VAR
 	StatusCapPush : UINT;
 	CapPushAddress : UDINT;
 	SizeCapPush : UDINT;

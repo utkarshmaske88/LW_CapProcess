@@ -20,15 +20,20 @@ PROGRAM _CYCLIC
 			
 			iPickupArm.DIs.PArm_FWD:=FALSE;
 			iPickupArm.DIs.PArm_BWD:=FALSE;
+			iPickupArm.Status.Running:=FALSE;
 			IF iPickupArm.Cmd.Start=TRUE THEN
+				iPickupArm.Status.Running:=TRUE;
 				iPickupArm.Cmd.Start:=FALSE;
 				sPArmStep:=enPICKING;
 			END_IF;
 		  
 			//picking the caps
 		enPICKING:
-			
-			iPickupArm.DIs.PArm_FWD:=TRUE;
+			IF gManuelMode=TRUE THEN
+					
+			ELSE
+				iPickupArm.DIs.PArm_FWD:=TRUE;
+			END_IF;
 			IF iPickupArm.DOs.PArmLFR = TRUE THEN
 				IF gManuelMode=TRUE THEN
 					

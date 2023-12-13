@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingDefinition xmlns="http://www.br-automation.com/iat2014/binding/runtime/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:br="http://www.br-automation.com/iat2015/bindingList/runtime/v2">
+  
+
+<Content id="BodyContent"><Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::PickupArm:iPickupArm.Status.Running" attribute="value" />
+<Target xsi:type="brease" refId="BodyContent_PArm" attribute="value" />
+</Binding><Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::PickupArm:iPickupArm.Status.Running" attribute="editable" />
+<Target xsi:type="brease" refId="BodyContent_PArm" attribute="editable::value" />
+</Binding></Content>
+
+
+
+<Content id="BodyContent"><Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::CapPush:iCapPush.Status.Running" attribute="value" />
+<Target xsi:type="brease" refId="BodyContent_CapPush" attribute="value" />
+</Binding><Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::CapPush:iCapPush.Status.Running" attribute="editable" />
+<Target xsi:type="brease" refId="BodyContent_CapPush" attribute="editable::value" />
+</Binding></Content>
+
+
+
+<Content id="BodyContent"><Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::LogoCOnv:iLogoConv.Status.Running" attribute="value" />
+<Target xsi:type="brease" refId="BodyContent_LogoConv" attribute="value" />
+</Binding><Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::LogoCOnv:iLogoConv.Status.Running" attribute="editable" />
+<Target xsi:type="brease" refId="BodyContent_LogoConv" attribute="editable::value" />
+</Binding></Content>
+
+
+
+<Content id="BodyContent"><Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::ClrDetect:iClrDetect.Status.Running" attribute="value" />
+<Target xsi:type="brease" refId="BodyContent_ClrDtc" attribute="value" />
+</Binding><Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::ClrDetect:iClrDetect.Status.Running" attribute="editable" />
+<Target xsi:type="brease" refId="BodyContent_ClrDtc" attribute="editable::value" />
+</Binding></Content>
+
+
+
+<Content id="BodyContent"><Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::LineGates:iLineGates.Status.Running" attribute="value" />
+<Target xsi:type="brease" refId="BodyContent_LaneGate" attribute="value" />
+</Binding><Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::LineGates:iLineGates.Status.Running" attribute="editable" />
+<Target xsi:type="brease" refId="BodyContent_LaneGate" attribute="editable::value" />
+</Binding></Content>
+
+
+
+
+</BindingDefinition>

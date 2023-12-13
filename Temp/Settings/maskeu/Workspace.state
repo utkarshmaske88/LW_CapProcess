@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio FileVersion="4.9"?>
 <State Top="0" Left="0" Width="0" Height="0" WindowState="Normal" xmlns="http://br-automation.co.at/AS/State">
-  <TextEdit ID="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\CapPushPkg\CapPush\Main.st" CaretLine="1" CaretColumn="1" FirstVisibleLine="1">
+  <TextEdit ID="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\AutoCtrlPkg\AutoCtrl\Main.st" CaretLine="54" CaretColumn="26" FirstVisibleLine="30">
     <Bookmarks />
   </TextEdit>
-  <TextEdit ID="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\PickupArmPkg\PickupArm\Main.st" CaretLine="1" CaretColumn="1" FirstVisibleLine="1">
+  <TextEdit ID="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\PickupArmPkg\PickupArm\Main.st" CaretLine="33" CaretColumn="6" FirstVisibleLine="13">
     <Bookmarks />
   </TextEdit>
-  <TextEdit ID="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\SortConvPkg\SortConv\Main.st" CaretLine="16" CaretColumn="11" FirstVisibleLine="1">
+  <TextEdit ID="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\LogoConvPkg\LogoCOnv\Main.st" CaretLine="46" CaretColumn="27" FirstVisibleLine="25">
     <Bookmarks />
   </TextEdit>
-  <TextEdit ID="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\ClrDetectPkg\ClrDetect\Main.st" CaretLine="13" CaretColumn="10" FirstVisibleLine="1">
+  <TextEdit ID="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\SortConvPkg\SortConv\Main.st" CaretLine="26" CaretColumn="10" FirstVisibleLine="1">
     <Bookmarks />
   </TextEdit>
-  <TextEdit ID="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\LaneGatesPkg\LineGates\Main.st" CaretLine="37" CaretColumn="18" FirstVisibleLine="14">
+  <TextEdit ID="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\ClrDetectPkg\ClrDetect\Main.st" CaretLine="16" CaretColumn="10" FirstVisibleLine="4">
     <Bookmarks />
   </TextEdit>
-  <TextEdit ID="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\LogoConvPkg\LogoCOnv\Main.st" CaretLine="1" CaretColumn="1" FirstVisibleLine="1">
+  <TextEdit ID="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\LaneGatesPkg\LineGates\Main.st" CaretLine="15" CaretColumn="10" FirstVisibleLine="1">
     <Bookmarks />
   </TextEdit>
-  <TextEdit ID="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\Libraries\ComTotal\ComTotal_P\Main.cpp" CaretLine="1" CaretColumn="1" FirstVisibleLine="1">
+  <TextEdit ID="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\CapPushPkg\CapPush\Main.st" CaretLine="15" CaretColumn="22" FirstVisibleLine="1">
     <Bookmarks />
   </TextEdit>
 </State>

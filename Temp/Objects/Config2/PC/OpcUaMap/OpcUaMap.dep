@@ -1,0 +1,17 @@
+$(AS_PROJECT_PATH)/Logical/Global.var
+$(AS_PROJECT_PATH)/Logical/Global.typ
+$(AS_PROJECT_PATH)/Logical/CapPushPkg/CapPush/Variables.var
+$(AS_PROJECT_PATH)/Physical/Config2/PC/Cpu.sw
+$(AS_PROJECT_PATH)/Logical/CapPushPkg/CapPushtyp.typ
+$(AS_PROJECT_PATH)/Logical/PickupArmPkg/PickupArm/Variables.var
+$(AS_PROJECT_PATH)/Logical/PickupArmPkg/Pickuptyp.typ
+$(AS_PROJECT_PATH)/Logical/LogoConvPkg/LogoCOnv/Variables.var
+$(AS_PROJECT_PATH)/Logical/LogoConvPkg/LogoTyp.typ
+$(AS_PROJECT_PATH)/Logical/ClrDetectPkg/ClrDetect/Variables.var
+$(AS_PROJECT_PATH)/Logical/ClrDetectPkg/ClrDetTyp.typ
+$(AS_PROJECT_PATH)/Logical/LaneGatesPkg/LineGates/Variables.var
+$(AS_PROJECT_PATH)/Logical/LaneGatesPkg/Types.typ
+$(AS_PROJECT_PATH)/Logical/AutoCtrlPkg/AutoCtrl/Variables.var
+$(AS_PROJECT_PATH)/Logical/AutoCtrlPkg/AutoCtrl/Types.typ
+$(AS_PROJECT_PATH)/Logical/SortConvPkg/SortConv/Variables.var
+$(AS_PROJECT_PATH)/Logical/SortConvPkg/SortTyp.typ

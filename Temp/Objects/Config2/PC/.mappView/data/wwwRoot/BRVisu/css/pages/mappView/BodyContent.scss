@@ -1,0 +1,289 @@
+@import "mixins.scss";
+#BodyContent_ButtonBar1 {	@include elemWidth(200);
+}
+#BodyContent_ButtonBar1 {	@include elemTop(6);
+}
+#BodyContent_ButtonBar1 {	@include elemLeft(479);
+}
+#BodyContent_ButtonBar1 {	@include elemHeight(257);
+}
+#BodyContent_ButtonBar1 {	z-index: 0;
+}
+#BodyContent_Start {	@include elemTop(6);
+}
+#BodyContent_Start {	@include elemLeft(42);
+}
+#BodyContent_Start {	@include elemAutoWidth(121);
+}
+#BodyContent_Start {	@include elemAutoHeight(58);
+}
+#BodyContent_Start {	z-index: 0;
+}
+#BodyContent_Start {	@include border-radius(5px);
+}
+#BodyContent_Start {	&:not(.disabled):not(.active):not(.checked) {
+		background-color: rgba(128, 255, 128, 1);
+	}
+}
+#BodyContent_Start {	&:not(.disabled):not(.checked) {
+		border-color: rgba(0, 0, 0, 1);
+	}
+}
+#BodyContent_Start {	span {
+		font-size: 18px;
+	}
+}
+#BodyContent_Start {	span {
+		font-family: Arial Unicode;
+	}
+}
+#BodyContent_Start {	span {
+		@include font-weight-bold(true);
+	}
+}
+#BodyContent_Start {	&.checked:not(.active):not(.disabled) {
+		background-color: rgba(128, 255, 128, 1);
+	}
+}
+#BodyContent_Stop {	@include elemTop(99);
+}
+#BodyContent_Stop {	@include elemLeft(42);
+}
+#BodyContent_Stop {	@include elemAutoWidth(121);
+}
+#BodyContent_Stop {	@include elemAutoHeight(58);
+}
+#BodyContent_Stop {	z-index: 1;
+}
+#BodyContent_Stop {	@include border-radius(5px);
+}
+#BodyContent_Stop {	&:not(.disabled):not(.active):not(.checked) {
+		background-color: rgba(255, 192, 192, 1);
+	}
+}
+#BodyContent_Stop {	&:not(.disabled):not(.checked) {
+		border-color: rgba(0, 0, 0, 1);
+	}
+}
+#BodyContent_Stop {	span {
+		font-size: 18px;
+	}
+}
+#BodyContent_Stop {	span {
+		font-family: Arial Unicode;
+	}
+}
+#BodyContent_Stop {	span {
+		@include font-weight-bold(true);
+	}
+}
+#BodyContent_Stop {	&.checked:not(.active):not(.disabled) {
+		background-color: rgba(255, 128, 128, 1);
+	}
+}
+#BodyContent_estop {	@include elemTop(192);
+}
+#BodyContent_estop {	@include elemLeft(42);
+}
+#BodyContent_estop {	@include elemAutoWidth(121);
+}
+#BodyContent_estop {	@include elemAutoHeight(58);
+}
+#BodyContent_estop {	z-index: 2;
+}
+#BodyContent_estop {	@include border-radius(5px);
+}
+#BodyContent_estop {	&:not(.disabled):not(.active):not(.checked) {
+		background-color: rgba(255, 0, 0, 1);
+	}
+}
+#BodyContent_estop {	&:not(.disabled):not(.checked) {
+		border-color: rgba(0, 0, 0, 1);
+	}
+}
+#BodyContent_estop {	span {
+		font-size: 18px;
+	}
+}
+#BodyContent_estop {	span {
+		font-family: Arial Unicode;
+	}
+}
+#BodyContent_estop {	span {
+		@include font-weight-bold(true);
+	}
+}
+#BodyContent_estop {	&.checked:not(.active):not(.disabled) {
+		background-color: rgba(255, 0, 0, 1);
+	}
+}
+#BodyContent_Errorreset {	@include elemTop(292);
+}
+#BodyContent_Errorreset {	@include elemLeft(517);
+}
+#BodyContent_Errorreset {	@include elemAutoWidth(129);
+}
+#BodyContent_Errorreset {	@include elemAutoHeight(58);
+}
+#BodyContent_Errorreset {	z-index: 1;
+}
+#BodyContent_Errorreset {	@include border-radius(5px);
+}
+#BodyContent_Errorreset {	&:not(.disabled):not(.active):not(.checked) {
+		background-color: rgba(192, 255, 255, 1);
+	}
+}
+#BodyContent_Errorreset {	&:not(.disabled):not(.checked) {
+		border-color: rgba(0, 0, 0, 1);
+	}
+}
+#BodyContent_Errorreset {	span {
+		font-size: 18px;
+	}
+}
+#BodyContent_Errorreset {	span {
+		font-family: Arial Unicode;
+	}
+}
+#BodyContent_Errorreset {	span {
+		@include font-weight-bold(true);
+	}
+}
+#BodyContent_Errorreset {	&.checked:not(.active):not(.disabled) {
+		background-color: rgba(192, 255, 255, 1);
+	}
+}
+#BodyContent_AlarmLine1 {	@include elemTop(470);
+}
+#BodyContent_AlarmLine1 {	@include elemLeft(122);
+}
+#BodyContent_AlarmLine1 {	@include elemWidth(560);
+}
+#BodyContent_AlarmLine1 {	@include elemHeight(42);
+}
+#BodyContent_AlarmLine1 {	z-index: 2;
+}
+#BodyContent_AlarmLineItem1 {	@include elemWidth(552);
+}
+#BodyContent_AlarmLineItem1 {	z-index: 0;
+}
+#BodyContent_CurrentState1 {	@include elemAutoHeight(30);
+}
+#BodyContent_CurrentState1 {	@include elemTop(475);
+}
+#BodyContent_CurrentState1 {	@include elemLeft(-3);
+}
+#BodyContent_CurrentState1 {	@include elemAutoWidth(124);
+}
+#BodyContent_CurrentState1 {	z-index: 3;
+}
+#BodyContent_CurrentState1 {	@include text-alignment-all('right');
+}
+#BodyContent_CurrentState1 {	@include font-weight-bold(true);
+}
+#BodyContent_Line {	z-index: 4;
+}
+#BodyContent_Line {	line {
+		stroke-width: 3px;
+	}
+}
+#BodyContent_CapPush {	@include elemTop(254);
+}
+#BodyContent_CapPush {	@include elemLeft(114);
+}
+#BodyContent_CapPush {	@include elemAutoWidth(20);
+}
+#BodyContent_CapPush {	@include elemAutoHeight(20);
+}
+#BodyContent_CapPush {	z-index: 5;
+}
+#BodyContent_CapPush {	&:not(.active):not(.checked) {
+		border-width: 0px;
+	}
+}
+#BodyContent_CapPush {	&.disabled {
+		border-width: 0px;
+	}
+}
+#BodyContent_CapPush {	@include border-radius(50px);
+}
+#BodyContent_PArm {	@include elemTop(254);
+}
+#BodyContent_PArm {	@include elemLeft(170);
+}
+#BodyContent_PArm {	@include elemAutoWidth(20);
+}
+#BodyContent_PArm {	@include elemAutoHeight(20);
+}
+#BodyContent_PArm {	z-index: 6;
+}
+#BodyContent_PArm {	&:not(.active):not(.checked) {
+		border-width: 0px;
+	}
+}
+#BodyContent_PArm {	&.disabled {
+		border-width: 0px;
+	}
+}
+#BodyContent_PArm {	@include border-radius(50px);
+}
+#BodyContent_LogoConv {	@include elemTop(254);
+}
+#BodyContent_LogoConv {	@include elemLeft(226);
+}
+#BodyContent_LogoConv {	@include elemAutoWidth(20);
+}
+#BodyContent_LogoConv {	@include elemAutoHeight(20);
+}
+#BodyContent_LogoConv {	z-index: 7;
+}
+#BodyContent_LogoConv {	&:not(.active):not(.checked) {
+		border-width: 0px;
+	}
+}
+#BodyContent_LogoConv {	&.disabled {
+		border-width: 0px;
+	}
+}
+#BodyContent_LogoConv {	@include border-radius(50px);
+}
+#BodyContent_ClrDtc {	@include elemTop(254);
+}
+#BodyContent_ClrDtc {	@include elemLeft(282);
+}
+#BodyContent_ClrDtc {	@include elemAutoWidth(20);
+}
+#BodyContent_ClrDtc {	@include elemAutoHeight(20);
+}
+#BodyContent_ClrDtc {	z-index: 8;
+}
+#BodyContent_ClrDtc {	&:not(.active):not(.checked) {
+		border-width: 0px;
+	}
+}
+#BodyContent_ClrDtc {	&.disabled {
+		border-width: 0px;
+	}
+}
+#BodyContent_ClrDtc {	@include border-radius(50px);
+}
+#BodyContent_LaneGate {	@include elemTop(254);
+}
+#BodyContent_LaneGate {	@include elemLeft(338);
+}
+#BodyContent_LaneGate {	@include elemAutoWidth(20);
+}
+#BodyContent_LaneGate {	@include elemAutoHeight(20);
+}
+#BodyContent_LaneGate {	z-index: 9;
+}
+#BodyContent_LaneGate {	&:not(.active):not(.checked) {
+		border-width: 0px;
+	}
+}
+#BodyContent_LaneGate {	&.disabled {
+		border-width: 0px;
+	}
+}
+#BodyContent_LaneGate {	@include border-radius(50px);
+}

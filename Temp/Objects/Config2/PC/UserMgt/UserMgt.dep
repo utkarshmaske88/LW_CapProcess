@@ -1,0 +1,3 @@
+$(AS_PROJECT_PATH)/Logical/mappView/Project.language
+$(AS_PROJECT_PATH)/Physical/Config2/PC/AccessAndSecurity/UserRoleSystem/Role.role
+$(AS_PROJECT_PATH)/Physical/Config2/PC/AccessAndSecurity/UserRoleSystem/User.user

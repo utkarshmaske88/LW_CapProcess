@@ -1,0 +1,13 @@
+$(AS_PROJECT_PATH)/Logical/Libraries/Acp10_MC/acp10_mc.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/MpAlarmX/MpAlarmX.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/MpAxis/MpAxis.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/MpBase/MpBase.typ
+$(AS_PROJECT_PATH)/Logical/Libraries/MpAxis/MpAxis.typ
+$(AS_PROJECT_PATH)/Logical/Libraries/MpAxis/MpAxisError.typ
+$(AS_PROJECT_PATH)/Logical/SortConvPkg/SortConv/Variables.var
+$(AS_PROJECT_PATH)/Logical/SortConvPkg/SortTyp.typ
+$(AS_PROJECT_PATH)/Logical/Global.var
+$(AS_PROJECT_PATH)/Logical/Libraries/Acp10man/Acp10man.typ
+$(AS_PROJECT_PATH)/Physical/Config2/PC/mappServices/Alarms.mpalarmxcore
+$(AS_PROJECT_PATH)/Logical/SortConvPkg/SortConv/Types.typ
+$(AS_PROJECT_PATH)/Physical/Config2/PC/Motion/SortAxis.mpaxisbasic

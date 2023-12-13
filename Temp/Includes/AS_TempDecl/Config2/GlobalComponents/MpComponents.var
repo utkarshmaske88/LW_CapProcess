@@ -1,0 +1,7 @@
+VAR
+	gAlarmXCore : {REDUND_UNREPLICABLE} MpComIdentType; (*#1"C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Physical\Config2\PC\mappServices\Alarms.mpalarmxcore" #2"1" #3"1"*)
+	gAlarmXCore_1 : {REDUND_UNREPLICABLE} MpComIdentType; (*#1"C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Physical\Config2\PC\mappServices\Alarms.mpalarmxcore" #2"1" #3"1"*)
+	gAlarmXCore_2 : {REDUND_UNREPLICABLE} MpComIdentType; (*#1"C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Physical\Config2\PC\mappServices\Alarms.mpalarmxcore" #2"1" #3"1"*)
+	gAxisBasic : {REDUND_UNREPLICABLE} MpComIdentType; (*#1"C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Physical\Config2\PC\Motion\LogoAxis.mpaxisbasic" #2"1" #3"1"*)
+	gAxisBasic_1 : {REDUND_UNREPLICABLE} MpComIdentType; (*#1"C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Physical\Config2\PC\Motion\SortAxis.mpaxisbasic" #2"1" #3"1"*)
+END_VAR

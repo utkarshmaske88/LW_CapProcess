@@ -1,0 +1,78 @@
+@import "mixins.scss";
+@mixin widgets_brease_AlarmLine_base {
+	@include elemWidth(600);
+	@include elemHeight(80);
+	@include elemMinWidth(0);
+	@include elemMaxWidth(0);
+	@include elemMinHeight(0);
+	@include elemMaxHeight(0);
+	&.breaseAlarmLine {
+		border-style: solid;
+	}
+	&.breaseAlarmLine {
+		border-width: 1px;
+	}
+	&.breaseAlarmLine {
+		border-color: #8b0000;
+	}
+	&.breaseAlarmLine .AlarmLineWrapper > div {
+		border-color: #fff;
+	}
+	&.breaseAlarmLine  .AlarmLineWrapper > div {
+		border-width: 0px;
+	}
+	&.breaseAlarmLine .AlarmLineWrapper > div {
+		border-style: none;
+	}
+	&.breaseAlarmLine .AlarmLineWrapper > div {
+		padding: 0px 12px;
+	}
+	&.breaseAlarmLine .AlarmLineWrapper > div {
+		@include border-radius(0px);
+	}
+	&.breaseAlarmLine {
+		padding: 0px;
+	}
+	&.breaseAlarmLine {
+		background-color: transparent;
+	}
+	&.breaseAlarmLine {
+		@include backGroundGradient('');
+	}
+	&.breaseAlarmLine  .AlarmLineWrapper > div > span {
+		color: #333;
+	}
+	&.breaseAlarmLine .AlarmLineWrapper > div {
+		@include text-alignment(center);
+	}
+	&.breaseAlarmLine .AlarmLineWrapper > div {
+		font-size: 16px;
+	}
+	&.breaseAlarmLine .AlarmLineWrapper > div {
+		font-family: Arial;
+	}
+	&.breaseAlarmLine .AlarmLineWrapper > div {
+		@include font-weight-bold(false);
+	}
+	&.breaseAlarmLine .AlarmLineWrapper > div {
+		@include font-style-italic(false);
+	}
+	margin: 0px;
+	opacity: 1;
+	@include border-radius(0px);
+	@include box-shadow(none);
+	&.breaseAlarmLine .AlarmLineWrapper > div > img {
+		@include imageWidth(0);
+	}
+	&.breaseAlarmLine .AlarmLineWrapper > div > svg {
+		@include imageWidth(0);
+	}
+	&.breaseAlarmLine .AlarmLineWrapper > div > img {
+		@include imageHeight(0);
+	}
+	&.breaseAlarmLine .AlarmLineWrapper > div > svg {
+		@include imageHeight(0);
+	}
+
+}
+

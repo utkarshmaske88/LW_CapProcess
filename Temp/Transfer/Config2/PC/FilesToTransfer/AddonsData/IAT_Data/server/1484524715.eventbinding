@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingDefinition xmlns="http://www.br-automation.com/iat2014/eventbinding/runtime/v2">
+  <Content id="ManualMode">
+    <EventBinding id="ManualMode.ColorDct.Click">
+      <Source type="widgets.brease.ToggleButton.Event" event="Click" refId="ManualMode_ColorDct" />
+      <EventHandler>
+        <Action>
+          <Target type="opcUa.NodeAction" refId="::ClrDetect:iClrDetect.DOs.CapStopperFWD">
+            <Method type="opcUa.NodeAction.SetValueBool"><Parameter name="value" xsi:type="BOOL" value="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /></Method>
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Content>
+</EventBindingDefinition>

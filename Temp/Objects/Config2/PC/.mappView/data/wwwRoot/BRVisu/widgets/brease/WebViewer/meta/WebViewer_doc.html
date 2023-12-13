@@ -1,0 +1,864 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>widgets.brease.WebViewer Documentation</title>
+    <link href="../../../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <style>.true {color:#00aa00;font-weight:bold;}.false {color:#aaa;font-weight:normal;}</style>
+  </head>
+  <body>
+<div class="panel-heading"><h3>widgets.brease.WebViewer</h3></div>
+<div class="panel panel-default">
+ <div class="panel-heading"><h3>Widget Description</h3></div>
+<table class="table table-bordered parameter_tab">
+<tbody>
+<tr>
+<td class="parameter_tab"><strong>short: </strong>HTML Content Viewer</td>
+</tr>
+<tr>
+<td class="parameter_tab"><strong>de: </strong>Zeigt HTML Seiten an, die von einer externen Quelle kommen</td>
+</tr>
+<tr>
+<td class="parameter_tab"><strong>en: </strong>Displays HTML pages coming from an external source</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="panel panel-default">
+ <div class="panel-heading"><h3>Properties</h3></div>
+<table class="table table-bordered parameter_tab">
+<thead>
+<tr>
+<th class="parameter_tab">name</th>
+<th class="parameter_tab">description</th>
+<th class="parameter_tab">category</th>
+<th class="parameter_tab">type</th>
+<th class="parameter_tab">defaultValue</th>
+<th class="parameter_tab">bindable</th>
+<th class="parameter_tab">readOnly</th>
+<th class="parameter_tab">required</th>
+<th class="parameter_tab">localizable</th>
+<th class="parameter_tab">editableBinding</th>
+<th class="parameter_tab">projectable</th>
+<th class="parameter_tab">cssProp (<small>has no setter and getter in JS</small>)</th>
+<th class="parameter_tab">groupRefId</th>
+<th class="parameter_tab">groupOrder</th>
+<th class="parameter_tab">nodeRefId (<small>for linking node and value</small>)</th>
+<th class="parameter_tab">deprecated</th>
+<th class="parameter_tab">typeRefId (<small>for StyleReference</small>)</th>
+<th class="parameter_tab">subtype (<small>for MpComIdentReference</small>)</th>
+</tr>
+ </thead>
+<tbody>
+<tr>
+<td class="parameter_tab">busy</td>
+<td class="parameter_tab">Request not yet completed.
+</td>
+<td class="parameter_tab">Behavior</td>
+<td class="parameter_tab">Boolean</td>
+<td class="parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">enable</td>
+<td class="parameter_tab">Initial option to enable widget.
+</td>
+<td class="parameter_tab">Behavior</td>
+<td class="parameter_tab">Boolean</td>
+<td class="parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">host</td>
+<td class="parameter_tab">Hostname or IP of the server the data is to be pulled from. If this is
+left blank this field will default to value of the source of where the
+application is running.
+
+ Common explanation of host, port, path and query:
+
+ Property specification of the URL. URL is the Uniform Resource Locator
+ where the webpage's address is given. It is written on the format of:
+
+ http://[host][:port][/path][?query]
+
+ an example to break down the B&amp;R homepage URL as following to add
+ to the properties:
+
+https://www.br-automation.com/en/search/?stype=0&amp;key=mapp%20View
+
+explanation:
+ -here the host is: www.br-automation.com
+ -the port is by default 80, and can thus be left at default.
+ -the path is: /en/search/
+ -the query is: stype=0&amp;key=mapp%20View
+</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">path</td>
+<td class="parameter_tab">The path of the URL, this is what comes after the port (if given) or after
+the domain. E.g.: in the url www.example.com/this/is/the/path/
+The path field would have to be 'this/is/the/path/'
+</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab">sdm</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">permissionOperate</td>
+<td class="parameter_tab">restricts operability to users, which have given roles
+</td>
+<td class="parameter_tab">Accessibility</td>
+<td class="parameter_tab">RoleCollection</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">permissionView</td>
+<td class="parameter_tab">restricts visibility to users, which have given roles
+</td>
+<td class="parameter_tab">Accessibility</td>
+<td class="parameter_tab">RoleCollection</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">port</td>
+<td class="parameter_tab">Port of the server, default value is 80.
+</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">Number</td>
+<td class="parameter_tab">80</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">query</td>
+<td class="parameter_tab">The query of a URL is the parameters after the &amp; , also known as the
+GET-parameters. These should be specified as following:
+
+single parameter: param=value
+multiple parameters: param1=value&amp;param2=value&amp;param3=value
+</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">src</td>
+<td class="parameter_tab">Here the url from the browser can be copied and pasted into, and the
+webpage will be displayed.
+
+The src can be used to specify the entire URL at once on the format:
+
+http://[host][:port][/path][?query]
+
+E.g.: https://www.br-automation.com/en/search/?stype=0&amp;key=mapp%20View
+
+Port 80 is standard for the web and thus doesn't have to be added.
+</td>
+<td class="parameter_tab">Data</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">style</td>
+<td class="parameter_tab">reference to a style for this widget type
+</td>
+<td class="parameter_tab">Appearance</td>
+<td class="parameter_tab">StyleReference</td>
+<td class="parameter_tab">default</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">tabIndex</td>
+<td class="parameter_tab">sets if a widget should have autofocus enabled (0), the order of the focus (>0),
+or if autofocus should be disabled (-1)
+</td>
+<td class="parameter_tab">Behavior</td>
+<td class="parameter_tab">Integer</td>
+<td class="parameter_tab">-1</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">tooltip</td>
+<td class="parameter_tab">reference to a tooltip for a widget
+</td>
+<td class="parameter_tab">Appearance</td>
+<td class="parameter_tab">String</td>
+<td class="parameter_tab"></td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">useURL</td>
+<td class="parameter_tab">This option toggles between using the Properties (host, port, path AND
+query) and the src-property. If true the four properties together will
+be used to create the url, else the src-option will be used.
+
+By default, the URL-properties are used and if not altered these will
+direct the user to the SDM of the source.
+</td>
+<td class="parameter_tab">Behavior</td>
+<td class="parameter_tab">Boolean</td>
+<td class="parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">visible</td>
+<td class="parameter_tab">change visibility
+</td>
+<td class="parameter_tab">Behavior</td>
+<td class="parameter_tab">Boolean</td>
+<td class="parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">maxHeight</td>
+<td class="parameter_tab">maximum outer height of widget</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab">Size</td>
+<td class="parameter_tab">0</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab"></td>
+<td class="false parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">minHeight</td>
+<td class="parameter_tab">minimum outer height of widget</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab">Size</td>
+<td class="parameter_tab">0</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab"></td>
+<td class="false parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">maxWidth</td>
+<td class="parameter_tab">maximum outer width of widget</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab">Size</td>
+<td class="parameter_tab">0</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab"></td>
+<td class="false parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">minWidth</td>
+<td class="parameter_tab">minimum outer width of widget</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab">Size</td>
+<td class="parameter_tab">0</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab"></td>
+<td class="false parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">zIndex</td>
+<td class="parameter_tab">The zIndex property specifies the z-order of a widget and its childs.<br/>
+        When widgets overlap, z-order determines which one covers the other. A widget with a larger zIndex generally covers a widget with a lower one.<br/>
+        The zIndex must be unique within a content.<br/></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab">UInteger</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="true parameter_tab">true</td>
+<td class="false parameter_tab"></td>
+<td class="false parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">left</td>
+<td class="parameter_tab">absolute position measured from left boundary of parent container</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab">Integer</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab"></td>
+<td class="false parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">top</td>
+<td class="parameter_tab">absolute position measured from top boundary of parent container</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab">Integer</td>
+<td class="parameter_tab">no defaultValue<br/>defined</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab"></td>
+<td class="false parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">height</td>
+<td class="parameter_tab">outer height of widget</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab">Size</td>
+<td class="parameter_tab">200</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab"></td>
+<td class="false parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">width</td>
+<td class="parameter_tab">outer width of widget</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab">Size</td>
+<td class="parameter_tab">300</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab">false</td>
+<td class="false parameter_tab"></td>
+<td class="false parameter_tab"></td>
+<td class="true parameter_tab">true</td>
+<td class="true parameter_tab">true</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="panel panel-default">
+ <div class="panel-heading"><h3>Styleable Properties</h3></div>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th class="parameter_tab">name</th>
+<th class="parameter_tab">type</th>
+<th class="parameter_tab">description</th>
+<th class="parameter_tab">defaultValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="parameter_tab">backColor</td>
+<td class="parameter_tab">Color</td>
+<td class="parameter_tab"><p>Sets the background color</p>
+</td>
+<td class="parameter_tab" >transparent</td>
+</tr>
+<tr>
+<td class="parameter_tab">borderColor</td>
+<td class="parameter_tab">ColorCollection</td>
+<td class="parameter_tab"><p>Sets the widget's border color, and may have one to four values (starting with the top border, clockwise direction).</p>
+</td>
+<td class="parameter_tab" >#9A9A9A</td>
+</tr>
+<tr>
+<td class="parameter_tab">borderStyle</td>
+<td class="parameter_tab">BorderStyle</td>
+<td class="parameter_tab"><p>Sets the border style of the widget. Options are 'none', solid', 'dashed', 'dotted', 'double', and 'groove'.</p>
+</td>
+<td class="parameter_tab" >solid</td>
+</tr>
+<tr>
+<td class="parameter_tab">borderWidth</td>
+<td class="parameter_tab">PixelValCollection</td>
+<td class="parameter_tab"><p>Sets the widget's border width, and may have one to four values (starting with the top border, in the clockwise direction).
+Examples: '2px' (all borders set to this value), '2px 10px 2px 2px' (all but right border set to 2px)</p>
+</td>
+<td class="parameter_tab" >2px 0px 0px 2px</td>
+</tr>
+<tr>
+<td class="parameter_tab">cornerRadius</td>
+<td class="parameter_tab">PixelValCollection</td>
+<td class="parameter_tab"><p>Sets the corner radius of the widget's border, and may contain one to four values (starting with the top left corner, in the clockwise direction).</p>
+</td>
+<td class="parameter_tab" >0px</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="panel panel-default">
+ <div class="panel-heading"><h3>Events</h3></div>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th class="parameter_tab">name</th>
+<th class="parameter_tab">description</th>
+<th class="parameter_tab">arguments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="parameter_tab">DisabledClick</td>
+<td class="parameter_tab">Fired when disabled element is clicked on.
+</td>
+<td class="parameter_tab"><ul>
+<li>origin: String
+<p>id of widget that triggered this event
+
+</p>
+</li>
+<li>hasPermission: Boolean
+<p>defines if the state is caused due to missing roles of the current user
+
+</p>
+</li>
+<li>horizontalPos: String
+<p>horizontal position of click in pixel i.e '10px'
+
+</p>
+</li>
+<li>verticalPos: String
+<p>vertical position of click in pixel i.e '10px'
+
+</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="parameter_tab">EnableChanged</td>
+<td class="parameter_tab">Fired when operability of the widget changes.
+</td>
+<td class="parameter_tab"><ul>
+<li>value: Boolean
+<p>operability
+
+
+
+</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="parameter_tab">FocusIn</td>
+<td class="parameter_tab">Fired when the widgets gets focus
+</td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">FocusOut</td>
+<td class="parameter_tab">Fired when the widgets lost focus
+</td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">VisibleChanged</td>
+<td class="parameter_tab">Fired when the visibility of the widget changes.
+</td>
+<td class="parameter_tab"><ul>
+<li>value: Boolean
+<p>visibility
+
+
+
+</p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="panel panel-default">
+ <div class="panel-heading"><h3>Actions</h3></div>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th class="parameter_tab">name</th>
+<th class="parameter_tab">description</th>
+<th class="parameter_tab">arguments</th>
+<th class="parameter_tab">result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="parameter_tab">Focus</td>
+<td class="parameter_tab">Sets focus on the widget element, if it can be focused and keyboardOperation=true
+</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">Reload</td>
+<td class="parameter_tab">Reloads the configured src/url of the widget.
+</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">SetEnable</td>
+<td class="parameter_tab">Sets the state of property «enable»
+</td>
+<td class="parameter_tab"><ul>
+<li>value: Boolean
+<p>
+</p>
+</li>
+</ul>
+</td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">SetHost</td>
+<td class="parameter_tab">Sets the host, as in hostname or ip-address.
+</td>
+<td class="parameter_tab"><ul>
+<li>value: String
+<p>
+</p>
+</li>
+</ul>
+</td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">SetPath</td>
+<td class="parameter_tab">Sets the path.
+</td>
+<td class="parameter_tab"><ul>
+<li>value: String
+<p>
+</p>
+</li>
+</ul>
+</td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">SetPort</td>
+<td class="parameter_tab">Sets the port.
+</td>
+<td class="parameter_tab"><ul>
+<li>value: Number
+<p>
+</p>
+</li>
+</ul>
+</td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">SetQuery</td>
+<td class="parameter_tab">Sets the query.
+</td>
+<td class="parameter_tab"><ul>
+<li>value: String
+<p>
+</p>
+</li>
+</ul>
+</td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">SetSrc</td>
+<td class="parameter_tab">Sets the src.
+</td>
+<td class="parameter_tab"><ul>
+<li>value: String
+<p>
+</p>
+</li>
+</ul>
+</td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">SetStyle</td>
+<td class="parameter_tab">
+</td>
+<td class="parameter_tab"><ul>
+<li>value: StyleReference
+<p>
+</p>
+</li>
+</ul>
+</td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">SetUseURL</td>
+<td class="parameter_tab">Sets the value of the option for selecting the source displayed in the widget.
+</td>
+<td class="parameter_tab"><ul>
+<li>value: Boolean
+<p>
+</p>
+</li>
+</ul>
+</td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">SetVisible</td>
+<td class="parameter_tab">Sets the state of property «visible»
+</td>
+<td class="parameter_tab"><ul>
+<li>value: Boolean
+<p>
+</p>
+</li>
+</ul>
+</td>
+<td class="parameter_tab"></td>
+</tr>
+<tr>
+<td class="parameter_tab">ShowTooltip</td>
+<td class="parameter_tab">
+</td>
+<td class="parameter_tab"></td>
+<td class="parameter_tab"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>

@@ -16,7 +16,7 @@ PROGRAM _CYCLIC
 	
 		//wait state if statred will move in next state
 		enWAIT:
-		//	iCapPush.DOs.PushFWD:=FALSE;
+			iCapPush.DOs.PushFWD:=FALSE;
 			iCapPush.Status.Running:=FALSE;
 			IF iCapPush.Cmd.Start=TRUE THEN
 				iCapPush.Cmd.Start:=FALSE; 
@@ -27,18 +27,22 @@ PROGRAM _CYCLIC
 		enPUSH:
 			iCapPush.Status.Running:=TRUE;
 			IF iCapPush.DIs.MagznPosnEmpty_IR=FALSE AND iCapPush.DIs.PickUp_IR=FALSE THEN
-				iCapPush.DOs.PushFWD:=TRUE ;
+				IF gManuelMode=TRUE THEN
+					
+				ELSE
+					iCapPush.DOs.PushFWD:=TRUE ;
+				END_IF;
+
 				sCapPushStep:=enOPERATION;
 			END_IF;
 
 			
 			//OPERATION Mode
 		enOPERATION:		
-			IF iCapPush.DOs.PushFWD=FALSE  THEN
+			IF iCapPush.DIs.PusherLFR=TRUE THEN
+				iCapPush.DOs.PushFWD:=FALSE;
 				sCapPushStep:=enWAIT;
-	
 			END_IF;
-			sCapPushStep:=enWAIT;
 			
 			//error mode
 		enERROR:

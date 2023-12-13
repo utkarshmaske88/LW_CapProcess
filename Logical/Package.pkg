@@ -8,7 +8,6 @@
     <Object Type="DataObject" Language="Ett">acp10etxen</Object>
     <Object Type="Package" Description="gAxis01obj">gAxis01obj</Object>
     <Object Type="Package" Description="gAxis02obj">gAxis02obj</Object>
-    <Object Type="Package">mappView</Object>
     <Object Type="Package">AlarmsPkg</Object>
     <Object Type="File" Description="Global data types">MNG_Global.typ</Object>
     <Object Type="Package">CapPushPkg</Object>
@@ -18,5 +17,6 @@
     <Object Type="Package">ClrDetectPkg</Object>
     <Object Type="Package">LaneGatesPkg</Object>
     <Object Type="Package">AutoCtrlPkg</Object>
+    <Object Type="Package">mappView</Object>
   </Objects>
 </Package>

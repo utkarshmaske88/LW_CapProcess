@@ -6,11 +6,17 @@ ACTION SortAxisA:
 	iFb_MpAxisBasic_0.Enable := 1;
 	iFb_MpAxisBasic_0.Parameters := ADR(BasicParameters);
 	iFb_MpAxisBasic_0();
-	//	
+	
 	//	BasicParameters.Velocity := 1000; 
 	//	BasicParameters.Distance := 1000; 
 	//		
-	//	iFb_MC_MoveVelocity_0.Velocity := 1000;
+	IF iVl_OldVelocitySC<> BasicParameters.Velocity THEN
+		iFb_MpAxisBasic_0.Update:=TRUE ;
+		IF	iFb_MpAxisBasic_0.UpdateDone=TRUE THEN
+			iVl_OldVelocitySC:= BasicParameters.Velocity;
+			iFb_MpAxisBasic_0.Update:=FALSE ;
+		END_IF;
+	END_IF;
 	//	iFb_MC_MoveVelocity_0.Acceleration := 2000;
 	//	iFb_MC_MoveVelocity_0.Deceleration := 2000;
 	
@@ -27,9 +33,8 @@ ACTION SortAxisA:
 	IF cmdStop=TRUE THEN
 		iFb_MpAxisBasic_0.Stop:=TRUE;
 		IF iFb_MpAxisBasic_0.Stopped=TRUE THEN
-			cmdMoveVelocity:=FALSE;
-			cmdStop:=FALSE;
 			iFb_MpAxisBasic_0.Stop:=FALSE;
+			cmdStop:=FALSE;
 		END_IF;
 	END_IF;
 		
@@ -40,7 +45,7 @@ ACTION SortAxisA:
 	CASE strStep OF
 		
 		enINITA:
-			
+			strStep :=enSTARTA;
 		enSTARTA:
 			IF iFb_MpAxisBasic_0.Info.ReadyToPowerOn = TRUE THEN
 				strStep := enPOWER_ONA;
@@ -57,7 +62,8 @@ ACTION SortAxisA:
 				cmdHome := FALSE;
 			END_IF
 		enOPERATIONA:
-			IF iFb_MpAxisBasic_0.Error = TRUE THEN
+			IF iFb_MpAxisBasic_0.Error =
+				TRUE THEN
 				strStep := enERRORA;
 			END_IF
 			IF cmdMoveAdditive=TRUE THEN
@@ -69,7 +75,7 @@ ACTION SortAxisA:
 			cmdPower := FALSE;
 			cmdMoveVelocity := FALSE;
 			cmdStop := FALSE;
-			cmdErrorReset;
+			cmdErrorReset:=TRUE;
 			IF iFb_MpAxisBasic_0.Error = FALSE THEN;
 				strStep := enSTARTA;
 				cmdErrorReset := FALSE;

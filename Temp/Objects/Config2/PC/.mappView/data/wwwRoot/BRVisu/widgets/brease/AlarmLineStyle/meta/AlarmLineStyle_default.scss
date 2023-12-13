@@ -1,0 +1,25 @@
+@import "mixins.scss";
+@mixin widgets_brease_AlarmLineStyle_base {
+	@include elemWidth(600);
+	@include elemHeight(80);
+	&.breaseAlarmLine.breaseAlarmLineStyle {
+		@include importantBackColor(transparent);
+	}
+	&.breaseAlarmLine.breaseAlarmLineStyle {
+		@include importantGradient();
+	}
+	&.breaseAlarmLine.breaseAlarmLineStyle  .AlarmLineWrapper > div > span {
+		@include importantTextColor(#333);
+	}
+	&.breaseAlarmLine.breaseAlarmLineStyle .AlarmLineWrapper > div {
+		@include importantBoldText(false);
+	}
+	&.breaseAlarmLine.breaseAlarmLineStyle .AlarmLineWrapper > div {
+		@include importantItalicText(false);
+	}
+
+}
+
+.widgets_brease_AlarmLineStyle_style_default {
+@include widgets_brease_AlarmLineStyle_base
+}

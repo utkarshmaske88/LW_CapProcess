@@ -14,7 +14,9 @@ PROGRAM _CYCLIC
 		
 		//waiting for start
 		enWAIT:
+			iClrDetect.Status.Running:=FALSE;
 			IF iClrDetect.Cmd.Start=TRUE THEN
+				iClrDetect.Status.Running:=TRUE;
 				gColorCap:="";
 				iClrDetect.Cmd.Start:=FALSE;
 				iClrDetect.DOs.CapStopperFWD:=TRUE;
@@ -45,8 +47,12 @@ PROGRAM _CYCLIC
 		
 			//exiting the station
 		enEXIT:
-			
-			iClrDetect.DOs.CapStopperFWD:=FALSE;
+			IF gManuelMode=TRUE THEN
+				
+			ELSE
+				
+				iClrDetect.DOs.CapStopperFWD:=FALSE;
+			END_IF;
 			sClrDetectStep:=enWAIT;
 		
 			//error mode

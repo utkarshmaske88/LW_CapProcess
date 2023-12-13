@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?AutomationRuntimeIOSystem Version="1.0"?>
+<IO xmlns="http://www.br-automation.com/AR/IO">
+<Links>
+<LN ID="%IX.SL1.ModuleOk" Type="BOOL">
+<Prod Device="SL1" DPName="ModuleOk" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.SerialNumber" Type="UDINT">
+<Prod Device="SL1" DPName="SerialNumber" Kind="io"/>
+</LN>
+<LN ID="%IW.SL1.ModuleID" Type="UINT">
+<Prod Device="SL1" DPName="ModuleID" Kind="io"/>
+</LN>
+<LN ID="%IW.SL1.HardwareVariant" Type="UINT">
+<Prod Device="SL1" DPName="HardwareVariant" Kind="io"/>
+</LN>
+<LN ID="%IW.SL1.FirmwareVersion" Type="UINT">
+<Prod Device="SL1" DPName="FirmwareVersion" Kind="io"/>
+</LN>
+<LN ID="%IB.SL1.BatteryStatus" Type="USINT">
+<Prod Device="SL1" DPName="BatteryStatus" Kind="io"/>
+</LN>
+<LN ID="%QX.SL1.DigitalOutput01" Type="BOOL">
+<Cons Device="SL1" DPName="DigitalOutput01" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.CycleCount" Type="DINT">
+<Prod Device="SL1" DPName="IF1.CycleCount" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.BreakCount" Type="DINT">
+<Prod Device="SL1" DPName="IF1.BreakCount" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.Nettime" Type="DINT">
+<Prod Device="SL1" DPName="IF1.Nettime" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.SyncErrorCount" Type="DINT">
+<Prod Device="SL1" DPName="IF1.SyncErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.SyncSramErrorCount" Type="DINT">
+<Prod Device="SL1" DPName="IF1.SyncSramErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.SyncBusyErrorCount" Type="DINT">
+<Prod Device="SL1" DPName="IF1.SyncBusyErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.SyncNoRxErrorCount" Type="DINT">
+<Prod Device="SL1" DPName="IF1.SyncNoRxErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.SyncFormatErrorCount" Type="DINT">
+<Prod Device="SL1" DPName="IF1.SyncFormatErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.SyncPendingErrorCount" Type="DINT">
+<Prod Device="SL1" DPName="IF1.SyncPendingErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.AsyncErrorCount" Type="DINT">
+<Prod Device="SL1" DPName="IF1.AsyncErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.AsyncSramErrorCount" Type="DINT">
+<Prod Device="SL1" DPName="IF1.AsyncSramErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.AsyncBusyErrorCount" Type="DINT">
+<Prod Device="SL1" DPName="IF1.AsyncBusyErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.AsyncNoRxErrorCount" Type="DINT">
+<Prod Device="SL1" DPName="IF1.AsyncNoRxErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.AsyncFormatErrorCount" Type="DINT">
+<Prod Device="SL1" DPName="IF1.AsyncFormatErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.AsyncPendingErrorCount" Type="DINT">
+<Prod Device="SL1" DPName="IF1.AsyncPendingErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.DMALateOutputErrorCount" Type="DINT">
+<Prod Device="SL1" DPName="IF1.DMALateOutputErrorCount" Kind="io"/>
+</LN>
+<LN ID="%IB.SL1.IF1.NrOfStationsMax" Type="USINT">
+<Prod Device="SL1" DPName="IF1.NrOfStationsMax" Kind="io"/>
+</LN>
+<LN ID="%IB.SL1.IF1.NrOfStationsConfigured" Type="USINT">
+<Prod Device="SL1" DPName="IF1.NrOfStationsConfigured" Kind="io"/>
+</LN>
+<LN ID="%IB.SL1.IF1.StationAtBusEnd" Type="USINT">
+<Prod Device="SL1" DPName="IF1.StationAtBusEnd" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.StationAtBusEndChangeTime" Type="DATE_AND_TIME">
+<Prod Device="SL1" DPName="IF1.StationAtBusEndChangeTime" Kind="io"/>
+</LN>
+<LN ID="%IB.SL1.IF1.StationPastOutFrameError" Type="USINT">
+<Prod Device="SL1" DPName="IF1.StationPastOutFrameError" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.StationPastOutFrameErrorChangeTime" Type="DATE_AND_TIME">
+<Prod Device="SL1" DPName="IF1.StationPastOutFrameErrorChangeTime" Kind="io"/>
+</LN>
+<LN ID="%IB.SL1.IF1.StationPastInFrameError" Type="USINT">
+<Prod Device="SL1" DPName="IF1.StationPastInFrameError" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.StationPastInFrameErrorChangeTime" Type="DATE_AND_TIME">
+<Prod Device="SL1" DPName="IF1.StationPastInFrameErrorChangeTime" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.SyncInFrameSize" Type="DINT">
+<Prod Device="SL1" DPName="IF1.SyncInFrameSize" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.SyncOutFrameSize" Type="DINT">
+<Prod Device="SL1" DPName="IF1.SyncOutFrameSize" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.AsyncFrameSize" Type="DINT">
+<Prod Device="SL1" DPName="IF1.AsyncFrameSize" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.AsyncFrameSpareSize" Type="DINT">
+<Prod Device="SL1" DPName="IF1.AsyncFrameSpareSize" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.BusLengthConfigured" Type="DINT">
+<Prod Device="SL1" DPName="IF1.BusLengthConfigured" Kind="io"/>
+</LN>
+<LN ID="%IB.SL1.IF2.NodeSwitch" Type="USINT">
+<Prod Device="SL1" DPName="IF2.NodeSwitch" Kind="io"/>
+</LN>
+<LN ID="%IX.SL1.IF2.LinkOk" Type="BOOL">
+<Prod Device="SL1" DPName="IF2.LinkOk" Kind="io"/>
+</LN>
+<LN ID="%IB.SL1.IF2.NodeNumber" Type="USINT">
+<Prod Device="SL1" DPName="IF2.NodeNumber" Kind="io"/>
+</LN>
+<LN ID="%IX.SL1.IF2.CycleOk" Type="BOOL">
+<Prod Device="SL1" DPName="IF2.CycleOk" Kind="io"/>
+</LN>
+<LN ID="%IX.SL1.IF2.SyncOk" Type="BOOL">
+<Prod Device="SL1" DPName="IF2.SyncOk" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF2.TimeSeconds" Type="UDINT">
+<Prod Device="SL1" DPName="IF2.TimeSeconds" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF2.TimeNanoseconds" Type="UDINT">
+<Prod Device="SL1" DPName="IF2.TimeNanoseconds" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF2.NettimeSoC" Type="DINT">
+<Prod Device="SL1" DPName="IF2.NettimeSoC" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF2.NettimeOffset" Type="DINT">
+<Prod Device="SL1" DPName="IF2.NettimeOffset" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF2.CycleCount" Type="UDINT">
+<Prod Device="SL1" DPName="IF2.CycleCount" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF2.FailedCycleCount" Type="UDINT">
+<Prod Device="SL1" DPName="IF2.FailedCycleCount" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF2.CycleTimeViolationCount" Type="UDINT">
+<Prod Device="SL1" DPName="IF2.CycleTimeViolationCount" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF2.CycleIdleTime" Type="UDINT">
+<Prod Device="SL1" DPName="IF2.CycleIdleTime" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF2.CycleCongestionCount" Type="UDINT">
+<Prod Device="SL1" DPName="IF2.CycleCongestionCount" Kind="io"/>
+</LN>
+<LN ID="::CapPush:iCapPush.DIs.PusherLBK/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::ComTotal_SimInputs.CapPusher_LBK" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::CapPush:iCapPush.DIs.PusherLBK" Kind="pv"/>
+</LN>
+<LN ID="::LogoCOnv:iLogoConv.DIs.LogoActPos/4" Type="REAL">
+<Prod Device="TC#1-CPYDEV" DPName="::ComTotal_SimInputs.LogoAxis_ACTPOS" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::LogoCOnv:iLogoConv.DIs.LogoActPos" Kind="pv"/>
+</LN>
+<LN ID="::CapPush:iCapPush.DIs.PusherLFR/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::ComTotal_SimInputs.CapPusher_LFR" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::CapPush:iCapPush.DIs.PusherLFR" Kind="pv"/>
+</LN>
+<LN ID="::CapPush:iCapPush.DIs.MagznPosnEmpty_IR/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::ComTotal_SimInputs.MagazineEmpty_IR" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::CapPush:iCapPush.DIs.MagznPosnEmpty_IR" Kind="pv"/>
+</LN>
+<LN ID="::CapPush:iCapPush.DIs.PickUp_IR/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::ComTotal_SimInputs.CapAtPickup_IR" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::CapPush:iCapPush.DIs.PickUp_IR" Kind="pv"/>
+</LN>
+<LN ID="::ClrDetect:iClrDetect.DIs.ColorDetectionIR/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::ComTotal_SimInputs.ColourDetection_IR" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::ClrDetect:iClrDetect.DIs.ColorDetectionIR" Kind="pv"/>
+</LN>
+<LN ID="::ClrDetect:iClrDetect.DIs.ColorDtectNotBlack/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::ComTotal_SimInputs.CapColour_NOT_BLACK" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::ClrDetect:iClrDetect.DIs.ColorDtectNotBlack" Kind="pv"/>
+</LN>
+<LN ID="::ClrDetect:iClrDetect.DIs.ColorDtectMetallic/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::ComTotal_SimInputs.CapColour_METALLIC" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::ClrDetect:iClrDetect.DIs.ColorDtectMetallic" Kind="pv"/>
+</LN>
+<LN ID="::SortConv:iSortConv.DIs.SortBasicConvStart_IR/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::ComTotal_SimInputs.SortingConveyorStart_IR" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::SortConv:iSortConv.DIs.SortBasicConvStart_IR" Kind="pv"/>
+</LN>
+<LN ID="::LogoCOnv:iLogoConv.DIs.LogoConvStart_IR/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::ComTotal_SimInputs.LogoConveyorStart_IR" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::LogoCOnv:iLogoConv.DIs.LogoConvStart_IR" Kind="pv"/>
+</LN>
+<LN ID="::LogoCOnv:iLogoConv.DIs.LogoConvExit_IR/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::ComTotal_SimInputs.LogoConveyorExit_IR" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::LogoCOnv:iLogoConv.DIs.LogoConvExit_IR" Kind="pv"/>
+</LN>
+<LN ID="::LineGates:iLineGates.DIs.LG1_LBK/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::ComTotal_SimInputs.LaneGate1_LBK" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::LineGates:iLineGates.DIs.LG1_LBK" Kind="pv"/>
+</LN>
+<LN ID="::LineGates:iLineGates.DIs.LG1_LFR/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::ComTotal_SimInputs.LaneGate1_LFR" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::LineGates:iLineGates.DIs.LG1_LFR" Kind="pv"/>
+</LN>
+<LN ID="::LineGates:iLineGates.DIs.LG2_LBK/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::ComTotal_SimInputs.LaneGate2_LBK" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::LineGates:iLineGates.DIs.LG2_LBK" Kind="pv"/>
+</LN>
+<LN ID="::LineGates:iLineGates.DIs.LG2_LFR/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::ComTotal_SimInputs.LaneGate2_LFR" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::LineGates:iLineGates.DIs.LG2_LFR" Kind="pv"/>
+</LN>
+<LN ID="::PickupArm:iPickupArm.DOs.PArmLBK/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::ComTotal_SimInputs.PickupArm_LBK" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::PickupArm:iPickupArm.DOs.PArmLBK" Kind="pv"/>
+</LN>
+<LN ID="::PickupArm:iPickupArm.DOs.PArmLFR/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::ComTotal_SimInputs.PickupArm_LFR" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::PickupArm:iPickupArm.DOs.PArmLFR" Kind="pv"/>
+</LN>
+<LN ID="::PickupArm:iPickupArm.DOs.CapGripVaccum/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::ComTotal_SimInputs.CapGripper_VACUUM" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::PickupArm:iPickupArm.DOs.CapGripVaccum" Kind="pv"/>
+</LN>
+<LN ID="::LineGates:iLineGates.DIs.LaneTopIR/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::ComTotal_SimInputs.LaneTop_IR" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::LineGates:iLineGates.DIs.LaneTopIR" Kind="pv"/>
+</LN>
+<LN ID="::ComTotal_SimOutputs.CapPusher_FWD/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::CapPush:iCapPush.DOs.PushFWD" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::ComTotal_SimOutputs.CapPusher_FWD" Kind="pv"/>
+</LN>
+<LN ID="::ComTotal_SimOutputs.SortingConveyor_SETSPEED/4" Type="REAL">
+<Prod Device="TC#1-CPYDEV" DPName="::SortConv:iSortConv.AOs.SortBasicConvSpeed" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::ComTotal_SimOutputs.SortingConveyor_SETSPEED" Kind="pv"/>
+</LN>
+<LN ID="::ComTotal_SimOutputs.LogoConveyor_SETSPEED/4" Type="REAL">
+<Prod Device="TC#1-CPYDEV" DPName="::LogoCOnv:iLogoConv.AOs.LogoConvSpeed" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::ComTotal_SimOutputs.LogoConveyor_SETSPEED" Kind="pv"/>
+</LN>
+<LN ID="::ComTotal_SimOutputs.LaneGate1_FWD/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::LineGates:iLineGates.DOs.LG1FWD" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::ComTotal_SimOutputs.LaneGate1_FWD" Kind="pv"/>
+</LN>
+<LN ID="::ComTotal_SimOutputs.LaneGate2_FWD/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::LineGates:iLineGates.DOs.LW2FWD" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::ComTotal_SimOutputs.LaneGate2_FWD" Kind="pv"/>
+</LN>
+<LN ID="::ComTotal_SimOutputs.PickupArm_FWD/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::PickupArm:iPickupArm.DIs.PArm_FWD" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::ComTotal_SimOutputs.PickupArm_FWD" Kind="pv"/>
+</LN>
+<LN ID="::ComTotal_SimOutputs.PickupArm_BWD/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::PickupArm:iPickupArm.DIs.PArm_BWD" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::ComTotal_SimOutputs.PickupArm_BWD" Kind="pv"/>
+</LN>
+<LN ID="::ComTotal_SimOutputs.CapGripper_PICK/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::PickupArm:iPickupArm.DIs.CapGripper_PICK" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::ComTotal_SimOutputs.CapGripper_PICK" Kind="pv"/>
+</LN>
+<LN ID="::ComTotal_SimOutputs.CapStopper_FWD/1" Type="BOOL">
+<Prod Device="TC#1-CPYDEV" DPName="::ClrDetect:iClrDetect.DOs.CapStopperFWD" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::ComTotal_SimOutputs.CapStopper_FWD" Kind="pv"/>
+</LN>
+</Links></IO>

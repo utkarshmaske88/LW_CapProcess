@@ -3,11 +3,12 @@
 <Package SubType="PagePackage" PackageType="PagePackage" xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
     <Object Type="File" Description="Page description">Page.page</Object>
-    <Object Type="File">BodyContent.content</Object>
-    <Object Type="File">NavBar.content</Object>
-    <Object Type="File">Header.content</Object>
-    <Object Type="File">AlarmsCont.content</Object>
-    <Object Type="File">UserMgt.content</Object>
-    <Object Type="File">Diagnostic.content</Object>
+    <Object Type="File" Description=" Body of the content">BodyContent.content</Object>
+    <Object Type="File" Description="navigation bar">NavBar.content</Object>
+    <Object Type="File" Description="header bar">Header.content</Object>
+    <Object Type="File" Description="alarms page">AlarmsCont.content</Object>
+    <Object Type="File" Description="user management">UserMgt.content</Object>
+    <Object Type="File" Description="diagnostic page">Diagnostic.content</Object>
+    <Object Type="File">ManualMode.content</Object>
   </Objects>
 </Package>

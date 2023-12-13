@@ -1,12 +1,15 @@
 
 PROGRAM _INIT
-	(* Insert code here *)
+	
 //	 iLogoConv.AOs.LogoConvSpeed:=0.1;
 	BasicParameters.Velocity:= 100;
+	iFb_MpAxisBasic_0.ErrorReset:=TRUE;
+	
 END_PROGRAM
 
 PROGRAM _CYCLIC
 	
+	iLogoConv.AOs.LogoConvSpeed:=iFb_MpAxisBasic_0.Velocity/100;
 	//axis action file
 	LogoAxis;
 	//alarms file for the logo conveyor
@@ -19,38 +22,46 @@ PROGRAM _CYCLIC
 	CASE sLogoConvStep OF
 		//waiting for commands
 		enWAIT:
-			iLogoConv.AOs.LogoConvSpeed:=0;
+			
+			iLogoConv.Status.Running:=FALSE;
 			IF iLogoConv.Cmd.Start=TRUE THEN
+				iLogoConv.Status.Running:=TRUE;
 				iLogoConv.Cmd.Start:=FALSE;
 				sLogoConvStep:=enOPERATION;
 			END_IF;		  
 			
 			//operation mode cap is on
 		enOPERATION:
-			
 			IF iLogoConv.DIs.LogoConvStart_IR=TRUE THEN
-				sLogoConvStep:=enRUNNING;
+
+				cmdStop:=TRUE;
+				IF iFb_MpAxisBasic_0.Stopped=TRUE THEN
+					sLogoConvStep:=enRUNNING;
+				END_IF;
 			END_IF;
 			
 			//running the conveyor
 		enRUNNING:
-			iLogoConv.AOs.LogoConvSpeed:=BasicParameters.Velocity/100;
+			IF gManuelMode=TRUE THEN
+			
+			ELSE
+				cmdMoveVelocity:=TRUE;
+			END_IF;
 			IF iLogoConv.DIs.LogoConvExit_IR=TRUE THEN
 				sLogoConvStep:=enEXIT;	
 			END_IF;
 		
 			//exit cap from conveyor
 		enEXIT:
+			cmdMoveVelocity:=FALSE;
+			cmdStop:=TRUE;
 			
 			IF iLogoConv.Status.Running=FALSE THEN
-				sLogoConvStep:=enEXIT;	
-				iLogoConv.AOs.LogoConvSpeed:=0;
 				sLogoConvStep:=enWAIT;
 			END_IF;
 			
 			//error mode
 		enERROR:
-			iLogoConv.AOs.LogoConvSpeed:=0;
 			IF iLogoConv.Cmd.ErrorReset=TRUE THEN
 				iLogoConv.Cmd.ErrorReset:=FALSE;
 				iLogoConv.Status.Error:=FALSE;
@@ -62,6 +73,8 @@ END_PROGRAM
 
 PROGRAM _EXIT
 	(* Insert code here *)
-	 
+	iFb_MpAxisBasic_0.Enable:=FALSE;
+	iFb_MpAxisBasic_0();
+	
 END_PROGRAM
 

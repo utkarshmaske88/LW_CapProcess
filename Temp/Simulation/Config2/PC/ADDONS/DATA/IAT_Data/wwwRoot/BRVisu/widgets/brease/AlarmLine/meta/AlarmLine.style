@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<StyleInformation name="widgets.brease.AlarmLine" xmlns="http://www.br-automation.com/iat2014/widgetStyles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <StyleProperties>
+    <StyleProperty name="width" type="Size" not_styleable="true" default="600">
+      <StyleElement attribute="@include elemWidth($value)"></StyleElement>
+      <Description>outer width of widget</Description>
+    </StyleProperty>
+    <StyleProperty name="height" type="Size" not_styleable="true" default="80">
+      <StyleElement attribute="@include elemHeight($value)"></StyleElement>
+      <Description>outer height of widget</Description>
+    </StyleProperty>
+    <StyleProperty name="minWidth" type="Size" not_styleable="true" default="0" category="Layout" groupRefId="Size" groupOrder="3">
+      <StyleElement attribute="@include elemMinWidth($value)"/>
+        <Description>minimum outer width of widget</Description>
+      </StyleProperty>
+      <StyleProperty name="maxWidth" type="Size" not_styleable="true" default="0" category="Layout" groupRefId="Size" groupOrder="4">
+        <StyleElement attribute="@include elemMaxWidth($value)"/>
+        <Description>maximum outer width of widget</Description>
+      </StyleProperty>
+      <StyleProperty name="minHeight" type="Size" not_styleable="true" default="0" category="Layout" groupRefId="Size" groupOrder="5">
+        <StyleElement attribute="@include elemMinHeight($value)"/>
+        <Description>minimum outer height of widget</Description>
+      </StyleProperty>
+      <StyleProperty name="maxHeight" type="Size" not_styleable="true" default="0" category="Layout" groupRefId="Size" groupOrder="6">
+        <StyleElement attribute="@include elemMaxHeight($value)"/>
+        <Description>maximum outer height of widget</Description>
+    </StyleProperty>
+    <StyleProperty name="borderStyle" type="BorderStyle" category="Appearance" default="solid">
+			<StyleElement selector="&amp;.breaseAlarmLine" attribute="border-style"></StyleElement>
+			<Description>
+				Widget border style
+			</Description>
+		</StyleProperty>
+		<StyleProperty name="borderWidth" type="PixelValCollection" category="Appearance" default="1px">
+			<StyleElement selector="&amp;.breaseAlarmLine" attribute="border-width"></StyleElement>
+			<Description>
+        Widget border width
+			</Description>
+		</StyleProperty>
+    <StyleProperty name="borderColor" type="ColorCollection" category="Appearance" default="#8b0000">
+      <StyleElement selector="&amp;.breaseAlarmLine" attribute="border-color"></StyleElement>
+      <Description>
+        Widget border color
+      </Description>
+    </StyleProperty>
+    <StyleProperty name="cellBorderColor" type="ColorCollection" category="Appearance" default="#fff">
+      <StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper > div" attribute="border-color"></StyleElement>
+      <Description>
+        Sets the border color of the individual cells. For further information, please see its type
+      </Description>
+    </StyleProperty>
+    <StyleProperty name="cellBorderWidth" type="PixelValCollection" category="Appearance" default="0px">
+      <StyleElement selector="&amp;.breaseAlarmLine  .AlarmLineWrapper > div" attribute="border-width"></StyleElement>
+        <Description>
+          Sets the border width of individual cells. For further information, please see its type
+        </Description>
+    </StyleProperty>
+    <StyleProperty name="cellBorderStyle" type="BorderStyle" category="Appearance" default="none">
+      <StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper > div" attribute="border-style"></StyleElement>
+      <Description>
+        Sets the border style of the individual cells. For further information, please see its type
+      </Description>
+    </StyleProperty>
+    <StyleProperty name="cellPadding"  category="Appearance" type="Padding" default="0px 12px">
+      <StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper > div" attribute="padding"></StyleElement>
+      <Description>
+        Sets the padding of the individual cells. For further information, please see its type.
+      </Description>
+    </StyleProperty>
+    <StyleProperty name="cellCornerRadius" type="PixelValCollection" category="Appearance" default="0px">
+      <StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper > div" attribute="@include border-radius($value)"></StyleElement>
+      <Description>
+        Sets the radius of the widget rounded corners. For further information, please see its type
+      </Description>
+    </StyleProperty>   
+    <StyleProperty name="padding"  category="Appearance" type="Padding" default="0px">
+      <StyleElement selector="&amp;.breaseAlarmLine" attribute="padding"></StyleElement>
+      <Description>
+        Sets the padding of the widget. For further information, please see its type.
+      </Description>
+    </StyleProperty>
+    <StyleProperty name="backColor" type="Color" category="Appearance" default="transparent" >
+			<StyleElement selector="&amp;.breaseAlarmLine" attribute="background-color"></StyleElement>
+			<Description>
+        Widget border color background color
+			</Description>
+		</StyleProperty>
+    <StyleProperty name="backGroundGradient" type="Gradient" category="Appearance" groupOrder="1" default="">
+    <StyleElement selector="&amp;.breaseAlarmLine" attribute="@include backGroundGradient('$value')"></StyleElement>
+      <Description>
+        Sets the background gradient of the header
+      </Description>
+    </StyleProperty>
+    <StyleProperty name="textColor" type="Color" category="Appearance" groupRefId="Rows" groupOrder="5" default="#333">
+      <StyleElement selector="&amp;.breaseAlarmLine  .AlarmLineWrapper > div > span" attribute="color"></StyleElement>
+      <Description>
+        Text color of list entries
+      </Description>
+    </StyleProperty>
+    <StyleProperty name="textAlign" type="brease.enum.TextAlign" default="center" category="Appearance">
+      <StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper > div" attribute="@include text-alignment($value)"></StyleElement>
+      <Description>
+        Alignment of the text in a cell
+      </Description>
+    </StyleProperty>
+    <StyleProperty name="fontSize" type="PixelVal" category="Font" groupRefId="Rows" groupOrder="6" default="16px">
+      <StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper > div" attribute="font-size"></StyleElement>
+      <Description>
+        Fontsize of list entries
+      </Description>
+    </StyleProperty>
+    <StyleProperty name="fontName" category="Font" type="FontName" default="Arial">
+			<StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper > div" attribute="font-family"></StyleElement>
+			<Description>
+				Fontname of the text
+			</Description>
+		</StyleProperty>
+    <StyleProperty name="bold" type="Boolean" default="false" category="Font">
+      <StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper > div" attribute="@include font-weight-bold($value)"></StyleElement>
+      <Description>
+        If true, the font style of the table is bold
+      </Description>
+    </StyleProperty>
+    <StyleProperty name="italic" type="Boolean" default="false" category="Font">
+      <StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper > div" attribute="@include font-style-italic($value)"></StyleElement>
+      <Description>
+        If true, the font style of the table is italic
+      </Description>
+    </StyleProperty>
+		<StyleProperty name="margin" category="Layout" type="Margin" default="0px">
+			<StyleElement attribute="margin"></StyleElement>
+			<Description>
+				Margin of the Widget
+			</Description>
+		</StyleProperty>
+    <StyleProperty name="opacity" type="Opacity" category="Appearance" default="1">
+      <StyleElement attribute="opacity"></StyleElement>
+      <Description>
+        Opacity of the widget
+      </Description>
+    </StyleProperty>
+    <StyleProperty name="cornerRadius" type="PixelValCollection" category="Appearance" default="0px">
+      <StyleElement attribute="@include border-radius($value)"></StyleElement>
+      <Description>
+        Sets the radius of the widget rounded corners. For further information, please see its type
+      </Description>
+    </StyleProperty>
+    <StyleProperty name="shadow" type="Shadow" category="Appearance" default="none">
+      <StyleElement attribute="@include box-shadow($value)"></StyleElement>
+      <Description>
+        Shadow of the Widget
+      </Description>
+    </StyleProperty>
+    <StyleProperty name="imageWidth" type="ImageSize" not_styleable="true" category="Appearance" default="0">
+      <StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper > div > img" attribute="@include imageWidth($value)"></StyleElement>
+      <StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper > div > svg" attribute="@include imageWidth($value)"></StyleElement>
+      <Description>width of the image</Description>
+    </StyleProperty>
+    <StyleProperty name="imageHeight" type="ImageSize" not_styleable="true" category="Appearance" default="0">
+      <StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper > div > img" attribute="@include imageHeight($value)"></StyleElement>
+      <StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper > div > svg" attribute="@include imageHeight($value)"></StyleElement>
+      <Description>height of the image</Description>
+    </StyleProperty>
+  </StyleProperties>
+</StyleInformation>

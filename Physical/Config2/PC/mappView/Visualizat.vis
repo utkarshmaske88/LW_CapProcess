@@ -5,10 +5,13 @@
   <Navigations />
   <BindingsSets>
     <BindingsSet refId="AlarmsContent_binding" />
+    <BindingsSet refId="ManualMode_binding" />
+    <BindingsSet refId="BodyContent_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="UserMgtContent_eventbinding" />
     <EventBindingsSet refId="NavBarContent_eventbinding" />
+    <EventBindingsSet refId="ManualMode_eventbinding" />
   </EventBindingsSets>
   <Dialogs />
   <Contents>
@@ -18,6 +21,7 @@
     <Content refId="BodyContent" />
     <Content refId="UserMgtContent" />
     <Content refId="Diagnostic" />
+    <Content refId="ManualMode" />
   </Contents>
   <SnippetsSets />
   <VariablesSets />

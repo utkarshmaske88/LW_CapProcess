@@ -1,4 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Content id="BodyContent" height="518" width="688" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2">
-  <Widgets></Widgets>
+<Content id="BodyContent" height="518" width="688" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.ButtonBar" id="ButtonBar1" top="6" left="479" height="257" zIndex="0" permissionOperate="['Administrators', 'Operator']">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.ToggleButton" id="Start" top="6" left="42" width="121" height="58" zIndex="0" image="Media/SymbolLib/Symbols/Start.svg" text="Start" cornerRadius="5px" backColor="rgba(128, 255, 128, 1)" borderColor="rgba(0, 0, 0, 1)" fontSize="18px" fontName="Arial Unicode" bold="true" checkedBackColor="rgba(128, 255, 128, 1)" permissionOperate="['Administrators', 'Operator']" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="Stop" top="99" left="42" width="121" height="58" zIndex="1" image="Media/SymbolLib/Symbols/Stop.svg" text="Stop" cornerRadius="5px" backColor="rgba(255, 192, 192, 1)" borderColor="rgba(0, 0, 0, 1)" fontSize="18px" fontName="Arial Unicode" bold="true" checkedBackColor="rgba(255, 128, 128, 1)" permissionOperate="['Administrators', 'Operator']" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="estop" top="192" left="42" width="121" height="58" zIndex="2" image="Media/SymbolLib/Symbols/Off.svg" text="EStop" cornerRadius="5px" backColor="rgba(255, 0, 0, 1)" borderColor="rgba(0, 0, 0, 1)" fontSize="18px" fontName="Arial Unicode" bold="true" checkedBackColor="rgba(255, 0, 0, 1)" permissionOperate="['Administrators', 'Operator']" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.ToggleButton" id="Errorreset" top="292" left="517" width="129" height="58" zIndex="1" text="Errorreset" cornerRadius="5px" backColor="rgba(192, 255, 255, 1)" borderColor="rgba(0, 0, 0, 1)" fontSize="18px" fontName="Arial Unicode" bold="true" checkedBackColor="rgba(192, 255, 255, 1)" permissionOperate="['Administrators', 'Operator']" />
+    <Widget xsi:type="widgets.brease.AlarmLine" id="AlarmLine1" top="470" left="122" width="560" height="42" zIndex="2">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.AlarmLineItem" id="AlarmLineItem1" width="552" zIndex="0" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.TextOutput" id="CurrentState1" top="475" left="-3" width="124" zIndex="3" value="Recent Alarm &gt;" textAlign="right" bold="true" />
+    <Widget xsi:type="widgets.brease.Line" id="Line" zIndex="4" x1="49" x2="419" y1="265" y2="265" lineWidth="3px" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="CapPush" top="254" left="114" width="20" height="20" zIndex="5" borderWidth="0px" cornerRadius="50px" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="PArm" top="254" left="170" width="20" height="20" zIndex="6" borderWidth="0px" cornerRadius="50px" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="LogoConv" top="254" left="226" width="20" height="20" zIndex="7" borderWidth="0px" cornerRadius="50px" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ClrDtc" top="254" left="282" width="20" height="20" zIndex="8" borderWidth="0px" cornerRadius="50px" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="LaneGate" top="254" left="338" width="20" height="20" zIndex="9" borderWidth="0px" cornerRadius="50px" />
+  </Widgets>
 </Content>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="ManualMode_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::PickupArm:iPickupArm.DIs.CapGripper_PICK" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualMode" widgetRefId="VaccumON" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::CapPush:iCapPush.DOs.PushFWD" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualMode" widgetRefId="CapPush" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::LogoCOnv:cmdMoveVelocity" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualMode" widgetRefId="LogoConv" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::PickupArm:iPickupArm.DIs.PArm_FWD" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualMode" widgetRefId="PickCap" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::SortConv:cmdMoveVelocity" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualMode" widgetRefId="SortConv" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::LineGates:iLineGates.DOs.LG1FWD" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualMode" widgetRefId="LaneOne" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::LineGates:iLineGates.DOs.LW2FWD" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualMode" widgetRefId="LaneTwo" attribute="value" />
+</Binding>
+</Bindings>
+</BindingsSet>

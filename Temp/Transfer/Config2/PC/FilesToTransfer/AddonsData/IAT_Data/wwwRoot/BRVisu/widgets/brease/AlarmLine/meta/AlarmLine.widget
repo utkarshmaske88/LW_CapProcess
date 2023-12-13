@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WidgetLibrary xmlns="http://www.br-automation.com/iat2014/widget">
+	<Widget name="widgets.brease.AlarmLine">
+		<ASEngineeringInfo>
+			<IsProjectable>true</IsProjectable>
+			<LicenseInfo>unlicensed</LicenseInfo>
+		</ASEngineeringInfo>
+		<Dependencies>
+			<Files>
+				<File>brease/core/BaseWidget.js</File>
+				<File>brease/events/BreaseEvent.js</File>
+				<File>brease/decorators/CultureDependency.js</File>
+				<File>brease/decorators/MeasurementSystemDependency.js</File>
+				<File>widgets/brease/AlarmLine/libs/utils/EditorBehavior.js</File>
+				<File>widgets/brease/AlarmLine/libs/config/Config.js</File>
+				<File>widgets/brease/AlarmLine/libs/config/InitState.js</File>
+				<File>widgets/brease/AlarmLine/libs/view/AlarmLineView/AlarmLineView.js</File>
+				<File>widgets/brease/AlarmLine/libs/reducer/AlarmLineMainReducer.js</File>
+				<File>widgets/brease/AlarmLine/libs/reducer/AlarmLineMainActions.js</File>
+				<File>widgets/brease/AlarmLine/libs/reducer/AlarmLineConfigReducer/AlarmLineConfigAction.js</File>
+				<File>widgets/brease/common/libs/external/redux.js</File>
+				<File>widgets/brease/common/libs/redux/middleware/DataHandler/DataHandlerMiddleware.js</File>
+				<File>widgets/brease/common/libs/redux/reducers/DataHandler/DataHandlerActions.js</File>
+				<File>widgets/brease/common/libs/redux/reducers/Status/StatusActions.js</File>
+				<File>widgets/brease/common/MpLinkHandler/libs/MpLinkHandler.js</File>
+				<File>widgets/brease/common/ErrorHandling/libs/CommissioningErrorHandler.js</File>
+				<File>widgets/brease/TableWidget/libs/ConfigBuilder.js</File>
+				<File>widgets/brease/AlarmLine/libs/utils/Dialogue.js</File>
+				<File>brease/decorators/DragAndDropCapability.js</File>
+				<File>brease/enum/Enum.js</File>
+				<File>widgets/brease/common/libs/BreaseResizeObserver.js</File>
+				<File>brease/decorators/ContentActivatedDependency.js</File>
+				<File>widgets/brease/common/DragDropProperties/libs/DroppablePropertiesEvents.js</File>
+				<File>widgets/brease/TextInput/TextInput.js</File>
+				<File>widgets/brease/Label/Label.js</File>
+				<File>widgets/brease/NumericInput/NumericInput.js</File>
+				<File>widgets/brease/CheckBox/CheckBox.js</File>
+				<File>widgets/brease/DateTimeInput/DateTimeInput.js</File>
+				<File>widgets/brease/Image/Image.js</File>
+				<File>widgets/brease/Rectangle/Rectangle.js</File>
+				<File>widgets/brease/DropDownBox/DropDownBox.js</File>
+				<File>widgets/brease/GenericDialog/GenericDialog.js</File>
+				<File>widgets/brease/TableWidget/TableWidget.js</File>
+				<File>widgets/brease/AlarmList/AlarmList.js</File>
+				<File>widgets/brease/AlarmLineStyle/AlarmLineStyle.js</File>
+			</Files>
+			<Widgets>
+				<Widget>widgets/brease/AlarmLine/AlarmLine.js</Widget>
+				<Widget>widgets/brease/TextInput/TextInput.js</Widget>
+				<Widget>widgets/brease/Label/Label.js</Widget>
+				<Widget>widgets/brease/NumericInput/NumericInput.js</Widget>
+				<Widget>widgets/brease/CheckBox/CheckBox.js</Widget>
+				<Widget>widgets/brease/DateTimeInput/DateTimeInput.js</Widget>
+				<Widget>widgets/brease/Image/Image.js</Widget>
+				<Widget>widgets/brease/Rectangle/Rectangle.js</Widget>
+				<Widget>widgets/brease/DropDownBox/DropDownBox.js</Widget>
+				<Widget>widgets/brease/GenericDialog/GenericDialog.js</Widget>
+				<Widget>widgets/brease/TableWidget/TableWidget.js</Widget>
+				<Widget>widgets/brease/AlarmList/AlarmList.js</Widget>
+				<Widget>widgets/brease/AlarmLineStyle/AlarmLineStyle.js</Widget>
+			</Widgets>
+		</Dependencies>
+		<Categories>
+			<Category name="Category">Data</Category>
+			<Category name="Category">Alarm</Category>
+		</Categories>
+		<Descriptions>
+			<Description name="short">Widget for only displaying one alarm at the time in a header constellation, connected to the MpAlarmXCore</Description>
+			<Description name="de">Widget, um nur einen Alarm in einem Kopfzeilenformat anzuzeigen, das mit dem MpAlarmXCore verbunden ist</Description>
+			<Description name="en">Widget for only displaying one alarm at the time in a header constellation, connected to the MpAlarmXCore</Description>
+		</Descriptions>
+		<Inheritance>
+			<Class level="0">widgets.brease.AlarmLine</Class>
+			<Class level="1">brease.core.BaseWidget</Class>
+		</Inheritance>
+		<Parents>
+			<Parent>*</Parent>
+		</Parents>
+		<Children>
+			<Child>widgets.brease.AlarmLineItem</Child>
+		</Children>
+		<Methods>
+			<Method name="Acknowledge" read="false">
+				<Description>Acknowledge currently selected alarm</Description>
+			</Method>
+			<Method name="Focus" read="false">
+				<Description>Sets focus on the widget element, if it can be focused and keyboardOperation=true</Description>
+			</Method>
+			<Method name="OpenConfiguration" read="false">
+				<Description>Open the filter part of the configuration dialogue</Description>
+				<Arguments>
+					<Argument name="type" type="MappTableConfigurationType" index="0" required="true">
+						<Description>(Supported types: Filtering)</Description>
+					</Argument>
+				</Arguments>
+			</Method>
+			<Method name="SetEnable" read="false">
+				<Description>Sets the state of property «enable»</Description>
+				<Arguments>
+					<Argument name="value" type="Boolean" index="0" required="true"/>
+				</Arguments>
+			</Method>
+			<Method name="SetStyle" read="false">
+				<Arguments>
+					<Argument name="value" type="StyleReference" index="0" required="true"/>
+				</Arguments>
+			</Method>
+			<Method name="SetVisible" read="false">
+				<Description>Sets the state of property «visible»</Description>
+				<Arguments>
+					<Argument name="value" type="Boolean" index="0" required="true"/>
+				</Arguments>
+			</Method>
+			<Method name="ShowAlarmByCode" read="false">
+				<Description>Sets the value of which alarm code should be shown</Description>
+				<Arguments>
+					<Argument name="value" type="UInteger" index="0" required="true"/>
+				</Arguments>
+			</Method>
+			<Method name="ShowAlarmByInstanceId" read="false">
+				<Description>Sets the value of which instance id should be shown</Description>
+				<Arguments>
+					<Argument name="value" type="UInteger" index="0" required="true"/>
+				</Arguments>
+			</Method>
+			<Method name="ShowAlarmByName" read="false">
+				<Description>Sets the value of which alarm code should be shown</Description>
+				<Arguments>
+					<Argument name="value" type="String" index="0" required="true"/>
+				</Arguments>
+			</Method>
+			<Method name="ShowDefault" read="false">
+				<Description>Removes any selection made by the showAlarmByName, showAlarmByCode or showAlarmByInstanceId.</Description>
+			</Method>
+			<Method name="ShowFirst" read="false">
+				<Description>Displays the previous alarm that is possible to display given sorting and filtering settings</Description>
+				<Result type="Boolean"/>
+			</Method>
+			<Method name="ShowLast" read="false">
+				<Description>Displays the previous alarm that is possible to display given sorting and filtering settings</Description>
+				<Result type="Boolean"/>
+			</Method>
+			<Method name="ShowNext" read="false">
+				<Description>Displays the next alarm that is possible to display given sorting and filtering settings</Description>
+				<Result type="Boolean"/>
+			</Method>
+			<Method name="ShowPrevious" read="false">
+				<Description>Displays the previous alarm that is possible to display given sorting and filtering settings</Description>
+				<Result type="Boolean"/>
+			</Method>
+			<Method name="ShowTooltip" read="false"/>
+		</Methods>
+		<Events>
+			<Event name="AlarmChanged">
+				<Description>Fired when a new alarm is triggered to the AlarmLine</Description>
+				<Arguments>
+					<Argument name="additionalInfo1" type="String" index="0" required="true"/>
+					<Argument name="additionalInfo2" type="String" index="1" required="true"/>
+					<Argument name="category" type="String" index="2" required="true"/>
+					<Argument name="code" type="Integer" index="3" required="true"/>
+					<Argument name="instanceID" type="Integer" index="4" required="true"/>
+					<Argument name="message" type="String" index="5" required="true"/>
+					<Argument name="name" type="String" index="6" required="true"/>
+					<Argument name="scope" type="String" index="7" required="true"/>
+					<Argument name="severity" type="Integer" index="8" required="true"/>
+					<Argument name="state" type="Integer" index="9" required="true"/>
+					<Argument name="timestamp" type="String" index="10" required="true"/>
+				</Arguments>
+			</Event>
+			<Event name="Click">
+				<Description>Fired when element is clicked on.</Description>
+				<Arguments>
+					<Argument name="origin" type="String" index="0" required="true">
+						<Description>id of widget that triggered this event</Description>
+					</Argument>
+					<Argument name="horizontalPos" type="String" index="1" required="true">
+						<Description>horizontal position of click in pixel i.e &apos;10px&apos;</Description>
+					</Argument>
+					<Argument name="verticalPos" type="String" index="2" required="true">
+						<Description>vertical position of click in pixel i.e &apos;10px&apos;</Description>
+					</Argument>
+				</Arguments>
+			</Event>
+			<Event name="DisabledClick">
+				<Description>Fired when disabled element is clicked on.</Description>
+				<Arguments>
+					<Argument name="origin" type="String" index="0" required="true">
+						<Description>id of widget that triggered this event</Description>
+					</Argument>
+					<Argument name="hasPermission" type="Boolean" index="1" required="true">
+						<Description>defines if the state is caused due to missing roles of the current user</Description>
+					</Argument>
+					<Argument name="horizontalPos" type="String" index="2" required="true">
+						<Description>horizontal position of click in pixel i.e &apos;10px&apos;</Description>
+					</Argument>
+					<Argument name="verticalPos" type="String" index="3" required="true">
+						<Description>vertical position of click in pixel i.e &apos;10px&apos;</Description>
+					</Argument>
+				</Arguments>
+			</Event>
+			<Event name="EnableChanged">
+				<Description>Fired when operability of the widget changes.</Description>
+				<Arguments>
+					<Argument name="value" type="Boolean" index="0" required="true">
+						<Description>operability</Description>
+					</Argument>
+				</Arguments>
+			</Event>
+			<Event name="FocusIn">
+				<Description>Fired when the widgets gets focus</Description>
+			</Event>
+			<Event name="FocusOut">
+				<Description>Fired when the widgets lost focus</Description>
+			</Event>
+			<Event name="ItemClick">
+				<Description>Fired when a row is clicked on.</Description>
+				<Arguments>
+					<Argument name="additionalInfo1" type="String" index="0" required="true"/>
+					<Argument name="additionalInfo2" type="String" index="1" required="true"/>
+					<Argument name="category" type="String" index="2" required="true"/>
+					<Argument name="code" type="Integer" index="3" required="true"/>
+					<Argument name="instanceID" type="Integer" index="4" required="true"/>
+					<Argument name="message" type="String" index="5" required="true"/>
+					<Argument name="name" type="String" index="6" required="true"/>
+					<Argument name="scope" type="String" index="7" required="true"/>
+					<Argument name="severity" type="Integer" index="8" required="true"/>
+					<Argument name="state" type="Integer" index="9" required="true"/>
+					<Argument name="timestamp" type="String" index="10" required="true"/>
+					<Argument name="horizontalPos" type="String" index="11" required="true">
+						<Description>horizontal position of click in pixel i.e &apos;10px&apos;</Description>
+					</Argument>
+					<Argument name="verticalPos" type="String" index="12" required="true">
+						<Description>vertical position of click in pixel i.e &apos;10px&apos;</Description>
+					</Argument>
+				</Arguments>
+			</Event>
+			<Event name="ItemDoubleClick">
+				<Description>Fired when a row is double clicked on.</Description>
+				<Arguments>
+					<Argument name="additionalInfo1" type="String" index="0" required="true"/>
+					<Argument name="additionalInfo2" type="String" index="1" required="true"/>
+					<Argument name="category" type="String" index="2" required="true"/>
+					<Argument name="code" type="Integer" index="3" required="true"/>
+					<Argument name="instanceID" type="Integer" index="4" required="true"/>
+					<Argument name="message" type="String" index="5" required="true"/>
+					<Argument name="name" type="String" index="6" required="true"/>
+					<Argument name="scope" type="String" index="7" required="true"/>
+					<Argument name="severity" type="Integer" index="8" required="true"/>
+					<Argument name="state" type="Integer" index="9" required="true"/>
+					<Argument name="timestamp" type="String" index="10" required="true"/>
+					<Argument name="horizontalPos" type="String" index="11" required="true">
+						<Description>horizontal position of click in pixel i.e &apos;10px&apos;</Description>
+					</Argument>
+					<Argument name="verticalPos" type="String" index="12" required="true">
+						<Description>vertical position of click in pixel i.e &apos;10px&apos;</Description>
+					</Argument>
+				</Arguments>
+			</Event>
+			<Event name="OnDragEnter">
+				<Description>Fired when element has onDragEnter.</Description>
+				<Arguments>
+					<Argument name="contentId" type="String" index="0" required="true">
+						<Description>content id of the widget that has been entering the droppable widget</Description>
+					</Argument>
+					<Argument name="widgetId" type="String" index="1" required="true">
+						<Description>id of the widget that has been entering the droppable widget</Description>
+					</Argument>
+				</Arguments>
+			</Event>
+			<Event name="OnDragLeave">
+				<Description>Fired when element has OnDragLeave.</Description>
+				<Arguments>
+					<Argument name="contentId" type="String" index="0" required="true">
+						<Description>content id of the widget that has been leaving the droppable widget</Description>
+					</Argument>
+					<Argument name="widgetId" type="String" index="1" required="true">
+						<Description>id of the widget that has been leaving the droppable widget</Description>
+					</Argument>
+				</Arguments>
+			</Event>
+			<Event name="OnDrop">
+				<Description>Fired when element has OnDrop.</Description>
+				<Arguments>
+					<Argument name="contentId" type="String" index="0" required="true">
+						<Description>content id of the widget that has been dropped on the droppable widget</Description>
+					</Argument>
+					<Argument name="widgetId" type="String" index="1" required="true">
+						<Description>id of the widget that has been dropped on the droppable widget</Description>
+					</Argument>
+				</Arguments>
+			</Event>
+			<Event name="OnError">
+				<Description>Fired when mapp Component sends an Error.</Description>
+				<Arguments>
+					<Argument name="result" type="Integer" index="0" required="true"/>
+				</Arguments>
+			</Event>
+			<Event name="VisibleChanged">
+				<Description>Fired when the visibility of the widget changes.</Description>
+				<Arguments>
+					<Argument name="value" type="Boolean" index="0" required="true">
+						<Description>visibility</Description>
+					</Argument>
+				</Arguments>
+			</Event>
+		</Events>
+		<Properties>
+			<Property name="ellipsis" type="Boolean" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Behavior" defaultValue="false">
+				<Description>If true, overflow of text is symbolized with an ellipsis. This option has no effect if wordWrap = true.</Description>
+			</Property>
+			<Property name="enable" type="Boolean" initOnly="false" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Behavior" defaultValue="true">
+				<Description>Initial option to enable widget.</Description>
+			</Property>
+			<Property name="filterConfiguration" type="String" initOnly="false" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Data" defaultValue="">
+				<Description>configuration used to set the filter for the AlarmLine, see the AlarmList for an example. Exact same string can be used for both AlarmList and AlarmLine.</Description>
+			</Property>
+			<Property name="format" type="String" initOnly="false" localizable="true" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue="F">
+				<Description>Specifies the format of the time shown in the input field. This is either a format string (ee.g. &quot;HH:mm&quot;) or a pattern (&quot;F&quot;).</Description>
+			</Property>
+			<Property name="imageActive" type="ImagePath" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue="">
+				<Description>Path to the image used for state &quot;Active / Not-Acknowledged&quot;. If no image is defined, a predefined image will be used.</Description>
+			</Property>
+			<Property name="imageActiveAcknowledged" type="ImagePath" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue="">
+				<Description>Path to the image used for state &quot;Active / Acknowledged&quot;. If no image is defined, a predefined image will be used.</Description>
+			</Property>
+			<Property name="imageInactive" type="ImagePath" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue="">
+				<Description>Path to the image used for state &quot;Inactive / Not-Acknowledged&quot;. If no image is defined, a predefined image will be used.</Description>
+			</Property>
+			<Property name="imagePrefix" type="DirectoryPath" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue="">
+				<Description>Path to the image used for the images in the category. The image names have to specifed in the backend at the MpAlarmX. See help for more information.</Description>
+			</Property>
+			<Property name="imageSuffix" type="ImageType" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue=".png">
+				<Description>File extension used for the images in the category. The image names have to specifed in the backend at the MpAlarmX. See help for more information.</Description>
+			</Property>
+			<Property name="mpLink" type="MpComIdentType" initOnly="false" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="false" category="Data" defaultValue="">
+				<Description>Link to a MpAlarmX component</Description>
+			</Property>
+			<Property name="multiLine" type="Boolean" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Behavior" defaultValue="true">
+				<Description>When true, more than one line is possible. Text will wrap when necessary (wordWrap=true) or at line breaks (\n).
+If false, text will never wrap to the next line. The text continues on the same line.				</Description>
+			</Property>
+			<Property name="permissionOperate" type="RoleCollection" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Accessibility">
+				<Description>restricts operability to users, which have given roles</Description>
+			</Property>
+			<Property name="permissionView" type="RoleCollection" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Accessibility">
+				<Description>restricts visibility to users, which have given roles</Description>
+			</Property>
+			<Property name="sortOrder" type="brease.enum.SortDirection" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue="descending">
+				<Description>Display the alarm in the AlarmLine with the name given if it exists in the dataset after it has been filtered.</Description>
+			</Property>
+			<Property name="style" type="StyleReference" initOnly="false" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue="default">
+				<Description>reference to a style for this widget type</Description>
+			</Property>
+			<Property name="styleConfiguration" type="String" initOnly="false" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Data" defaultValue="">
+				<Description>configuration used to set the style for the AlarmLine, see the AlarmList for an example. Exact same string can be used for both AlarmList and AlarmLine.</Description>
+			</Property>
+			<Property name="tabIndex" type="Integer" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Behavior" defaultValue="-1">
+				<Description>sets if a widget should have autofocus enabled (0), the order of the focus (&gt;0),
+or if autofocus should be disabled (-1)				</Description>
+			</Property>
+			<Property name="tooltip" type="String" initOnly="true" localizable="true" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue="">
+				<Description>reference to a tooltip for a widget</Description>
+			</Property>
+			<Property name="visible" type="Boolean" initOnly="false" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Behavior" defaultValue="true">
+				<Description>change visibility</Description>
+			</Property>
+			<Property name="wordWrap" type="Boolean" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Behavior" defaultValue="true">
+				<Description>when true, text will wrap when necessary.</Description>
+			</Property>
+		</Properties>
+		<StyleProperties>
+			<StyleProperty name="width" type="Size" not_styleable="true" owner="widgets.brease.AlarmLine" category="Layout" groupRefId="Size" groupOrder="1" default="600">
+				<StyleElement attribute="@include elemWidth($value)"/>
+				<Description>outer width of widget</Description>
+			</StyleProperty>
+			<StyleProperty name="height" type="Size" not_styleable="true" owner="widgets.brease.AlarmLine" category="Layout" groupRefId="Size" groupOrder="2" default="80">
+				<StyleElement attribute="@include elemHeight($value)"/>
+				<Description>outer height of widget</Description>
+			</StyleProperty>
+			<StyleProperty name="top" type="Integer" not_styleable="true" owner="brease.core.BaseWidget" category="Layout" groupRefId="Position" groupOrder="1">
+				<StyleElement attribute="@include elemTop($value)"/>
+				<Description>absolute position measured from top boundary of parent container</Description>
+			</StyleProperty>
+			<StyleProperty name="left" type="Integer" not_styleable="true" owner="brease.core.BaseWidget" category="Layout" groupRefId="Position" groupOrder="2">
+				<StyleElement attribute="@include elemLeft($value)"/>
+				<Description>absolute position measured from left boundary of parent container</Description>
+			</StyleProperty>
+			<StyleProperty name="zIndex" type="UInteger" not_styleable="true" owner="brease.core.BaseWidget" category="Layout" required="true">
+				<StyleElement attribute="z-index"/>
+				<Description>The zIndex property specifies the z-order of a widget and its childs.&lt;br/&gt;
+        When widgets overlap, z-order determines which one covers the other. A widget with a larger zIndex generally covers a widget with a lower one.&lt;br/&gt;
+        The zIndex must be unique within a content.&lt;br/&gt;				</Description>
+			</StyleProperty>
+			<StyleProperty name="minWidth" type="Size" not_styleable="true" default="0" category="Layout" groupRefId="Size" groupOrder="3">
+				<StyleElement attribute="@include elemMinWidth($value)"/>
+				<Description>minimum outer width of widget</Description>
+			</StyleProperty>
+			<StyleProperty name="maxWidth" type="Size" not_styleable="true" default="0" category="Layout" groupRefId="Size" groupOrder="4">
+				<StyleElement attribute="@include elemMaxWidth($value)"/>
+				<Description>maximum outer width of widget</Description>
+			</StyleProperty>
+			<StyleProperty name="minHeight" type="Size" not_styleable="true" default="0" category="Layout" groupRefId="Size" groupOrder="5">
+				<StyleElement attribute="@include elemMinHeight($value)"/>
+				<Description>minimum outer height of widget</Description>
+			</StyleProperty>
+			<StyleProperty name="maxHeight" type="Size" not_styleable="true" default="0" category="Layout" groupRefId="Size" groupOrder="6">
+				<StyleElement attribute="@include elemMaxHeight($value)"/>
+				<Description>maximum outer height of widget</Description>
+			</StyleProperty>
+			<StyleProperty name="borderStyle" type="BorderStyle" category="Appearance" default="solid">
+				<StyleElement selector="&amp;.breaseAlarmLine" attribute="border-style"/>
+				<Description>Widget border style</Description>
+			</StyleProperty>
+			<StyleProperty name="borderWidth" type="PixelValCollection" category="Appearance" default="1px">
+				<StyleElement selector="&amp;.breaseAlarmLine" attribute="border-width"/>
+				<Description>Widget border width</Description>
+			</StyleProperty>
+			<StyleProperty name="borderColor" type="ColorCollection" category="Appearance" default="#8b0000">
+				<StyleElement selector="&amp;.breaseAlarmLine" attribute="border-color"/>
+				<Description>Widget border color</Description>
+			</StyleProperty>
+			<StyleProperty name="cellBorderColor" type="ColorCollection" category="Appearance" default="#fff">
+				<StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper &gt; div" attribute="border-color"/>
+				<Description>Sets the border color of the individual cells. For further information, please see its type</Description>
+			</StyleProperty>
+			<StyleProperty name="cellBorderWidth" type="PixelValCollection" category="Appearance" default="0px">
+				<StyleElement selector="&amp;.breaseAlarmLine  .AlarmLineWrapper &gt; div" attribute="border-width"/>
+				<Description>Sets the border width of individual cells. For further information, please see its type</Description>
+			</StyleProperty>
+			<StyleProperty name="cellBorderStyle" type="BorderStyle" category="Appearance" default="none">
+				<StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper &gt; div" attribute="border-style"/>
+				<Description>Sets the border style of the individual cells. For further information, please see its type</Description>
+			</StyleProperty>
+			<StyleProperty name="cellPadding" category="Appearance" type="Padding" default="0px 12px">
+				<StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper &gt; div" attribute="padding"/>
+				<Description>Sets the padding of the individual cells. For further information, please see its type.</Description>
+			</StyleProperty>
+			<StyleProperty name="cellCornerRadius" type="PixelValCollection" category="Appearance" default="0px">
+				<StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper &gt; div" attribute="@include border-radius($value)"/>
+				<Description>Sets the radius of the widget rounded corners. For further information, please see its type</Description>
+			</StyleProperty>
+			<StyleProperty name="padding" category="Appearance" type="Padding" default="0px">
+				<StyleElement selector="&amp;.breaseAlarmLine" attribute="padding"/>
+				<Description>Sets the padding of the widget. For further information, please see its type.</Description>
+			</StyleProperty>
+			<StyleProperty name="backColor" type="Color" category="Appearance" default="transparent">
+				<StyleElement selector="&amp;.breaseAlarmLine" attribute="background-color"/>
+				<Description>Widget border color background color</Description>
+			</StyleProperty>
+			<StyleProperty name="backGroundGradient" type="Gradient" category="Appearance" groupOrder="1" default="">
+				<StyleElement selector="&amp;.breaseAlarmLine" attribute="@include backGroundGradient(&apos;$value&apos;)"/>
+				<Description>Sets the background gradient of the header</Description>
+			</StyleProperty>
+			<StyleProperty name="textColor" type="Color" category="Appearance" groupRefId="Rows" groupOrder="5" default="#333">
+				<StyleElement selector="&amp;.breaseAlarmLine  .AlarmLineWrapper &gt; div &gt; span" attribute="color"/>
+				<Description>Text color of list entries</Description>
+			</StyleProperty>
+			<StyleProperty name="textAlign" type="brease.enum.TextAlign" default="center" category="Appearance">
+				<StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper &gt; div" attribute="@include text-alignment($value)"/>
+				<Description>Alignment of the text in a cell</Description>
+			</StyleProperty>
+			<StyleProperty name="fontSize" type="PixelVal" category="Font" groupRefId="Rows" groupOrder="6" default="16px">
+				<StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper &gt; div" attribute="font-size"/>
+				<Description>Fontsize of list entries</Description>
+			</StyleProperty>
+			<StyleProperty name="fontName" category="Font" type="FontName" default="Arial">
+				<StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper &gt; div" attribute="font-family"/>
+				<Description>Fontname of the text</Description>
+			</StyleProperty>
+			<StyleProperty name="bold" type="Boolean" default="false" category="Font">
+				<StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper &gt; div" attribute="@include font-weight-bold($value)"/>
+				<Description>If true, the font style of the table is bold</Description>
+			</StyleProperty>
+			<StyleProperty name="italic" type="Boolean" default="false" category="Font">
+				<StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper &gt; div" attribute="@include font-style-italic($value)"/>
+				<Description>If true, the font style of the table is italic</Description>
+			</StyleProperty>
+			<StyleProperty name="margin" category="Layout" type="Margin" default="0px">
+				<StyleElement attribute="margin"/>
+				<Description>Margin of the Widget</Description>
+			</StyleProperty>
+			<StyleProperty name="opacity" type="Opacity" category="Appearance" default="1">
+				<StyleElement attribute="opacity"/>
+				<Description>Opacity of the widget</Description>
+			</StyleProperty>
+			<StyleProperty name="cornerRadius" type="PixelValCollection" category="Appearance" default="0px">
+				<StyleElement attribute="@include border-radius($value)"/>
+				<Description>Sets the radius of the widget rounded corners. For further information, please see its type</Description>
+			</StyleProperty>
+			<StyleProperty name="shadow" type="Shadow" category="Appearance" default="none">
+				<StyleElement attribute="@include box-shadow($value)"/>
+				<Description>Shadow of the Widget</Description>
+			</StyleProperty>
+			<StyleProperty name="imageWidth" type="ImageSize" not_styleable="true" category="Appearance" default="0">
+				<StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper &gt; div &gt; img" attribute="@include imageWidth($value)"/>
+				<StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper &gt; div &gt; svg" attribute="@include imageWidth($value)"/>
+				<Description>width of the image</Description>
+			</StyleProperty>
+			<StyleProperty name="imageHeight" type="ImageSize" not_styleable="true" category="Appearance" default="0">
+				<StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper &gt; div &gt; img" attribute="@include imageHeight($value)"/>
+				<StyleElement selector="&amp;.breaseAlarmLine .AlarmLineWrapper &gt; div &gt; svg" attribute="@include imageHeight($value)"/>
+				<Description>height of the image</Description>
+			</StyleProperty>
+		</StyleProperties>
+		<PropertyGroups>
+			<PropertyGroup name="Size" type="String" category="Layout">
+				<Description>outer height and width of widget</Description>
+			</PropertyGroup>
+			<PropertyGroup name="Position" type="String" category="Layout">
+				<Description>top and left of widget</Description>
+			</PropertyGroup>
+		</PropertyGroups>
+	<BindingTemplates>
+  
+</BindingTemplates>
+</Widget>
+</WidgetLibrary>

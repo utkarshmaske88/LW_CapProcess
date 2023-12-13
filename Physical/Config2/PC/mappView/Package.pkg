@@ -7,5 +7,8 @@
     <Object Type="File">AlarmsContent.binding</Object>
     <Object Type="File">UserMgtContent.eventbinding</Object>
     <Object Type="File">NavBarContent.eventbinding</Object>
+    <Object Type="File">ManualMode.eventbinding</Object>
+    <Object Type="File">ManualMode.binding</Object>
+    <Object Type="File">BodyContent.binding</Object>
   </Objects>
 </Package>

@@ -1,5 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio FileVersion="4.9"?>
 <Package SubType="MediaPackage" PackageType="MediaPackage" xmlns="http://br-automation.co.at/AS/Package">
-  <Objects />
+  <Objects>
+    <Object Type="File">login.png</Object>
+    <Object Type="File">soda.png</Object>
+    <Object Type="File">stop.png</Object>
+    <Object Type="File">adjust.png</Object>
+    <Object Type="File">alarm.png</Object>
+    <Object Type="File">check.png</Object>
+    <Object Type="File">checked.png</Object>
+    <Object Type="File">Estop.png</Object>
+    <Object Type="File">home.png</Object>
+    <Object Type="File">Logo.png</Object>
+    <Object Type="File">logout.png</Object>
+    <Object Type="File">play.png</Object>
+  </Objects>
 </Package>

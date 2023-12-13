@@ -16,7 +16,6 @@ ACTION LogoAxis:
 			iVl_OldVelocity:= BasicParameters.Velocity;
 			iFb_MpAxisBasic_0.Update:=FALSE ;
 		END_IF;
-		
 	END_IF;
 	//	iFb_MC_MoveVelocity_0.Acceleration := 2000;
 	//	iFb_MC_MoveVelocity_0.Deceleration := 2000;
@@ -33,9 +32,9 @@ ACTION LogoAxis:
 	
 	IF cmdStop=TRUE THEN
 		iFb_MpAxisBasic_0.Stop:=TRUE;
-		cmdStop:=FALSE;
 		IF iFb_MpAxisBasic_0.Stopped=TRUE THEN
 			iFb_MpAxisBasic_0.Stop:=FALSE;
+			cmdStop:=FALSE;
 		END_IF;
 	END_IF;
 		
@@ -46,7 +45,7 @@ ACTION LogoAxis:
 	CASE strStep OF
 		
 		enINITA:
-			
+			strStep := 	enSTARTA;
 		enSTARTA:
 			IF iFb_MpAxisBasic_0.Info.ReadyToPowerOn = TRUE THEN
 				strStep := enPOWER_ONA;
@@ -76,7 +75,8 @@ ACTION LogoAxis:
 			cmdPower := FALSE;
 			cmdMoveVelocity := FALSE;
 			cmdStop := FALSE;
-			cmdErrorReset;
+			
+			cmdErrorReset:=TRUE;
 			IF iFb_MpAxisBasic_0.Error = FALSE THEN;
 				strStep := enSTARTA;
 				cmdErrorReset := FALSE;

@@ -51,5 +51,15 @@
         <seg>isAdmin</seg>
       </tuv>
     </tu>
+    <tu tuid="9">
+      <tuv xml:lang="en">
+        <seg>Choose the Lane No.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="10">
+      <tuv xml:lang="en">
+        <seg>Select the Process</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

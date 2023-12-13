@@ -1,6 +1,10 @@
 VAR
 	iSortConv : SortBasicConv_typ;
+END_VAR
+VAR RETAIN
 	sSortConvStep : sStep_SortConv;
+END_VAR
+VAR
 	BasicParameters : MpAxisBasicParType;
 	iFb_MpAxisBasic_0 : MpAxisBasic;
 	cmdPower : BOOL;
@@ -14,4 +18,5 @@ VAR
 	cmdMoveVelocity_ACP10_MC : BOOL;
 	strStep : Step;
 	ERROR : BOOL;
+	iVl_OldVelocitySC : REAL;
 END_VAR

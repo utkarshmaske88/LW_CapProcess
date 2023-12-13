@@ -3,6 +3,6 @@
   <Assignments>
     <Assignment type="Content" baseContentRefId="NavBarContent" areaRefId="area1" />
     <Assignment type="Content" baseContentRefId="HeaderContent" areaRefId="area2" />
-    <Assignment type="Content" baseContentRefId="UserMgtContent" areaRefId="area3" />
+    <Assignment type="Content" baseContentRefId="ManualMode" areaRefId="area3" />
   </Assignments>
 </pdef:Page>

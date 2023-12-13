@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<StyleInformation name="widgets.brease.AlarmLineStyle" xmlns="http://www.br-automation.com/iat2014/widgetStyles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <StyleProperties>
+    <StyleProperty name="width" type="Size" not_styleable="true" default="600">
+      <StyleElement attribute="@include elemWidth($value)"></StyleElement>
+      <Description>outer width of widget</Description>
+    </StyleProperty>
+    <StyleProperty name="height" type="Size" not_styleable="true" default="80">
+      <StyleElement attribute="@include elemHeight($value)"></StyleElement>
+      <Description>outer height of widget</Description>
+    </StyleProperty>
+    <StyleProperty name="backColor" type="Color" category="Appearance" default="transparent" >
+			<StyleElement selector="&amp;.breaseAlarmLine.breaseAlarmLineStyle" attribute="@include importantBackColor($value)"></StyleElement>
+			<Description>
+        Widget border color background color
+			</Description>
+		</StyleProperty>
+    <StyleProperty name="backGroundGradient" type="Gradient" category="Appearance" groupOrder="1" default="">
+    <StyleElement selector="&amp;.breaseAlarmLine.breaseAlarmLineStyle" attribute="@include importantGradient($value)"></StyleElement>
+      <Description>
+        Sets the background gradient of the header
+      </Description>
+    </StyleProperty>
+    <StyleProperty name="textColor" type="Color" category="Appearance" groupRefId="Rows" groupOrder="5" default="#333">
+      <StyleElement selector="&amp;.breaseAlarmLine.breaseAlarmLineStyle  .AlarmLineWrapper > div > span" attribute="@include importantTextColor($value)"></StyleElement>
+      <Description>
+        Text color of list entries
+      </Description>
+    </StyleProperty>
+    <StyleProperty name="bold" type="Boolean" default="false" category="Font">
+      <StyleElement selector="&amp;.breaseAlarmLine.breaseAlarmLineStyle .AlarmLineWrapper > div" attribute="@include importantBoldText($value)"></StyleElement>
+      <Description>
+        If true, the font style of the table is bold
+      </Description>
+    </StyleProperty>
+    <StyleProperty name="italic" type="Boolean" default="false" category="Font">
+      <StyleElement selector="&amp;.breaseAlarmLine.breaseAlarmLineStyle .AlarmLineWrapper > div" attribute="@include importantItalicText($value)"></StyleElement>
+      <Description>
+        If true, the font style of the table is italic
+      </Description>
+    </StyleProperty>
+  </StyleProperties>
+</StyleInformation>

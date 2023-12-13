@@ -1,4 +1,6 @@
 VAR
 	iPickupArm : PickupArm_typ;
+END_VAR
+VAR RETAIN
 	sPArmStep : sStep_PArm;
 END_VAR
