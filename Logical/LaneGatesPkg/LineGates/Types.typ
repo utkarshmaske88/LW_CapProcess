@@ -5,6 +5,7 @@ TYPE
 		enWAIT,
 		enOPERATION,
 		enRUNNING,
+		enRESET,
 		enEXIT,
 		enERROR
 		);

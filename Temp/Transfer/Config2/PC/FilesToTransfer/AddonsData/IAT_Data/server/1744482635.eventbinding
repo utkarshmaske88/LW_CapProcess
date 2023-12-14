@@ -4,11 +4,22 @@
     <EventBinding id="NavBarContent.cmdHome.Click">
       <Source type="widgets.brease.ToggleButton.Event" event="Click" refId="NavBarContent_cmdHome" />
       <EventHandler>
-        <Action>
-          <Target type="clientSystem.Action">
-            <Method type="clientSystem.Action.LoadContentInArea"><Parameter name="contentId" xsi:type="ANY_STRING" value="BodyContent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /><Parameter name="pageId" xsi:type="ANY_STRING" value="MainPage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /><Parameter name="areaId" xsi:type="ANY_STRING" value="area3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /></Method>
-          </Target>
-        </Action>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target type="opcUa.NodeAction" refId="::AsGlobalPV:gManuelMode">
+                <Method type="opcUa.NodeAction.SetValueBool"><Parameter name="value" xsi:type="BOOL" value="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /></Method>
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target type="clientSystem.Action">
+                <Method type="clientSystem.Action.LoadContentInArea"><Parameter name="contentId" xsi:type="ANY_STRING" value="BodyContent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /><Parameter name="pageId" xsi:type="ANY_STRING" value="MainPage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /><Parameter name="areaId" xsi:type="ANY_STRING" value="area3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /></Method>
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
       </EventHandler>
     </EventBinding>
   </Content>
@@ -30,7 +41,7 @@
       <EventHandler>
         <Action>
           <Target type="clientSystem.Action">
-            <Method type="clientSystem.Action.LoadContentInArea"><Parameter name="contentId" xsi:type="ANY_STRING" value="AlarmsContent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /><Parameter name="pageId" xsi:type="ANY_STRING" value="MainPage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /><Parameter name="areaId" xsi:type="ANY_STRING" value="area3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /></Method>
+            <Method type="clientSystem.Action.LoadContentInArea"><Parameter name="contentId" xsi:type="ANY_STRING" value="SettingContent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /><Parameter name="pageId" xsi:type="ANY_STRING" value="MainPage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /><Parameter name="areaId" xsi:type="ANY_STRING" value="area3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /></Method>
           </Target>
         </Action>
       </EventHandler>

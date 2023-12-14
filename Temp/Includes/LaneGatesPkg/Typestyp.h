@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1702385683_12_
-#define _BUR_1702385683_12_
+#ifndef _BUR_1702452007_12_
+#define _BUR_1702452007_12_
 
 #include <bur/plctypes.h>
 
@@ -54,5 +54,5 @@ __asm__(".ascii \"iecfile \\\"Logical/LaneGatesPkg/Types.typ\\\" scope \\\"globa
 __asm__(".previous");
 
 
-#endif /* _BUR_1702385683_12_ */
+#endif /* _BUR_1702452007_12_ */
 

@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1702385683_9_
-#define _BUR_1702385683_9_
+#ifndef _BUR_1702452007_9_
+#define _BUR_1702452007_9_
 
 #include <bur/plctypes.h>
 
@@ -51,5 +51,5 @@ __asm__(".ascii \"iecfile \\\"Logical/LogoConvPkg/LogoTyp.typ\\\" scope \\\"glob
 __asm__(".previous");
 
 
-#endif /* _BUR_1702385683_9_ */
+#endif /* _BUR_1702452007_9_ */
 

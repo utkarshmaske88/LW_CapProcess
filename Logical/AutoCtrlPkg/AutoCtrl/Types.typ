@@ -6,12 +6,14 @@ TYPE
 		enSTART,
 		enCAPPUSH,
 		enPICKARM,
+		enPARMTOLOGO,
 		enLOGOCONV,
 		enLOGOTOSORT,
 		enSORTCONV,
 		enCLRDETECT,
 		enLANEGATE,
 		enRESET,
-		enERROR
+		enERROR,
+		enQSTOP
 		);
 END_TYPE

@@ -5,7 +5,7 @@
 }
 #ManualMode_ButtonBar1 {	@include elemWidth(129);
 }
-#ManualMode_ButtonBar1 {	@include elemHeight(214);
+#ManualMode_ButtonBar1 {	@include elemHeight(247);
 }
 #ManualMode_ButtonBar1 {	z-index: 0;
 }
@@ -93,9 +93,9 @@
 		background-color: rgba(241, 241, 241, 1);
 	}
 }
-#ManualMode_LogoConv {	@include elemTop(132);
+#ManualMode_LogoConv {	@include elemTop(168);
 }
-#ManualMode_LogoConv {	@include elemLeft(8);
+#ManualMode_LogoConv {	@include elemLeft(5);
 }
 #ManualMode_LogoConv {	@include elemAutoWidth(117);
 }
@@ -121,9 +121,9 @@
 		background-color: rgba(241, 241, 241, 1);
 	}
 }
-#ManualMode_SortConv {	@include elemTop(173);
+#ManualMode_SortConv {	@include elemTop(211);
 }
-#ManualMode_SortConv {	@include elemLeft(8);
+#ManualMode_SortConv {	@include elemLeft(6);
 }
 #ManualMode_SortConv {	@include elemAutoWidth(117);
 }
@@ -243,9 +243,9 @@
 		background-color: rgba(241, 241, 241, 1);
 	}
 }
-#ManualMode_ColorDct {	@include elemTop(369);
+#ManualMode_ColorDct {	@include elemTop(408);
 }
-#ManualMode_ColorDct {	@include elemLeft(559);
+#ManualMode_ColorDct {	@include elemLeft(561);
 }
 #ManualMode_ColorDct {	@include elemAutoWidth(117);
 }
@@ -301,9 +301,9 @@
 		stroke-width: 3px;
 	}
 }
-#ManualMode_CapPush1 {	@include elemTop(270);
+#ManualMode_CapPush1 {	@include elemTop(410);
 }
-#ManualMode_CapPush1 {	@include elemLeft(96);
+#ManualMode_CapPush1 {	@include elemLeft(64);
 }
 #ManualMode_CapPush1 {	@include elemAutoWidth(20);
 }
@@ -321,9 +321,9 @@
 }
 #ManualMode_CapPush1 {	@include border-radius(50px);
 }
-#ManualMode_PArm {	@include elemTop(270);
+#ManualMode_PArm {	@include elemTop(410);
 }
-#ManualMode_PArm {	@include elemLeft(152);
+#ManualMode_PArm {	@include elemLeft(141);
 }
 #ManualMode_PArm {	@include elemAutoWidth(20);
 }
@@ -341,9 +341,9 @@
 }
 #ManualMode_PArm {	@include border-radius(50px);
 }
-#ManualMode_LogoConv1 {	@include elemTop(270);
+#ManualMode_LogoConv1 {	@include elemTop(410);
 }
-#ManualMode_LogoConv1 {	@include elemLeft(208);
+#ManualMode_LogoConv1 {	@include elemLeft(218);
 }
 #ManualMode_LogoConv1 {	@include elemAutoWidth(20);
 }
@@ -361,9 +361,9 @@
 }
 #ManualMode_LogoConv1 {	@include border-radius(50px);
 }
-#ManualMode_ClrDtc {	@include elemTop(270);
+#ManualMode_ClrDtc {	@include elemTop(410);
 }
-#ManualMode_ClrDtc {	@include elemLeft(264);
+#ManualMode_ClrDtc {	@include elemLeft(295);
 }
 #ManualMode_ClrDtc {	@include elemAutoWidth(20);
 }
@@ -381,9 +381,9 @@
 }
 #ManualMode_ClrDtc {	@include border-radius(50px);
 }
-#ManualMode_LaneGate {	@include elemTop(270);
+#ManualMode_LaneGate {	@include elemTop(410);
 }
-#ManualMode_LaneGate {	@include elemLeft(320);
+#ManualMode_LaneGate {	@include elemLeft(372);
 }
 #ManualMode_LaneGate {	@include elemAutoWidth(20);
 }
@@ -400,4 +400,274 @@
 	}
 }
 #ManualMode_LaneGate {	@include border-radius(50px);
+}
+#ManualMode_CapPusH {	@include elemAutoHeight(30);
+}
+#ManualMode_CapPusH {	@include elemTop(438);
+}
+#ManualMode_CapPusH {	@include elemLeft(31);
+}
+#ManualMode_CapPusH {	@include elemAutoWidth(77);
+}
+#ManualMode_CapPusH {	z-index: 11;
+}
+#ManualMode_CapPusH {	@include text-alignment-all('left');
+}
+#ManualMode_PickArmS {	@include elemAutoHeight(30);
+}
+#ManualMode_PickArmS {	@include elemTop(438);
+}
+#ManualMode_PickArmS {	@include elemLeft(108);
+}
+#ManualMode_PickArmS {	@include elemAutoWidth(77);
+}
+#ManualMode_PickArmS {	z-index: 12;
+}
+#ManualMode_PickArmS {	@include text-alignment-all('left');
+}
+#ManualMode_SortConvS {	@include elemAutoHeight(30);
+}
+#ManualMode_SortConvS {	@include elemTop(438);
+}
+#ManualMode_SortConvS {	@include elemLeft(265);
+}
+#ManualMode_SortConvS {	@include elemAutoWidth(77);
+}
+#ManualMode_SortConvS {	z-index: 13;
+}
+#ManualMode_SortConvS {	@include text-alignment-all('left');
+}
+#ManualMode_LogoConvS {	@include elemAutoHeight(30);
+}
+#ManualMode_LogoConvS {	@include elemTop(438);
+}
+#ManualMode_LogoConvS {	@include elemLeft(185);
+}
+#ManualMode_LogoConvS {	@include elemAutoWidth(81);
+}
+#ManualMode_LogoConvS {	z-index: 14;
+}
+#ManualMode_LogoConvS {	@include text-alignment-all('left');
+}
+#ManualMode_LaningS {	@include elemAutoHeight(30);
+}
+#ManualMode_LaningS {	@include elemTop(438);
+}
+#ManualMode_LaningS {	@include elemLeft(342);
+}
+#ManualMode_LaningS {	@include elemAutoWidth(77);
+}
+#ManualMode_LaningS {	z-index: 15;
+}
+#ManualMode_LaningS {	@include text-alignment-all('left');
+}
+#ManualMode_StatusS {	@include elemAutoHeight(30);
+}
+#ManualMode_StatusS {	@include elemTop(475);
+}
+#ManualMode_StatusS {	@include elemLeft(184);
+}
+#ManualMode_StatusS {	@include elemAutoWidth(77);
+}
+#ManualMode_StatusS {	z-index: 16;
+}
+#ManualMode_StatusS {	@include text-alignment-all('left');
+}
+#ManualMode_StatusS {	span {
+		font-family: Arial Unicode;
+	}
+}
+#ManualMode_StatusS {	font-size: 18px;
+}
+#ManualMode_StatusS {	@include font-weight-bold(true);
+}
+#ManualMode_TXTmanualMode {	@include elemTop(17);
+}
+#ManualMode_TXTmanualMode {	@include elemLeft(18);
+}
+#ManualMode_TXTmanualMode {	@include elemAutoWidth(182);
+}
+#ManualMode_TXTmanualMode {	@include elemAutoHeight(26);
+}
+#ManualMode_TXTmanualMode {	z-index: 17;
+}
+#ManualMode_TXTmanualMode {	@include text-alignment-all('left');
+}
+#ManualMode_TXTmanualMode {	font-size: 20px;
+}
+#ManualMode_TXTmanualMode {	@include font-weight-bold(true);
+}
+#ManualMode_CapisAvl {	@include elemAutoHeight(30);
+}
+#ManualMode_CapisAvl {	@include elemTop(160);
+}
+#ManualMode_CapisAvl {	@include elemLeft(215);
+}
+#ManualMode_CapisAvl {	@include elemAutoWidth(158);
+}
+#ManualMode_CapisAvl {	z-index: 18;
+}
+#ManualMode_CapisAvl {	@include border-radius(3px);
+}
+#ManualMode_CapisAvl {	background-color: rgba(205, 92, 92, 1);
+}
+#ManualMode_CapisAvl {	& span {
+		color: rgba(255, 255, 255, 1);
+	}
+}
+#ManualMode_CapisAvl {	@include font-weight-bold(true);
+}
+#ManualMode_ButtonBar2 {	@include elemWidth(200);
+}
+#ManualMode_ButtonBar2 {	@include elemTop(58);
+}
+#ManualMode_ButtonBar2 {	@include elemLeft(12);
+}
+#ManualMode_ButtonBar2 {	@include elemHeight(257);
+}
+#ManualMode_ButtonBar2 {	z-index: 19;
+}
+#ManualMode_Start {	@include elemTop(6);
+}
+#ManualMode_Start {	@include elemLeft(42);
+}
+#ManualMode_Start {	@include elemAutoWidth(121);
+}
+#ManualMode_Start {	@include elemAutoHeight(58);
+}
+#ManualMode_Start {	z-index: 0;
+}
+#ManualMode_Start {	@include border-radius(5px);
+}
+#ManualMode_Start {	&:not(.disabled):not(.active):not(.checked) {
+		background-color: rgba(128, 255, 128, 1);
+	}
+}
+#ManualMode_Start {	&:not(.disabled):not(.checked) {
+		border-color: rgba(0, 0, 0, 1);
+	}
+}
+#ManualMode_Start {	span {
+		font-size: 18px;
+	}
+}
+#ManualMode_Start {	span {
+		font-family: Arial Unicode;
+	}
+}
+#ManualMode_Start {	span {
+		@include font-weight-bold(true);
+	}
+}
+#ManualMode_Start {	&.checked:not(.active):not(.disabled) {
+		background-color: rgba(128, 255, 128, 1);
+	}
+}
+#ManualMode_Stop {	@include elemTop(99);
+}
+#ManualMode_Stop {	@include elemLeft(42);
+}
+#ManualMode_Stop {	@include elemAutoWidth(121);
+}
+#ManualMode_Stop {	@include elemAutoHeight(58);
+}
+#ManualMode_Stop {	z-index: 1;
+}
+#ManualMode_Stop {	@include border-radius(5px);
+}
+#ManualMode_Stop {	&:not(.disabled):not(.active):not(.checked) {
+		background-color: rgba(255, 192, 192, 1);
+	}
+}
+#ManualMode_Stop {	&:not(.disabled):not(.checked) {
+		border-color: rgba(0, 0, 0, 1);
+	}
+}
+#ManualMode_Stop {	span {
+		font-size: 18px;
+	}
+}
+#ManualMode_Stop {	span {
+		font-family: Arial Unicode;
+	}
+}
+#ManualMode_Stop {	span {
+		@include font-weight-bold(true);
+	}
+}
+#ManualMode_Stop {	&.checked:not(.active):not(.disabled) {
+		background-color: rgba(255, 128, 128, 1);
+	}
+}
+#ManualMode_estop {	@include elemTop(192);
+}
+#ManualMode_estop {	@include elemLeft(42);
+}
+#ManualMode_estop {	@include elemAutoWidth(121);
+}
+#ManualMode_estop {	@include elemAutoHeight(58);
+}
+#ManualMode_estop {	z-index: 2;
+}
+#ManualMode_estop {	@include border-radius(5px);
+}
+#ManualMode_estop {	&:not(.disabled):not(.active):not(.checked) {
+		background-color: rgba(255, 0, 0, 1);
+	}
+}
+#ManualMode_estop {	&:not(.disabled):not(.checked) {
+		border-color: rgba(0, 0, 0, 1);
+	}
+}
+#ManualMode_estop {	span {
+		font-size: 18px;
+	}
+}
+#ManualMode_estop {	span {
+		font-family: Arial Unicode;
+	}
+}
+#ManualMode_estop {	span {
+		@include font-weight-bold(true);
+	}
+}
+#ManualMode_estop {	&.checked:not(.active):not(.disabled) {
+		background-color: rgba(255, 0, 0, 1);
+	}
+}
+#ManualMode_Errorreset {	@include elemTop(344);
+}
+#ManualMode_Errorreset {	@include elemLeft(50);
+}
+#ManualMode_Errorreset {	@include elemAutoWidth(129);
+}
+#ManualMode_Errorreset {	@include elemAutoHeight(58);
+}
+#ManualMode_Errorreset {	z-index: 20;
+}
+#ManualMode_Errorreset {	@include border-radius(5px);
+}
+#ManualMode_Errorreset {	&:not(.disabled):not(.active):not(.checked) {
+		background-color: rgba(192, 255, 255, 1);
+	}
+}
+#ManualMode_Errorreset {	&:not(.disabled):not(.checked) {
+		border-color: rgba(0, 0, 0, 1);
+	}
+}
+#ManualMode_Errorreset {	span {
+		font-size: 18px;
+	}
+}
+#ManualMode_Errorreset {	span {
+		font-family: Arial Unicode;
+	}
+}
+#ManualMode_Errorreset {	span {
+		@include font-weight-bold(true);
+	}
+}
+#ManualMode_Errorreset {	&.checked:not(.active):not(.disabled) {
+		background-color: rgba(192, 255, 255, 1);
+	}
 }

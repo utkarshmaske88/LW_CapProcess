@@ -17,6 +17,22 @@ ACTION SortAxisA:
 			iFb_MpAxisBasic_0.Update:=FALSE ;
 		END_IF;
 	END_IF;
+	
+	IF iVl_OldAcc<> BasicParameters.Acceleration THEN
+		iFb_MpAxisBasic_0.Update:=TRUE ;
+		IF	iFb_MpAxisBasic_0.UpdateDone=TRUE THEN
+			iVl_OldAcc:= BasicParameters.Acceleration;
+			iFb_MpAxisBasic_0.Update:=FALSE ;
+		END_IF;
+	END_IF;
+	
+	IF iVl_OldAccNeg<> BasicParameters.Deceleration THEN
+		iFb_MpAxisBasic_0.Update:=TRUE ;
+		IF	iFb_MpAxisBasic_0.UpdateDone=TRUE THEN
+			iVl_OldAccNeg:= BasicParameters.Deceleration;
+			iFb_MpAxisBasic_0.Update:=FALSE ;
+		END_IF;
+	END_IF;
 	//	iFb_MC_MoveVelocity_0.Acceleration := 2000;
 	//	iFb_MC_MoveVelocity_0.Deceleration := 2000;
 	

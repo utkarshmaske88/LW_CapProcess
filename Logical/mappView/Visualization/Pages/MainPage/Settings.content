@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="SettingContent" height="518" width="688" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.NumericInput" id="LogoConvSpeed" top="14" left="573" zIndex="0" maxValue="5000" minValue="1000" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="SortConvSpeed" top="77" left="573" zIndex="1" maxValue="5000" minValue="1000" />
+    <Widget xsi:type="widgets.brease.Label" id="LogoCSpd" top="16" left="290" width="253" zIndex="2" text="$IAT/TextSystem/19" />
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="79" left="290" width="253" zIndex="3" text="$IAT/TextSystem/20" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="LogoConvAcc" top="141" left="573" zIndex="4" maxValue="1000" minValue="200" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="SortConvAcc" top="204" left="573" zIndex="5" maxValue="1000" minValue="200" />
+    <Widget xsi:type="widgets.brease.Label" id="LogoCAcc" top="143" left="290" width="253" zIndex="6" text="$IAT/TextSystem/21" />
+    <Widget xsi:type="widgets.brease.Label" id="sortCA" top="206" left="290" width="253" zIndex="7" text="$IAT/TextSystem/22" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="LogoConvDecc" top="263" left="573" zIndex="8" maxValue="1000" minValue="200" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="SortConvAcc1" top="326" left="573" zIndex="9" maxValue="1000" minValue="200" />
+    <Widget xsi:type="widgets.brease.Label" id="LogoCNAcc" top="265" left="290" width="253" zIndex="10" text="$IAT/TextSystem/26" />
+    <Widget xsi:type="widgets.brease.Label" id="sortCNAcc" top="328" left="290" width="253" zIndex="11" text="$IAT/TextSystem/27" />
+  </Widgets>
+</Content>

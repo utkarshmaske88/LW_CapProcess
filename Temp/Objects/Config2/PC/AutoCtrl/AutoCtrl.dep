@@ -2,8 +2,8 @@ $(AS_PROJECT_PATH)/Logical/Libraries/sys_lib/sys_lib.fun
 $(AS_PROJECT_PATH)/Logical/Libraries/standard/standard.fun
 $(AS_PROJECT_PATH)/Logical/AutoCtrlPkg/AutoCtrl/Variables.var
 $(AS_PROJECT_PATH)/Logical/AutoCtrlPkg/AutoCtrl/Types.typ
-$(AS_PROJECT_PATH)/Logical/ClrDetectPkg/ClrDetTyp.typ
 $(AS_PROJECT_PATH)/Logical/Global.var
+$(AS_PROJECT_PATH)/Logical/ClrDetectPkg/ClrDetTyp.typ
 $(AS_PROJECT_PATH)/Logical/Global.typ
 $(AS_PROJECT_PATH)/Logical/PickupArmPkg/Pickuptyp.typ
 $(AS_PROJECT_PATH)/Logical/LaneGatesPkg/Types.typ

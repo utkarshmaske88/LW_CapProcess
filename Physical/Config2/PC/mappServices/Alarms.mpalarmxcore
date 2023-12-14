@@ -73,6 +73,12 @@
         <Property ID="Severity" Value="100" />
         <Selector ID="Behavior" Value="PersistentAlarm" />
       </Group>
+      <Group ID="[9]">
+        <Property ID="Name" Value="EStopAuto" />
+        <Property ID="Message" Value="Emergency stop is pressed" />
+        <Property ID="Severity" Value="100" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
     </Group>
   </Element>
   <Element ID="gAlarmXCore_1" Type="mpalarmxcore" />

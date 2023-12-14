@@ -7,7 +7,7 @@ ACTION AlarmsCD:
 		MpAlarmXSet(gAlarmXCore, 'EStopCD');
 		iClrDetect.Status.Error:=TRUE;
 		IF MpAlarmXCheckReaction(gAlarmXCore, 'EStop') THEN
-			sClrDetectStep:=enERROR;
+		//	sClrDetectStep:=enERROR;
 		END_IF
 	ELSE
 		MpAlarmXReset(gAlarmXCore, 'EStopCD');

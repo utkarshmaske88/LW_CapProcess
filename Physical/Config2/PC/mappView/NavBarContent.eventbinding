@@ -4,11 +4,22 @@
     <EventBinding id="NavBarContent.cmdHome.Click">
       <Source xsi:type="widgets.brease.ToggleButton.Event" contentRefId="NavBarContent" widgetRefId="cmdHome" event="Click" />
       <EventHandler>
-        <Action>
-          <Target xsi:type="clientSystem.Action">
-            <Method xsi:type="clientSystem.Action.LoadContentInArea" contentId="BodyContent" pageId="MainPage" areaId="area3" />
-          </Target>
-        </Action>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gManuelMode">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="clientSystem.Action">
+                <Method xsi:type="clientSystem.Action.LoadContentInArea" contentId="BodyContent" pageId="MainPage" areaId="area3" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
       </EventHandler>
     </EventBinding>
     <EventBinding id="EventBinding_1">
@@ -26,7 +37,7 @@
       <EventHandler>
         <Action>
           <Target xsi:type="clientSystem.Action">
-            <Method xsi:type="clientSystem.Action.LoadContentInArea" contentId="AlarmsContent" pageId="MainPage" areaId="area3" />
+            <Method xsi:type="clientSystem.Action.LoadContentInArea" contentId="SettingContent" pageId="MainPage" areaId="area3" />
           </Target>
         </Action>
       </EventHandler>

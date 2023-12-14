@@ -1,5 +1,25 @@
 WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=PickupArm 
-Position X=0 Y=0 Width=0 Height=0 TabWidth Name=178 Type=0 Scope=0 Force=0 Index=0 ASCIIString=0
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=137 Type=0 Scope=0 Force=0 Index=9 ASCIIString=0
                                     name                                     type force                                                            value level type len format place expand specs
-                               sPArmStep                                     DINT    0 "                                                               0"    0    4    1   10    1    0 e,0,enWA
+                              iPickupArm                            PickupArm_typ    0 "                                                               *"    0   24    1    0    1    1         
+                                     DOs                                  DOs_typ    0 "                                                               *"    1   24    1    0    0    1         
+                                 PArmLFR                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
+                                 PArmLBK                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                           CapGripVaccum                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                     Cmd                              PArmCmd_typ    0 "                                                               *"    1   24    1    0    0    1         
+                                   Start                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                    Stop                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                   Estop                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                              ErrorReset                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                  Status                           PArmStatus_typ    0 "                                                               *"    1   24    1    0    0    1         
+                                 Running                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
+                               PickingUp                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                Dropping                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                 Holding                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                   Error                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                     DIs                                  DIs_typ    0 "                                                               *"    1   24    1    0    0    1         
+                                PArm_FWD                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
+                                PArm_BWD                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                         CapGripper_PICK                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                               sPArmStep                                     DINT    0 "                                                               1"    0    4    1   10    1    0 e,0,enWA
 

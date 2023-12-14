@@ -7,11 +7,13 @@
     <BindingsSet refId="-1275084005" />
     <BindingsSet refId="-2003565413" />
     <BindingsSet refId="-486405665" />
+    <BindingsSet refId="1090969177" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="-1442750172" />
     <EventBindingsSet refId="1744482635" />
     <EventBindingsSet refId="1484524715" />
+    <EventBindingsSet refId="2071993879" />
   </EventBindingsSets>
   <Dialogs />
   <Contents>
@@ -22,6 +24,7 @@
     <Content refId="UserMgtContent" />
     <Content refId="Diagnostic" />
     <Content refId="ManualMode" />
+    <Content refId="SettingContent" />
   </Contents>
   <SnippetsSets />
   <VariablesSets />

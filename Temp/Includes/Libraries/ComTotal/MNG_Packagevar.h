@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1702385683_6_
-#define _BUR_1702385683_6_
+#ifndef _BUR_1702452007_6_
+#define _BUR_1702452007_6_
 
 #include <bur/plctypes.h>
 
@@ -34,5 +34,5 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/ComTotal/MNG_Package.var\\\" sco
 __asm__(".previous");
 
 
-#endif /* _BUR_1702385683_6_ */
+#endif /* _BUR_1702452007_6_ */
 

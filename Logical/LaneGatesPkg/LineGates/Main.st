@@ -7,13 +7,15 @@ END_PROGRAM
 PROGRAM _CYCLIC
 	(* Insert code here *)
 	IF iLineGates.Status.Error=TRUE THEN
-	
+		sLineGateStep:=enERROR;
 	END_IF;
 	
 	CASE sLineGateStep OF
 		//waiting for the start
 		enWAIT:
 			iLineGates.Status.Running:=FALSE;
+			iLineGates.DOs.LG1FWD:=FALSE;
+			iLineGates.DOs.LW2FWD:=FALSE;
 			IF iLineGates.Cmd.Start=TRUE THEN
 				iLineGates.Cmd.Start:=FALSE;
 				iLineGates.Status.Running:=TRUE;
@@ -36,7 +38,7 @@ PROGRAM _CYCLIC
 					IF iLineGates.DIs.LG2_LFR=TRUE THEN
 						sLineGateStep:=enRUNNING;
 					END_IF;
-				ELSE
+				ELSIF  gColorCap="RED" THEN
 					iLineGates.DOs.LG1FWD:=FALSE;
 					iLineGates.DOs.LW2FWD:=FALSE;
 					sLineGateStep:=enRUNNING;
@@ -51,19 +53,26 @@ PROGRAM _CYCLIC
 			IF iLineGates.DIs.LaneTopIR=TRUE THEN
 				iLineGates.DOs.LG1FWD:=FALSE;
 				iLineGates.DOs.LW2FWD:=FALSE;
+				sLineGateStep:=enWAIT;
+				//sLineGateStep:=enRESET;
 			END_IF;
 		
+			//enRESET:
 			
-			IF iLineGates.DIs.LG1_LBK=TRUE AND  iLineGates.DIs.LG2_LBK=TRUE THEN
-				sLineGateStep:=enWAIT;
-				iLineGates.Status.Running:=FALSE;
-			END_IF;
+			//iLineGates.DOs.LG1FWD:=FALSE;
+			//iLineGates.DOs.LW2FWD:=FALSE;
+			//			IF iLineGates.DIs.LG1_LBK=TRUE AND  iLineGates.DIs.LG2_LBK=TRUE THEN
+		//	sLineGateStep:=enWAIT;
+			//				iLineGates.Status.Running:=FALSE;
+			//			END_IF;
 		
 			//error mode
 		enERROR:
 			iLineGates.DOs.LG1FWD:=FALSE;
 			iLineGates.DOs.LW2FWD:=FALSE;
 			IF iLineGates.Cmd.ErrorReset=TRUE THEN
+				iLineGates.Status.Error:=FALSE;
+				iLineGates.Status.Running:=FALSE;
 				iLineGates.Cmd.ErrorReset:=FALSE;
 				sLineGateStep:=enWAIT;	
 			END_IF;

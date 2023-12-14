@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1702385683_7_
-#define _BUR_1702385683_7_
+#ifndef _BUR_1702452007_7_
+#define _BUR_1702452007_7_
 
 #include <bur/plctypes.h>
 
@@ -54,5 +54,5 @@ __asm__(".ascii \"iecfile \\\"Logical/CapPushPkg/CapPushtyp.typ\\\" scope \\\"gl
 __asm__(".previous");
 
 
-#endif /* _BUR_1702385683_7_ */
+#endif /* _BUR_1702452007_7_ */
 

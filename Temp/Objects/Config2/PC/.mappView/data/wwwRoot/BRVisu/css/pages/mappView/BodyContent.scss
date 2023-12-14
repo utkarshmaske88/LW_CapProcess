@@ -187,9 +187,9 @@
 		stroke-width: 3px;
 	}
 }
-#BodyContent_CapPush {	@include elemTop(254);
+#BodyContent_CapPush {	@include elemTop(320);
 }
-#BodyContent_CapPush {	@include elemLeft(114);
+#BodyContent_CapPush {	@include elemLeft(68);
 }
 #BodyContent_CapPush {	@include elemAutoWidth(20);
 }
@@ -207,9 +207,9 @@
 }
 #BodyContent_CapPush {	@include border-radius(50px);
 }
-#BodyContent_PArm {	@include elemTop(254);
+#BodyContent_PArm {	@include elemTop(319);
 }
-#BodyContent_PArm {	@include elemLeft(170);
+#BodyContent_PArm {	@include elemLeft(144);
 }
 #BodyContent_PArm {	@include elemAutoWidth(20);
 }
@@ -227,9 +227,9 @@
 }
 #BodyContent_PArm {	@include border-radius(50px);
 }
-#BodyContent_LogoConv {	@include elemTop(254);
+#BodyContent_LogoConv {	@include elemTop(319);
 }
-#BodyContent_LogoConv {	@include elemLeft(226);
+#BodyContent_LogoConv {	@include elemLeft(220);
 }
 #BodyContent_LogoConv {	@include elemAutoWidth(20);
 }
@@ -247,9 +247,9 @@
 }
 #BodyContent_LogoConv {	@include border-radius(50px);
 }
-#BodyContent_ClrDtc {	@include elemTop(254);
+#BodyContent_ClrDtc {	@include elemTop(319);
 }
-#BodyContent_ClrDtc {	@include elemLeft(282);
+#BodyContent_ClrDtc {	@include elemLeft(296);
 }
 #BodyContent_ClrDtc {	@include elemAutoWidth(20);
 }
@@ -267,9 +267,9 @@
 }
 #BodyContent_ClrDtc {	@include border-radius(50px);
 }
-#BodyContent_LaneGate {	@include elemTop(254);
+#BodyContent_LaneGate {	@include elemTop(318);
 }
-#BodyContent_LaneGate {	@include elemLeft(338);
+#BodyContent_LaneGate {	@include elemLeft(372);
 }
 #BodyContent_LaneGate {	@include elemAutoWidth(20);
 }
@@ -286,4 +286,120 @@
 	}
 }
 #BodyContent_LaneGate {	@include border-radius(50px);
+}
+#BodyContent_CapPusH {	@include elemAutoHeight(30);
+}
+#BodyContent_CapPusH {	@include elemTop(353);
+}
+#BodyContent_CapPusH {	@include elemLeft(36);
+}
+#BodyContent_CapPusH {	@include elemAutoWidth(77);
+}
+#BodyContent_CapPusH {	z-index: 10;
+}
+#BodyContent_CapPusH {	@include text-alignment-all('left');
+}
+#BodyContent_PickArmS {	@include elemAutoHeight(30);
+}
+#BodyContent_PickArmS {	@include elemTop(353);
+}
+#BodyContent_PickArmS {	@include elemLeft(113);
+}
+#BodyContent_PickArmS {	@include elemAutoWidth(77);
+}
+#BodyContent_PickArmS {	z-index: 11;
+}
+#BodyContent_PickArmS {	@include text-alignment-all('left');
+}
+#BodyContent_SortConvS {	@include elemAutoHeight(30);
+}
+#BodyContent_SortConvS {	@include elemTop(353);
+}
+#BodyContent_SortConvS {	@include elemLeft(270);
+}
+#BodyContent_SortConvS {	@include elemAutoWidth(77);
+}
+#BodyContent_SortConvS {	z-index: 12;
+}
+#BodyContent_SortConvS {	@include text-alignment-all('left');
+}
+#BodyContent_LogoConvS {	@include elemAutoHeight(30);
+}
+#BodyContent_LogoConvS {	@include elemTop(353);
+}
+#BodyContent_LogoConvS {	@include elemLeft(190);
+}
+#BodyContent_LogoConvS {	@include elemAutoWidth(81);
+}
+#BodyContent_LogoConvS {	z-index: 13;
+}
+#BodyContent_LogoConvS {	@include text-alignment-all('left');
+}
+#BodyContent_LaningS {	@include elemAutoHeight(30);
+}
+#BodyContent_LaningS {	@include elemTop(353);
+}
+#BodyContent_LaningS {	@include elemLeft(347);
+}
+#BodyContent_LaningS {	@include elemAutoWidth(77);
+}
+#BodyContent_LaningS {	z-index: 14;
+}
+#BodyContent_LaningS {	@include text-alignment-all('left');
+}
+#BodyContent_StatusS {	@include elemAutoHeight(30);
+}
+#BodyContent_StatusS {	@include elemTop(390);
+}
+#BodyContent_StatusS {	@include elemLeft(189);
+}
+#BodyContent_StatusS {	@include elemAutoWidth(77);
+}
+#BodyContent_StatusS {	z-index: 15;
+}
+#BodyContent_StatusS {	@include text-alignment-all('left');
+}
+#BodyContent_StatusS {	span {
+		font-family: Arial Unicode;
+	}
+}
+#BodyContent_StatusS {	font-size: 18px;
+}
+#BodyContent_StatusS {	@include font-weight-bold(true);
+}
+#BodyContent_ManualMode {	@include elemTop(357);
+}
+#BodyContent_ManualMode {	@include elemLeft(519);
+}
+#BodyContent_ManualMode {	@include elemAutoWidth(125);
+}
+#BodyContent_ManualMode {	@include elemAutoHeight(52);
+}
+#BodyContent_ManualMode {	z-index: 16;
+}
+#BodyContent_ManualMode {	@include border-radius(5px);
+}
+#BodyContent_ManualMode {	&:not(.disabled):not(.active):not(.checked) {
+		background-color: rgba(255, 255, 255, 1);
+	}
+}
+#BodyContent_ManualMode {	&:not(.disabled):not(.active):not(.checked) {
+		border-color: rgba(128, 0, 0, 1);
+	}
+}
+#BodyContent_ManualMode {	span {
+		font-size: 15px;
+	}
+}
+#BodyContent_ManualMode {	span {
+		font-family: Arial Unicode;
+	}
+}
+#BodyContent_ManualMode {	span {
+		@include font-weight-bold(true);
+	}
+}
+#BodyContent_ManualMode {	span {
+		@include font-style-italic(false);
+	}
 }

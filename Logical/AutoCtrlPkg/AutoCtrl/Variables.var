@@ -28,4 +28,7 @@ VAR
 	pLineGate : REFERENCE TO LineGates_typ;
 	iTimeOut : TON;
 	iMi_MoveText : WSTRING[80];
+	iMi_QuickStop : BOOL;
+	iVi_CurrentState : Step_AutoCtrl;
+	iMi_ResumeQS : BOOL;
 END_VAR

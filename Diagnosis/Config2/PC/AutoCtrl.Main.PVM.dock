@@ -1,55 +1,66 @@
 WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=AutoCtrl 
-Position X=0 Y=0 Width=0 Height=0 TabWidth Name=169 Type=0 Scope=0 Force=0 Index=76 ASCIIString=0
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=103 Type=0 Scope=0 Force=0 Index=3 ASCIIString=0
                                     name                                     type force                                                            value level type len format place expand specs
-                                iTimeOut                                      TON    0 "                                                               *"    0   24    1    0    1    1         
-                                      IN                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
-                                      PT                                     TIME    0 "                                                   T#01h_56m_40s"    1   12    1    1    0    0         
-                                       Q                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
-                                      ET                                     TIME    0 "                                                 T#01m_39s_970ms"    1   12    1    1    0    0         
-                               StartTime                                     TIME    0 "                                                 T#22m_55s_610ms"    1   12    1    1    0    0         
-                                       M                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
-                                 Restart                                    UDINT    0 "                                                               5"    1    7    1   10    0    0         
-                               sAutoStep                                     DINT    0 "                                                               3"    0    4    1   10    1    0 e,0,enWA
-
-                             gManuelMode                                     BOOL    0 "                                                           FALSE"    0    1    1    2    0    0         
                                 gMainCmd                             gMainCmd_Str    0 "                                                               *"    0   24    1    0    0    1         
                                     Stop                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
                                    EStop                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
                               ErrorReset                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
                                    Start                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
-                               pLogoConv                             LogoConv_typ    0 "                                                               *"    0   24    1    0    2    1         
-                                     DIs                              LogoConvDIs    0 "                                                               *"    1   24    1    0    0    1         
-                        LogoConvStart_IR                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
-                         LogoConvExit_IR                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
-                              LogoActPos                                     REAL    0 "                                                             0.0"    2    8    1   10    0    0         
-                                     AOs                              LogoConvAOs    0 "                                                               *"    1   24    1    0    0    1         
-                           LogoConvSpeed                                     REAL    0 "                                                             0.0"    2    8    1   10    0    0         
-                                     Cmd                              LogoConvCmd    0 "                                                               *"    1   24    1    0    0    1         
-                                   Start                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
-                                    Stop                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
-                                   Estop                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
-                              ErrorReset                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
-                                  Status                           LogoConvStatus    0 "                                                               *"    1   24    1    0    0    0         
-                                 Running                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
-                                   Error                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
-                              pClrDetect                            ClrDetect_typ    0 "                                                               *"    0   24    1    0    2    0         
-                                     DIs                          DIClrDetect_typ    0 "                                                               *"    1   24    1    0    0    0         
-                        ColorDetectionIR                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
-                      ColorDtectNotBlack                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
-                      ColorDtectMetallic                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
-                                     DOs                          DOClrDetect_typ    0 "                                                               *"    1   24    1    0    0    0         
-                           CapStopperFWD                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
-                                     Cmd                         CmdClrDetect_typ    0 "                                                               *"    1   24    1    0    0    0         
+                               pLogoConv                             LogoConv_typ    0 "                                                               *"    0   24    1    0    2    0         
+                                     DIs                              LogoConvDIs    0 "                                                               *"    1   24    1    0    0    0         
+                        LogoConvStart_IR                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                         LogoConvExit_IR                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                              LogoActPos                                     REAL    0 "                                                               *"    2    8    1   10    0    0         
+                                     AOs                              LogoConvAOs    0 "                                                               *"    1   24    1    0    0    0         
+                           LogoConvSpeed                                     REAL    0 "                                                               *"    2    8    1   10    0    0         
+                                     Cmd                              LogoConvCmd    0 "                                                               *"    1   24    1    0    0    0         
                                    Start                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
                                     Stop                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
                                    Estop                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
                               ErrorReset                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
-                                  Status                      StatusClrDetect_typ    0 "                                                               *"    1   24    1    0    0    0         
+                                  Status                           LogoConvStatus    0 "                                                               *"    1   24    1    0    0    0         
                                  Running                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
                                    Error                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
-                                iNoOfRed                                    USINT    0 "                                                               *"    2    5    1   10    0    0         
-                              iNoOfBlack                                    USINT    0 "                                                               *"    2    5    1   10    0    0         
-                           iNoOfMetallic                                    USINT    0 "                                                               *"    2    5    1   10    0    0         
+                               sAutoStep                                     DINT    0 "                                                               4"    0    4    1   10    1    0 e,0,enWA
+
+                              pPickupArm                            PickupArm_typ    0 "                                                               *"    0   24    1    0    2    0         
+                                     DOs                                  DOs_typ    0 "                                                               *"    1   24    1    0    0    0         
+                                 PArmLFR                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                 PArmLBK                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                           CapGripVaccum                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                     Cmd                              PArmCmd_typ    0 "                                                               *"    1   24    1    0    0    0         
+                                   Start                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                    Stop                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                   Estop                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                              ErrorReset                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                  Status                           PArmStatus_typ    0 "                                                               *"    1   24    1    0    0    0         
+                                 Running                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                               PickingUp                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                Dropping                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                 Holding                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                   Error                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                     DIs                                  DIs_typ    0 "                                                               *"    1   24    1    0    0    0         
+                                PArm_FWD                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                PArm_BWD                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                         CapGripper_PICK                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                           iMi_QuickStop                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                             gManuelMode                                     BOOL    0 "                                                            TRUE"    0    1    1    2    0    0         
+                            iMi_ResumeQS                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                        iVi_CurrentState                                     DINT    0 "                                                               3"    0    4    1   10    1    0 e,0,enWA
+
+                               pSortConv                        SortBasicConv_typ    0 "                                                               *"    0   24    1    0    2    0         
+                                     DIs                     SortBasicConvDIs_typ    0 "                                                               *"    1   24    1    0    0    0         
+                   SortBasicConvStart_IR                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                     AOs                     SortBasicConvAOs_typ    0 "                                                               *"    1   24    1    0    0    0         
+                      SortBasicConvSpeed                                     REAL    0 "                                                               *"    2    8    1   10    0    0         
+                                  Status                  SortBasicConvStatus_typ    0 "                                                               *"    1   24    1    0    0    0         
+                                 Running                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                   Error                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                     Cmd                     SortBasicConvCmd_typ    0 "                                                               *"    1   24    1    0    0    0         
+                                   Start                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                    Stop                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                   Estop                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                              ErrorReset                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
                                 pCapPush                              CapPush_typ    0 "                                                               *"    0   24    1    0    2    0         
                                      Cmd                           CmdCapPush_typ    0 "                                                               *"    1   24    1    0    0    0         
                                    Start                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
@@ -68,23 +79,47 @@ Position X=0 Y=0 Width=0 Height=0 TabWidth Name=169 Type=0 Scope=0 Force=0 Index
                                  Running                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
                                  Backing                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
                                    Error                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
-                              pPickupArm                            PickupArm_typ    0 "                                                               *"    0   24    1    0    2    1         
-                                     DOs                                  DOs_typ    0 "                                                               *"    1   24    1    0    0    0         
-                                 PArmLFR                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
-                                 PArmLBK                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
-                           CapGripVaccum                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
-                                     Cmd                              PArmCmd_typ    0 "                                                               *"    1   24    1    0    0    0         
+                               pLineGate                            LineGates_typ    0 "                                                               *"    0   24    1    0    2    0         
+                                     Cmd                         CmdLineGates_typ    0 "                                                               *"    1   24    1    0    0    0         
                                    Start                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
                                     Stop                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
                                    Estop                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
                               ErrorReset                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
-                                  Status                           PArmStatus_typ    0 "                                                               *"    1   24    1    0    0    0         
-                                 Running                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
-                               PickingUp                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
-                                Dropping                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
-                                 Holding                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
-                                   Error                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
-                                     DIs                                  DIs_typ    0 "                                                               *"    1   24    1    0    0    0         
-                                PArm_FWD                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
-                                PArm_BWD                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
-                         CapGripper_PICK                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                  Status                      StatusLineGates_typ    0 "                                                               *"    1   24    1    0    0    0         
+                                 Running                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                   Error                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                     DIs                          DILineGates_typ    0 "                                                               *"    1   24    1    0    0    0         
+                                 LG1_LFR                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                 LG1_LBK                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                 LG2_LFR                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                 LG2_LBK                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                               LaneTopIR                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                     DOs                          DOLineGates_typ    0 "                                                               *"    1   24    1    0    0    0         
+                                  LG1FWD                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                  LW2FWD                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                              pClrDetect                            ClrDetect_typ    0 "                                                               *"    0   24    1    0    2    0         
+                                     DIs                          DIClrDetect_typ    0 "                                                               *"    1   24    1    0    0    0         
+                        ColorDetectionIR                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                      ColorDtectNotBlack                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                      ColorDtectMetallic                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                     DOs                          DOClrDetect_typ    0 "                                                               *"    1   24    1    0    0    0         
+                           CapStopperFWD                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                     Cmd                         CmdClrDetect_typ    0 "                                                               *"    1   24    1    0    0    0         
+                                   Start                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                    Stop                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                   Estop                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                              ErrorReset                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                  Status                      StatusClrDetect_typ    0 "                                                               *"    1   24    1    0    0    0         
+                                 Running                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                   Error                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                iNoOfRed                                    USINT    0 "                                                               *"    2    5    1   10    0    0         
+                              iNoOfBlack                                    USINT    0 "                                                               *"    2    5    1   10    0    0         
+                           iNoOfMetallic                                    USINT    0 "                                                               *"    2    5    1   10    0    0         
+                                iTimeOut                                      TON    0 "                                                               *"    0   24    1    0    1    0         
+                                      IN                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                      PT                                     TIME    0 "                                                               *"    1   12    1    1    0    0         
+                                       Q                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                      ET                                     TIME    0 "                                                               *"    1   12    1    1    0    0         
+                               StartTime                                     TIME    0 "                                                               *"    1   12    1    1    0    0         
+                                       M                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                 Restart                                    UDINT    0 "                                                               *"    1    7    1   10    0    0         

@@ -48,16 +48,21 @@ PROGRAM _CYCLIC
 		
 			//dropping caps on conveyor
 		enDROPPING:
-			iPickupArm.DIs.PArm_BWD:=TRUE;
-			IF iPickupArm.DOs.PArmLBK=TRUE THEN
-				iPickupArm.DIs.PArm_BWD:=FALSE;
-				IF gManuelMode=TRUE THEN
+			IF gManuelMode=TRUE THEN
 					
-				ELSE
-					iPickupArm.DIs.CapGripper_PICK:=FALSE;
-				END_IF;
-				IF iPickupArm.DIs.CapGripper_PICK=FALSE THEN	
-					sPArmStep:=enWAIT;
+			ELSE
+				//iPickupArm.Status.Running:=FALSE;
+				IF iPickupArm.DOs.PArmLBK=TRUE THEN
+					iPickupArm.DIs.PArm_BWD:=FALSE;
+					IF gManuelMode=TRUE THEN
+					
+					ELSE
+						iPickupArm.DIs.CapGripper_PICK:=FALSE;
+					END_IF;
+					IF iPickupArm.Status.Running=FALSE THEN	
+						iPickupArm.Cmd.Start:=FALSE;
+						sPArmStep:=enWAIT;
+					END_IF;
 				END_IF;
 			END_IF;
 		

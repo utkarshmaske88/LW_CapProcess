@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="ManualMode" height="518" width="688" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.ButtonBar" id="ButtonBar1" top="149" left="550" width="129" height="214" zIndex="0">
+    <Widget xsi:type="widgets.brease.ButtonBar" id="ButtonBar1" top="149" left="550" width="129" height="247" zIndex="0">
       <Widgets>
         <Widget xsi:type="widgets.brease.ToggleButton" id="CapPush" top="6" left="8" width="117" height="34" zIndex="0" text="CapPush" cornerRadius="4px" backColor="rgba(221, 230, 237, 1)" borderColor="rgba(0, 0, 0, 1)" fontSize="13px" checkedBackColor="rgba(241, 241, 241, 1)" />
         <Widget xsi:type="widgets.brease.ToggleButton" id="PickCap" top="48" left="8" width="117" height="34" zIndex="1" text="PickCap" cornerRadius="4px" backColor="rgba(221, 230, 237, 1)" borderColor="rgba(0, 0, 0, 1)" fontSize="13px" checkedBackColor="rgba(241, 241, 241, 1)" />
         <Widget xsi:type="widgets.brease.ToggleButton" id="VaccumON" top="90" left="8" width="117" height="34" zIndex="2" text="Vaccum ON" cornerRadius="4px" backColor="rgba(221, 230, 237, 1)" borderColor="rgba(0, 0, 0, 1)" fontSize="13px" checkedBackColor="rgba(241, 241, 241, 1)" />
-        <Widget xsi:type="widgets.brease.ToggleButton" id="LogoConv" top="132" left="8" width="117" height="34" zIndex="3" text="Logo Conv ON" cornerRadius="4px" backColor="rgba(221, 230, 237, 1)" borderColor="rgba(0, 0, 0, 1)" fontSize="13px" checkedBackColor="rgba(241, 241, 241, 1)" />
-        <Widget xsi:type="widgets.brease.ToggleButton" id="SortConv" top="173" left="8" width="117" height="34" zIndex="4" text="Sort Conv ON" cornerRadius="4px" backColor="rgba(221, 230, 237, 1)" borderColor="rgba(0, 0, 0, 1)" fontSize="13px" checkedBackColor="rgba(241, 241, 241, 1)" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="LogoConv" top="168" left="5" width="117" height="34" zIndex="3" text="Logo Conv ON" cornerRadius="4px" backColor="rgba(221, 230, 237, 1)" borderColor="rgba(0, 0, 0, 1)" fontSize="13px" checkedBackColor="rgba(241, 241, 241, 1)" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="SortConv" top="211" left="6" width="117" height="34" zIndex="4" text="Sort Conv ON" cornerRadius="4px" backColor="rgba(221, 230, 237, 1)" borderColor="rgba(0, 0, 0, 1)" fontSize="13px" checkedBackColor="rgba(241, 241, 241, 1)" />
       </Widgets>
     </Widget>
     <Widget xsi:type="widgets.brease.ButtonBar" id="ButtonLanes" top="4" left="555" width="121" height="134" zIndex="1">
@@ -17,14 +17,30 @@
         <Widget xsi:type="widgets.brease.ToggleButton" id="LaneThree" top="93" left="9" width="106" height="34" zIndex="2" text="Lane Three" cornerRadius="4px" backColor="rgba(221, 230, 237, 1)" borderColor="rgba(0, 0, 0, 1)" fontSize="13px" checkedBackColor="rgba(241, 241, 241, 1)" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.ToggleButton" id="ColorDct" top="369" left="559" width="117" height="34" zIndex="2" text="Color Detect" cornerRadius="4px" backColor="rgba(221, 230, 237, 1)" borderColor="rgba(0, 0, 0, 1)" fontSize="13px" checkedBackColor="rgba(241, 241, 241, 1)" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ColorDct" top="408" left="561" width="117" height="34" zIndex="2" text="Color Detect" cornerRadius="4px" backColor="rgba(221, 230, 237, 1)" borderColor="rgba(0, 0, 0, 1)" fontSize="13px" checkedBackColor="rgba(241, 241, 241, 1)" />
     <Widget xsi:type="widgets.brease.Label" id="LaneNo" top="7" left="380" width="154" zIndex="3" text="$IAT/TextSystem/9" textAlign="left" />
     <Widget xsi:type="widgets.brease.Label" id="Proecess" top="158" left="380" width="154" zIndex="4" text="$IAT/TextSystem/10" textAlign="left" />
-    <Widget xsi:type="widgets.brease.Line" id="Line" zIndex="5" x1="31" x2="401" y1="281" y2="281" lineWidth="3px" />
-    <Widget xsi:type="widgets.brease.ToggleButton" id="CapPush1" top="270" left="96" width="20" height="20" zIndex="6" borderWidth="0px" cornerRadius="50px" />
-    <Widget xsi:type="widgets.brease.ToggleButton" id="PArm" top="270" left="152" width="20" height="20" zIndex="7" borderWidth="0px" cornerRadius="50px" />
-    <Widget xsi:type="widgets.brease.ToggleButton" id="LogoConv1" top="270" left="208" width="20" height="20" zIndex="8" borderWidth="0px" cornerRadius="50px" />
-    <Widget xsi:type="widgets.brease.ToggleButton" id="ClrDtc" top="270" left="264" width="20" height="20" zIndex="9" borderWidth="0px" cornerRadius="50px" />
-    <Widget xsi:type="widgets.brease.ToggleButton" id="LaneGate" top="270" left="320" width="20" height="20" zIndex="10" borderWidth="0px" cornerRadius="50px" />
+    <Widget xsi:type="widgets.brease.Line" id="Line" zIndex="5" x1="39" x2="409" y1="420" y2="420" lineWidth="3px" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="CapPush1" top="410" left="64" width="20" height="20" zIndex="6" borderWidth="0px" cornerRadius="50px" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="PArm" top="410" left="141" width="20" height="20" zIndex="7" borderWidth="0px" cornerRadius="50px" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="LogoConv1" top="410" left="218" width="20" height="20" zIndex="8" borderWidth="0px" cornerRadius="50px" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ClrDtc" top="410" left="295" width="20" height="20" zIndex="9" borderWidth="0px" cornerRadius="50px" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="LaneGate" top="410" left="372" width="20" height="20" zIndex="10" borderWidth="0px" cornerRadius="50px" />
+    <Widget xsi:type="widgets.brease.Label" id="CapPusH" top="438" left="31" width="77" zIndex="11" text="$IAT/TextSystem/11" textAlign="left" />
+    <Widget xsi:type="widgets.brease.Label" id="PickArmS" top="438" left="108" width="77" zIndex="12" text="$IAT/TextSystem/12" textAlign="left" />
+    <Widget xsi:type="widgets.brease.Label" id="SortConvS" top="438" left="265" width="77" zIndex="13" text="$IAT/TextSystem/14" textAlign="left" />
+    <Widget xsi:type="widgets.brease.Label" id="LogoConvS" top="438" left="185" width="81" zIndex="14" text="$IAT/TextSystem/13" textAlign="left" />
+    <Widget xsi:type="widgets.brease.Label" id="LaningS" top="438" left="342" width="77" zIndex="15" text="$IAT/TextSystem/15" textAlign="left" />
+    <Widget xsi:type="widgets.brease.Label" id="StatusS" top="475" left="184" width="77" zIndex="16" text="$IAT/TextSystem/17" textAlign="left" fontName="Arial Unicode" fontSize="18px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="TXTmanualMode" top="17" left="18" width="182" height="26" zIndex="17" text="$IAT/TextSystem/18" textAlign="left" fontSize="20px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="CapisAvl" top="160" left="215" width="158" zIndex="18" autoScroll="true" text="$IAT/TextSystem/23" cornerRadius="3px" backColor="rgba(205, 92, 92, 1)" textColor="rgba(255, 255, 255, 1)" bold="true" />
+    <Widget xsi:type="widgets.brease.ButtonBar" id="ButtonBar2" top="58" left="12" height="257" zIndex="19" permissionOperate="['Administrators', 'Operator']">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.ToggleButton" id="Start" top="6" left="42" width="121" height="58" zIndex="0" image="Media/SymbolLib/Symbols/Start.svg" text="Start" cornerRadius="5px" backColor="rgba(128, 255, 128, 1)" borderColor="rgba(0, 0, 0, 1)" fontSize="18px" fontName="Arial Unicode" bold="true" checkedBackColor="rgba(128, 255, 128, 1)" permissionOperate="['Administrators', 'Operator']" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="Stop" top="99" left="42" width="121" height="58" zIndex="1" image="Media/SymbolLib/Symbols/Stop.svg" text="Stop" cornerRadius="5px" backColor="rgba(255, 192, 192, 1)" borderColor="rgba(0, 0, 0, 1)" fontSize="18px" fontName="Arial Unicode" bold="true" checkedBackColor="rgba(255, 128, 128, 1)" permissionOperate="['Administrators', 'Operator']" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="estop" top="192" left="42" width="121" height="58" zIndex="2" image="Media/SymbolLib/Symbols/Off.svg" text="EStop" cornerRadius="5px" backColor="rgba(255, 0, 0, 1)" borderColor="rgba(0, 0, 0, 1)" fontSize="18px" fontName="Arial Unicode" bold="true" checkedBackColor="rgba(255, 0, 0, 1)" permissionOperate="['Administrators', 'Operator']" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.ToggleButton" id="Errorreset" top="344" left="50" width="129" height="58" zIndex="20" text="Errorreset" cornerRadius="5px" backColor="rgba(192, 255, 255, 1)" borderColor="rgba(0, 0, 0, 1)" fontSize="18px" fontName="Arial Unicode" bold="true" checkedBackColor="rgba(192, 255, 255, 1)" permissionOperate="['Administrators', 'Operator']" />
   </Widgets>
 </Content>

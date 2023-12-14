@@ -1,15 +1,21 @@
-Wed Dec 13 09:45:50 2023
+Thu Dec 14 10:00:29 2023
 COPYRIGHT (C) B&R Industrial Automation GmbH
 
-Wed Dec 13 09:45:50 2023
+Thu Dec 14 10:00:29 2023
 No ARsim registration found!
 
-Wed Dec 13 09:45:50 2023
-InstanceName: 000003b6c3c91efa
+Thu Dec 14 10:00:29 2023
+InstanceName: 00000481fd20fb94
 
-Wed Dec 13 09:45:50 2023
+Thu Dec 14 10:00:29 2023
 WorkingDirectory: C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Temp\Simulation\Config2\PC\
 
-Wed Dec 13 09:45:50 2023
+Thu Dec 14 10:00:29 2023
 COMMAND_COLDSTART
+
+Thu Dec 14 10:00:57 2023
+Version: B4.91
+
+Thu Dec 14 10:01:02 2023
+COMMAND_TERMINATE
 

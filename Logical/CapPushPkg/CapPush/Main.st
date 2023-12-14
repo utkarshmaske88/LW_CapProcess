@@ -38,7 +38,8 @@ PROGRAM _CYCLIC
 
 			
 			//OPERATION Mode
-		enOPERATION:		
+		enOPERATION:	
+			iCapPush.DOs.PushFWD:=TRUE 	;
 			IF iCapPush.DIs.PusherLFR=TRUE THEN
 				iCapPush.DOs.PushFWD:=FALSE;
 				sCapPushStep:=enWAIT;

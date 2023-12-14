@@ -1,7 +1,9 @@
 
 PROGRAM _INIT
 	(* Insert code here *)
-	BasicParameters.Velocity:= 100;
+	BasicParameters.Velocity:= 10;
+	iFb_MpAxisBasic_0.ErrorReset:=TRUE;
+	
 	BasicParameters.Home.Mode:= mpAXIS_HOME_MODE_REF_PULSE;
 	BasicParameters.Home.HomingDirection := mpAXIS_HOME_DIR_POSITIVE;
 	BasicParameters.Home.HomingVelocity := 500;
@@ -16,7 +18,7 @@ PROGRAM _CYCLIC
 		sSortConvStep:=enERROR;
 	END_IF;
 		
-	iSortConv.AOs.SortBasicConvSpeed:=iFb_MpAxisBasic_0.Velocity/100;
+	iSortConv.AOs.SortBasicConvSpeed:=iFb_MpAxisBasic_0.Velocity/10000;
 		
 	//alarms file for conveyor of sorting
 	AlarmsSC;
@@ -55,7 +57,9 @@ PROGRAM _CYCLIC
 			
 			//error mode
 		enERROR:
-			iSortConv.AOs.SortBasicConvSpeed:=0;
+			cmdMoveVelocity:=FALSE;
+			cmdStop:=TRUE;
+			
 			IF iSortConv.Cmd.ErrorReset=TRUE THEN
 				iSortConv.Status.Error:=FALSE;
 				iSortConv.Cmd.ErrorReset:=FALSE;

@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1702385683_14_
-#define _BUR_1702385683_14_
+#ifndef _BUR_1702452008_14_
+#define _BUR_1702452008_14_
 
 #include <bur/plctypes.h>
 
@@ -29,5 +29,5 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/ComTotal/ComTotal_P/Variables.va
 __asm__(".previous");
 
 
-#endif /* _BUR_1702385683_14_ */
+#endif /* _BUR_1702452008_14_ */
 

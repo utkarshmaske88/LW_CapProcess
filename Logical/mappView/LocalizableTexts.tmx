@@ -61,5 +61,90 @@
         <seg>Select the Process</seg>
       </tuv>
     </tu>
+    <tu tuid="11">
+      <tuv xml:lang="en">
+        <seg>CapPush</seg>
+      </tuv>
+    </tu>
+    <tu tuid="12">
+      <tuv xml:lang="en">
+        <seg>PickArm</seg>
+      </tuv>
+    </tu>
+    <tu tuid="13">
+      <tuv xml:lang="en">
+        <seg>LogoConv</seg>
+      </tuv>
+    </tu>
+    <tu tuid="14">
+      <tuv xml:lang="en">
+        <seg>SortConv</seg>
+      </tuv>
+    </tu>
+    <tu tuid="15">
+      <tuv xml:lang="en">
+        <seg>Laning</seg>
+      </tuv>
+    </tu>
+    <tu tuid="16">
+      <tuv xml:lang="en">
+        <seg>ColorDetect</seg>
+      </tuv>
+    </tu>
+    <tu tuid="17">
+      <tuv xml:lang="en">
+        <seg>Status</seg>
+      </tuv>
+    </tu>
+    <tu tuid="18">
+      <tuv xml:lang="en">
+        <seg>MANUAL MODE</seg>
+      </tuv>
+    </tu>
+    <tu tuid="19">
+      <tuv xml:lang="en">
+        <seg>Logo Conveyor Speed</seg>
+      </tuv>
+    </tu>
+    <tu tuid="20">
+      <tuv xml:lang="en">
+        <seg>Sort Conveyor Speed</seg>
+      </tuv>
+    </tu>
+    <tu tuid="21">
+      <tuv xml:lang="en">
+        <seg>Logo Conveyor Acceleration</seg>
+      </tuv>
+    </tu>
+    <tu tuid="22">
+      <tuv xml:lang="en">
+        <seg>Sort Conveyor Acceleration</seg>
+      </tuv>
+    </tu>
+    <tu tuid="23">
+      <tuv xml:lang="en">
+        <seg>Cap is on Magzine</seg>
+      </tuv>
+    </tu>
+    <tu tuid="24">
+      <tuv xml:lang="en">
+        <seg>Logo Conveyor Negative Speed</seg>
+      </tuv>
+    </tu>
+    <tu tuid="25">
+      <tuv xml:lang="en">
+        <seg>Sort Conveyor Negative Speed</seg>
+      </tuv>
+    </tu>
+    <tu tuid="26">
+      <tuv xml:lang="en">
+        <seg>Sort Conveyor Negative Acceleration</seg>
+      </tuv>
+    </tu>
+    <tu tuid="27">
+      <tuv xml:lang="en">
+        <seg>Logo Conveyor Negative Acceleration</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

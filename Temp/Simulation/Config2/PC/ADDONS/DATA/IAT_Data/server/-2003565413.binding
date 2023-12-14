@@ -73,5 +73,52 @@
 
 
 
+<Content id="ManualMode"><Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::CapPush:iCapPush.DIs.PickUp_IR" attribute="value" />
+<Target xsi:type="brease" refId="ManualMode_CapisAvl" attribute="visible" />
+</Binding></Content>
+
+
+
+<Content id="ManualMode"><Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMainCmd.ErrorReset" attribute="value" />
+<Target xsi:type="brease" refId="ManualMode_Errorreset" attribute="value" />
+</Binding><Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMainCmd.ErrorReset" attribute="editable" />
+<Target xsi:type="brease" refId="ManualMode_Errorreset" attribute="editable::value" />
+</Binding></Content>
+
+
+
+<Content id="ManualMode"><Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMainCmd.EStop" attribute="value" />
+<Target xsi:type="brease" refId="ManualMode_estop" attribute="value" />
+</Binding><Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMainCmd.EStop" attribute="editable" />
+<Target xsi:type="brease" refId="ManualMode_estop" attribute="editable::value" />
+</Binding></Content>
+
+
+
+<Content id="ManualMode"><Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMainCmd.Stop" attribute="value" />
+<Target xsi:type="brease" refId="ManualMode_Stop" attribute="value" />
+</Binding><Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMainCmd.Stop" attribute="editable" />
+<Target xsi:type="brease" refId="ManualMode_Stop" attribute="editable::value" />
+</Binding></Content>
+
+
+
+<Content id="ManualMode"><Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMainCmd.Start" attribute="value" />
+<Target xsi:type="brease" refId="ManualMode_Start" attribute="value" />
+</Binding><Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMainCmd.Start" attribute="editable" />
+<Target xsi:type="brease" refId="ManualMode_Start" attribute="editable::value" />
+</Binding></Content>
+
+
+
 
 </BindingDefinition>

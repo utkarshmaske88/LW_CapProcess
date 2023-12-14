@@ -19,4 +19,6 @@ VAR
 	strStep : Step;
 	ERROR : BOOL;
 	iVl_OldVelocitySC : REAL;
+	iVl_OldAcc : REAL;
+	iVl_OldAccNeg : REAL;
 END_VAR

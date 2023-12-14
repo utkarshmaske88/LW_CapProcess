@@ -98,6 +98,8 @@
         Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\AutoCtrlPkg\AutoCtrl\Types.typ" />
       <File
         Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\AutoCtrlPkg\AutoCtrl\Variables.var" />
+      <InternalFile
+        Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Temp\Objects\Config2\PC\AutoCtrl\AutoAlarms.st.var" />
     </Task>
     <Task
       Name="SortConv"

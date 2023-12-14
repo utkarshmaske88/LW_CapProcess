@@ -10,7 +10,7 @@
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Temp\Includes\AS_TempDecl\Config2\GlobalComponents\MpComponents.var"
     LogicalPath="MpComponents.var"
     Type="File"
-    LastWriteTime="133468592785557100"
+    LastWriteTime="133469256047280018"
     Private="false" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\Global.typ"
@@ -656,7 +656,7 @@
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\gAxis02obj\gAxis02i\gAxis02i.ax"
     LogicalPath="gAxis02obj.gAxis02i.gAxis02i.ax"
     Type="File"
-    LastWriteTime="133460977037665864"
+    LastWriteTime="133469337775733252"
     Private="false" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\AlarmsPkg\Package.pkg"
@@ -706,7 +706,7 @@
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\CapPushPkg\CapPush\Main.st"
     LogicalPath="CapPushPkg.CapPush.Main.st"
     Type="File"
-    LastWriteTime="133468398246891122"
+    LastWriteTime="133470025603979594"
     Private="false" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\CapPushPkg\CapPush\Types.typ"
@@ -746,7 +746,7 @@
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\PickupArmPkg\PickupArm\Main.st"
     LogicalPath="PickupArmPkg.PickupArm.Main.st"
     Type="File"
-    LastWriteTime="133468501875101669"
+    LastWriteTime="133469264120134436"
     Private="false" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\PickupArmPkg\PickupArm\Types.typ"
@@ -786,7 +786,7 @@
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\LogoConvPkg\LogoCOnv\Main.st"
     LogicalPath="LogoConvPkg.LogoCOnv.Main.st"
     Type="File"
-    LastWriteTime="133468589184544679"
+    LastWriteTime="133470044533411791"
     Private="false" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\LogoConvPkg\LogoCOnv\Types.typ"
@@ -798,13 +798,13 @@
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\LogoConvPkg\LogoCOnv\Variables.var"
     LogicalPath="LogoConvPkg.LogoCOnv.Variables.var"
     Type="File"
-    LastWriteTime="133467721972949038"
+    LastWriteTime="133470062805997730"
     Private="true" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\LogoConvPkg\LogoCOnv\LogoAxis.st"
     LogicalPath="LogoConvPkg.LogoCOnv.LogoAxis.st"
     Type="File"
-    LastWriteTime="133468356630652593"
+    LastWriteTime="133470062619438631"
     Private="false" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\LogoConvPkg\LogoCOnv\AlarmsLC.st"
@@ -832,7 +832,7 @@
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\SortConvPkg\SortConv\Main.st"
     LogicalPath="SortConvPkg.SortConv.Main.st"
     Type="File"
-    LastWriteTime="133468502480928026"
+    LastWriteTime="133470019141001342"
     Private="false" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\SortConvPkg\SortConv\Types.typ"
@@ -844,13 +844,13 @@
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\SortConvPkg\SortConv\Variables.var"
     LogicalPath="SortConvPkg.SortConv.Variables.var"
     Type="File"
-    LastWriteTime="133468319634670249"
+    LastWriteTime="133470063132798817"
     Private="true" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\SortConvPkg\SortConv\SortAxisA.st"
     LogicalPath="SortConvPkg.SortConv.SortAxisA.st"
     Type="File"
-    LastWriteTime="133468354171810340"
+    LastWriteTime="133470063132638857"
     Private="false" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\SortConvPkg\SortConv\AlarmsSC.st"
@@ -878,7 +878,7 @@
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\ClrDetectPkg\ClrDetect\Main.st"
     LogicalPath="ClrDetectPkg.ClrDetect.Main.st"
     Type="File"
-    LastWriteTime="133468502658347063"
+    LastWriteTime="133469374434747647"
     Private="false" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\ClrDetectPkg\ClrDetect\Types.typ"
@@ -896,7 +896,7 @@
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\ClrDetectPkg\ClrDetect\AlarmsCD.st"
     LogicalPath="ClrDetectPkg.ClrDetect.AlarmsCD.st"
     Type="File"
-    LastWriteTime="133467649376417814"
+    LastWriteTime="133469226453216822"
     Private="false" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\ClrDetectPkg\ClrDetTyp.typ"
@@ -918,13 +918,13 @@
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\LaneGatesPkg\LineGates\Main.st"
     LogicalPath="LaneGatesPkg.LineGates.Main.st"
     Type="File"
-    LastWriteTime="133468502785037871"
+    LastWriteTime="133470036734183877"
     Private="false" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\LaneGatesPkg\LineGates\Types.typ"
     LogicalPath="LaneGatesPkg.LineGates.Types.typ"
     Type="File"
-    LastWriteTime="133466180711148606"
+    LastWriteTime="133469374743237837"
     Private="true" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\LaneGatesPkg\LineGates\Variables.var"
@@ -953,25 +953,31 @@
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\AutoCtrlPkg\AutoCtrl\IEC.prg"
     LogicalPath="AutoCtrlPkg.AutoCtrl"
     Type="Program"
-    LastWriteTime="133465229427433234" />
+    LastWriteTime="133469445597829334" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\AutoCtrlPkg\AutoCtrl\Main.st"
     LogicalPath="AutoCtrlPkg.AutoCtrl.Main.st"
     Type="File"
-    LastWriteTime="133469161950109185"
+    LastWriteTime="133470058805458285"
     Private="false" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\AutoCtrlPkg\AutoCtrl\Types.typ"
     LogicalPath="AutoCtrlPkg.AutoCtrl.Types.typ"
     Type="File"
-    LastWriteTime="133468584634036882"
+    LastWriteTime="133469248145113388"
     Private="true" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\AutoCtrlPkg\AutoCtrl\Variables.var"
     LogicalPath="AutoCtrlPkg.AutoCtrl.Variables.var"
     Type="File"
-    LastWriteTime="133467722559295472"
+    LastWriteTime="133469236840718278"
     Private="true" />
+  <Object
+    Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\AutoCtrlPkg\AutoCtrl\AutoAlarms.st"
+    LogicalPath="AutoCtrlPkg.AutoCtrl.AutoAlarms.st"
+    Type="File"
+    LastWriteTime="133469446012163674"
+    Private="false" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\mappView\Package.pkg"
     LogicalPath="mappView"
@@ -1103,7 +1109,7 @@
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\mappView\Visualization\Pages\MainPage\Package.pkg"
     LogicalPath="mappView.Visualization.Pages.MainPage"
     Type="Package"
-    LastWriteTime="133468442665682545" />
+    LastWriteTime="133469334889033150" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\mappView\Visualization\Pages\MainPage\Page.page"
     LogicalPath="mappView.Visualization.Pages.MainPage.Page.page"
@@ -1114,7 +1120,7 @@
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\mappView\Visualization\Pages\MainPage\BodyContent.content"
     LogicalPath="mappView.Visualization.Pages.MainPage.BodyContent.content"
     Type="File"
-    LastWriteTime="133468505976151325"
+    LastWriteTime="133469432523002122"
     Private="false" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\mappView\Visualization\Pages\MainPage\NavBar.content"
@@ -1150,7 +1156,13 @@
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\mappView\Visualization\Pages\MainPage\ManualMode.content"
     LogicalPath="mappView.Visualization.Pages.MainPage.ManualMode.content"
     Type="File"
-    LastWriteTime="133468542159587009"
+    LastWriteTime="133470093481164658"
+    Private="false" />
+  <Object
+    Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\mappView\Visualization\Pages\MainPage\Settings.content"
+    LogicalPath="mappView.Visualization.Pages.MainPage.Settings.content"
+    Type="File"
+    LastWriteTime="133470091792691378"
     Private="false" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\mappView\Visualization\Variables\Package.pkg"
@@ -1208,7 +1220,7 @@
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Logical\mappView\LocalizableTexts.tmx"
     LogicalPath="mappView.LocalizableTexts.tmx"
     Type="File"
-    LastWriteTime="133468539866762182"
+    LastWriteTime="133470060271670774"
     Private="false" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Physical\Config2\Config.pkg"
@@ -1231,7 +1243,7 @@
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Physical\Config2\PC\Cpu.pkg"
     LogicalPath="Config2.PC"
     Type="Cpu"
-    LastWriteTime="133468594366216707" />
+    LastWriteTime="133470090927201792" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Physical\Config2\PC\Cpu.sw"
     LogicalPath="Config2.PC.Cpu.sw"
@@ -1270,7 +1282,7 @@
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Physical\Config2\PC\Connectivity\OpcUA\OpcUaMap.uad"
     LogicalPath="Config2.PC.Connectivity.OpcUA.OpcUaMap.uad"
     Type="File"
-    LastWriteTime="133468503424402831"
+    LastWriteTime="133470065514878042"
     Private="false" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Physical\Config2\PC\Connectivity\OpcUaFx\Package.pkg"
@@ -1390,7 +1402,7 @@
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Physical\Config2\PC\mappServices\Alarms.mpalarmxcore"
     LogicalPath="Config2.PC.mappServices.Alarms.mpalarmxcore"
     Type="File"
-    LastWriteTime="133467649376827889"
+    LastWriteTime="133469446350924390"
     Private="false" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Physical\Config2\PC\mappServices\UserMgt.mpuserx"
@@ -1417,12 +1429,12 @@
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Physical\Config2\PC\mappView\Package.pkg"
     LogicalPath="Config2.PC.mappView"
     Type="Package"
-    LastWriteTime="133468503581591380" />
+    LastWriteTime="133469422637778636" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Physical\Config2\PC\mappView\Visualizat.vis"
     LogicalPath="Config2.PC.mappView.Visualizat.vis"
     Type="File"
-    LastWriteTime="133468503588897526"
+    LastWriteTime="133469422639028599"
     Private="false" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Physical\Config2\PC\mappView\Config.mappviewcfg"
@@ -1446,7 +1458,7 @@
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Physical\Config2\PC\mappView\NavBarContent.eventbinding"
     LogicalPath="Config2.PC.mappView.NavBarContent.eventbinding"
     Type="File"
-    LastWriteTime="133465039346629509"
+    LastWriteTime="133469432524392086"
     Private="false" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Physical\Config2\PC\mappView\ManualMode.eventbinding"
@@ -1458,13 +1470,25 @@
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Physical\Config2\PC\mappView\ManualMode.binding"
     LogicalPath="Config2.PC.mappView.ManualMode.binding"
     Type="File"
-    LastWriteTime="133468490136663260"
+    LastWriteTime="133469441067923988"
     Private="false" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Physical\Config2\PC\mappView\BodyContent.binding"
     LogicalPath="Config2.PC.mappView.BodyContent.binding"
     Type="File"
-    LastWriteTime="133468506477824876"
+    LastWriteTime="133469358604421016"
+    Private="false" />
+  <Object
+    Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Physical\Config2\PC\mappView\content_0.binding"
+    LogicalPath="Config2.PC.mappView.content_0.binding"
+    Type="File"
+    LastWriteTime="133470065862495754"
+    Private="false" />
+  <Object
+    Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Physical\Config2\PC\mappView\BodyContent.eventbinding"
+    LogicalPath="Config2.PC.mappView.BodyContent.eventbinding"
+    Type="File"
+    LastWriteTime="133469430931347781"
     Private="false" />
   <Object
     Path="C:\Users\maskeu\Desktop\All\projects\ECamp\CapProcess\Physical\Config2\PC\mappVision\Package.pkg"

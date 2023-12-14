@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1702385683_11_
-#define _BUR_1702385683_11_
+#ifndef _BUR_1702452007_11_
+#define _BUR_1702452007_11_
 
 #include <bur/plctypes.h>
 
@@ -54,5 +54,5 @@ __asm__(".ascii \"iecfile \\\"Logical/ClrDetectPkg/ClrDetTyp.typ\\\" scope \\\"g
 __asm__(".previous");
 
 
-#endif /* _BUR_1702385683_11_ */
+#endif /* _BUR_1702452007_11_ */
 

@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1702385683_8_
-#define _BUR_1702385683_8_
+#ifndef _BUR_1702452007_8_
+#define _BUR_1702452007_8_
 
 #include <bur/plctypes.h>
 
@@ -56,5 +56,5 @@ __asm__(".ascii \"iecfile \\\"Logical/PickupArmPkg/Pickuptyp.typ\\\" scope \\\"g
 __asm__(".previous");
 
 
-#endif /* _BUR_1702385683_8_ */
+#endif /* _BUR_1702452007_8_ */
 

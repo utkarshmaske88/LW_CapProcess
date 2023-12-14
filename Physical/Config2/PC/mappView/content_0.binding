@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="SettingContent_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::SortConv:BasicParameters.Acceleration" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SettingContent" widgetRefId="SortConvAcc" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::LogoCOnv:BasicParameters.Acceleration" attribute="value" />
+<Target xsi:type="brease" contentRefId="SettingContent" widgetRefId="LogoConvAcc" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::LogoCOnv:BasicParameters.Velocity" attribute="value" />
+<Target xsi:type="brease" contentRefId="SettingContent" widgetRefId="LogoConvSpeed" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::SortConv:BasicParameters.Velocity" attribute="value" />
+<Target xsi:type="brease" contentRefId="SettingContent" widgetRefId="SortConvSpeed" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::LogoCOnv:BasicParameters.Deceleration" attribute="value" />
+<Target xsi:type="brease" contentRefId="SettingContent" widgetRefId="LogoConvDecc" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::SortConv:BasicParameters.Deceleration" attribute="value" />
+<Target xsi:type="brease" contentRefId="SettingContent" widgetRefId="SortConvAcc1" attribute="value" />
+</Binding>
+</Bindings>
+</BindingsSet>

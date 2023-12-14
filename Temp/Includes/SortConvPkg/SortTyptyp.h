@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1702385683_10_
-#define _BUR_1702385683_10_
+#ifndef _BUR_1702452007_10_
+#define _BUR_1702452007_10_
 
 #include <bur/plctypes.h>
 
@@ -49,5 +49,5 @@ __asm__(".ascii \"iecfile \\\"Logical/SortConvPkg/SortTyp.typ\\\" scope \\\"glob
 __asm__(".previous");
 
 
-#endif /* _BUR_1702385683_10_ */
+#endif /* _BUR_1702452007_10_ */
 

@@ -6,17 +6,33 @@ ACTION LogoAxis:
 	iFb_MpAxisBasic_0.Enable := 1;
 	iFb_MpAxisBasic_0.Parameters := ADR(BasicParameters);
 	iFb_MpAxisBasic_0();
-	
 	//	BasicParameters.Velocity := 1000; 
 	//	BasicParameters.Distance := 1000; 
 	//		
-	IF iVl_OldVelocity<> BasicParameters.Velocity THEN
+	IF iVl_OldVelocity <> BasicParameters.Acceleration THEN
 		iFb_MpAxisBasic_0.Update:=TRUE ;
 		IF	iFb_MpAxisBasic_0.UpdateDone=TRUE THEN
 			iVl_OldVelocity:= BasicParameters.Velocity;
 			iFb_MpAxisBasic_0.Update:=FALSE ;
 		END_IF;
 	END_IF;
+	
+	IF iVl_OldAcc<> BasicParameters.Acceleration THEN
+		iFb_MpAxisBasic_0.Update:=TRUE ;
+		IF	iFb_MpAxisBasic_0.UpdateDone=TRUE THEN
+			iVl_OldAcc:= BasicParameters.Acceleration;
+			iFb_MpAxisBasic_0.Update:=FALSE ;
+		END_IF;
+	END_IF;
+	
+	IF iVl_OldAccNeg<> BasicParameters.Deceleration THEN
+		iFb_MpAxisBasic_0.Update:=TRUE ;
+		IF	iFb_MpAxisBasic_0.UpdateDone=TRUE THEN
+			iVl_OldAccNeg:= BasicParameters.Deceleration;
+			iFb_MpAxisBasic_0.Update:=FALSE ;
+		END_IF;
+	END_IF;
+	
 	//	iFb_MC_MoveVelocity_0.Acceleration := 2000;
 	//	iFb_MC_MoveVelocity_0.Deceleration := 2000;
 	
@@ -62,8 +78,7 @@ ACTION LogoAxis:
 				cmdHome := FALSE;
 			END_IF
 		enOPERATIONA:
-			IF iFb_MpAxisBasic_0.Error =
-				TRUE THEN
+			IF iFb_MpAxisBasic_0.Error =TRUE THEN
 				strStep := enERRORA;
 			END_IF
 			IF cmdMoveAdditive=TRUE THEN
@@ -84,5 +99,5 @@ ACTION LogoAxis:
 	END_CASE
 	
 	iFb_MpAxisBasic_0();
-	iFb_MC_MoveVelocity_0();
+	//iFb_MC_MoveVelocity_0();
 END_ACTION

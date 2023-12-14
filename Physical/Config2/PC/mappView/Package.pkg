@@ -10,5 +10,7 @@
     <Object Type="File">ManualMode.eventbinding</Object>
     <Object Type="File">ManualMode.binding</Object>
     <Object Type="File">BodyContent.binding</Object>
+    <Object Type="File">content_0.binding</Object>
+    <Object Type="File">BodyContent.eventbinding</Object>
   </Objects>
 </Package>

@@ -31,5 +31,25 @@
 <Source xsi:type="opcUa" refId="::LineGates:iLineGates.DOs.LW2FWD" attribute="value" />
 <Target xsi:type="brease" contentRefId="ManualMode" widgetRefId="LaneTwo" attribute="value" />
 </Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::CapPush:iCapPush.DIs.PickUp_IR" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualMode" widgetRefId="CapisAvl" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMainCmd.ErrorReset" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualMode" widgetRefId="Errorreset" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMainCmd.EStop" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualMode" widgetRefId="estop" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMainCmd.Stop" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualMode" widgetRefId="Stop" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gMainCmd.Start" attribute="value" />
+<Target xsi:type="brease" contentRefId="ManualMode" widgetRefId="Start" attribute="value" />
+</Binding>
 </Bindings>
 </BindingsSet>

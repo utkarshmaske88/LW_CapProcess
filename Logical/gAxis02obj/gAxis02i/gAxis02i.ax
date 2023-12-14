@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.12?>
+<?AutomationStudio Version=4.12.4.107 SP?>
 <InitParameter Version="5.23.1" NcSwId="Acp10">
   <Group ID="ACP10AXIS_typ">
     <Group ID="dig_in">
@@ -16,7 +16,7 @@
         <Parameter ID="count_dir" Value="ncSTANDARD" />
         <Group ID="scaling">
           <Group ID="load">
-            <Parameter ID="units" Value="1000" />
+            <Parameter ID="units" Value="7000" />
             <Parameter ID="rev_motor" Value="1" />
           </Group>
         </Group>
@@ -24,18 +24,18 @@
     </Group>
     <Group ID="limit">
       <Group ID="parameter">
-        <Parameter ID="v_pos" Value="10000" />
-        <Parameter ID="v_neg" Value="10000" />
-        <Parameter ID="a1_pos" Value="50000" />
-        <Parameter ID="a2_pos" Value="50000" />
-        <Parameter ID="a1_neg" Value="50000" />
-        <Parameter ID="a2_neg" Value="50000" />
-        <Parameter ID="t_jolt" Value="0" />
-        <Parameter ID="t_in_pos" Value="0" />
+        <Parameter ID="v_pos" Value="25000.0" />
+        <Parameter ID="v_neg" Value="25000.0" />
+        <Parameter ID="a1_pos" Value="250000.0" />
+        <Parameter ID="a2_pos" Value="250000.0" />
+        <Parameter ID="a1_neg" Value="250000.0" />
+        <Parameter ID="a2_neg" Value="250000.0" />
+        <Parameter ID="t_jolt" Value="0.123" />
+        <Parameter ID="t_in_pos" Value="0.123" />
         <Parameter ID="pos_sw_end" Value="2000000000" />
         <Parameter ID="neg_sw_end" Value="-2000000000" />
-        <Parameter ID="ds_warning" Value="500" />
-        <Parameter ID="ds_stop" Value="1000" />
+        <Parameter ID="ds_warning" Value="350.0" />
+        <Parameter ID="ds_stop" Value="700.0" />
         <Parameter ID="a_stop" Value="1.0e30" />
         <Parameter ID="dv_stop" Value="0" />
         <Parameter ID="dv_stop_mode" Value="ncOFF" />

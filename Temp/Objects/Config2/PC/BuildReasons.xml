@@ -1,24 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BuildReasons>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\iat_media.job._markerfile">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config2\pc\iat_media.job" differs.
+</BuildReason>
+  </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\.mappview\data\wwwroot\0_visulist.json">
     <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config2\pc\.mappview\0_visulist.json" differs.
 </BuildReason>
   </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\autoctrl\main.st.o">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\logical\autoctrlpkg\autoctrl\main.st" differs.
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\.mappview\type_sass._markerfile">
+    <BuildReason>Target "type_sass._markerfile" does not exist</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\.mappview\data\wwwroot\transformations\eventbinding\parametertypemapping.xml">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\logical\mappview\visualization\pages\mainpage\manualmode.content" differs.
 </BuildReason>
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\.mappview\dialog_sass._markerfile">
     <BuildReason>Target "dialog_sass._markerfile" does not exist</BuildReason>
   </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\.mappview\type_sass._markerfile">
-    <BuildReason>Target "type_sass._markerfile" does not exist</BuildReason>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\.mappview\content_trans._markerfile">
+    <BuildReason>Target "content_trans._markerfile" does not exist</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\.mappview\validatebindings._markerfile">
+    <BuildReason>Target "validatebindings._markerfile" does not exist</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\.mappview\binding_trans._markerfile">
+    <BuildReason>Target "binding_trans._markerfile" does not exist</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\.mappview\eventbinding_trans._markerfile">
+    <BuildReason>Target "eventbinding_trans._markerfile" does not exist</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\.mappview\duplicatebindingsfinder._markerfile">
+    <BuildReason>Target "duplicatebindingsfinder._markerfile" does not exist</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\.mappview\data\wwwroot\vis_0.json">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config2\pc\.mappview\content_trans._markerfile" differs.
+</BuildReason>
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\.mappview\content_sass._markerfile">
     <BuildReason>Target "content_sass._markerfile" does not exist</BuildReason>
   </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\iat_media.job._markerfile">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config2\pc\iat_media.job" differs.
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\.mappview\data\wwwroot\brvisu\css\brease_core.css">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config2\pc\.mappview\content_trans._markerfile" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\.mappview\data\wwwroot\grunt.breasecsso._markerfile">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config2\pc\.mappview\data\wwwroot\brvisu\css\brease_core.css" differs.
 </BuildReason>
   </Rule>
   <Rule ID=".mappView_Build">
@@ -27,27 +54,7 @@
   <Rule ID=".mappView_IntegrationBuild">
     <BuildReason>Rule contains a phony target. </BuildReason>
   </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\autoctrl\_bur_pvdef.st.o">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config2\pc\autoctrl\main.st.o" differs.
-</BuildReason>
-  </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\autoctrl\a.out">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config2\pc\autoctrl\main.st.o" differs.
-</BuildReason>
-  </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\autoctrl\autoctrl.ox">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config2\pc\autoctrl\a.out" differs.
-</BuildReason>
-  </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\pc\autoctrl.br">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config2\pc\autoctrl\autoctrl.ox" differs.
-</BuildReason>
-  </Rule>
   <Rule ID="#cpu_tp.mak">
     <BuildReason>Rule is forced.</BuildReason>
-  </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\binaries\config2\pc\transfer.lst">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config2\pc\autoctrl.br" differs.
-</BuildReason>
   </Rule>
 </BuildReasons>

@@ -1,21 +1,120 @@
 WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=LogoCOnv 
-Position X=0 Y=0 Width=0 Height=0 TabWidth Name=137 Type=0 Scope=0 Force=0 Index=13 ASCIIString=0
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=117 Type=0 Scope=0 Force=0 Index=100 ASCIIString=0
                                     name                                     type force                                                            value level type len format place expand specs
-                           sLogoConvStep                                     DINT    0 "                                                               2"    0    4    1   10    1    0 e,0,enWA
+                         iVl_OldVelocity                                     REAL    0 "                                                          5000.0"    0    8    1   10    1    0         
+                       iFb_MpAxisBasic_0                              MpAxisBasic    0 "                                                               *"    0   24    1    0    1    0         
+                                  MpLink                                    UDINT    0 "                                                               *"    1    7    1   10    0    0         
+                                  Enable                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                              ErrorReset                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                              Parameters                                    UDINT    0 "                                                               *"    1    7    1   10    0    0         
+                                  Update                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                    Axis                                    UDINT    0 "                                                               *"    1    7    1   10    0    0         
+                                   Power                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                    Home                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                            MoveVelocity                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                            MoveAbsolute                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                            MoveAdditive                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                    Stop                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                             JogPositive                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                             JogNegative                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                Autotune                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                Simulate                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                             TorqueLimit                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                            ReleaseBrake                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                  Active                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                   Error                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                StatusID                                     DINT    0 "                                                               *"    1    4    1   10    0    0         
+                              UpdateDone                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                Position                                    LREAL    0 "                                                               *"    1   14    1   10    0    0         
+                                Velocity                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
+                             CommandBusy                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                          CommandAborted                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                 PowerOn                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                 IsHomed                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                              InVelocity                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                              InPosition                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                              MoveActive                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                 Stopped                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                              TuningDone                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                              Simulation                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                           TorqueLimited                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                           BrakeReleased                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                    Info                      MpAxisBasicInfoType    0 "                                                               *"    1   24    1    0    0    0         
+                         AxisInitialized                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                          ReadyToPowerOn                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                              JogLimited                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                       TorqueLimitActive                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                          DriveRestarted                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                              CyclicRead                     MpAxisCyclicReadType    0 "                                                               *"    2   24    1    0    0    0         
+                                  Torque                MpAxisCyclicReadValueType    0 "                                                               *"    3   24    1    0    0    0         
+                                   Valid                                     BOOL    0 "                                                               *"    4    1    1    2    0    0         
+                                   Value                                    LREAL    0 "                                                               *"    4   14    1   10    0    0         
+                                LagError                MpAxisCyclicReadValueType    0 "                                                               *"    3   24    1    0    0    0         
+                                   Valid                                     BOOL    0 "                                                               *"    4    1    1    2    0    0         
+                                   Value                                    LREAL    0 "                                                               *"    4   14    1   10    0    0         
+                        MotorTemperature                MpAxisCyclicReadValueType    0 "                                                               *"    3   24    1    0    0    0         
+                                   Valid                                     BOOL    0 "                                                               *"    4    1    1    2    0    0         
+                                   Value                                    LREAL    0 "                                                               *"    4   14    1   10    0    0         
+                  UserChannelParameterID                MpAxisCyclicReadValueType    0 "                                                               *"    3   24    1    0    0    0         
+                                   Valid                                     BOOL    0 "                                                               *"    4    1    1    2    0    0         
+                                   Value                                    LREAL    0 "                                                               *"    4   14    1   10    0    0         
+                               BootState                                     DINT    0 "                                                               *"    2    4    1   10    0    0 e,0,mpAX
+
+                            PLCopenState                                     DINT    0 "                                                               *"    2    4    1   10    0    0 e,0,mpAX
+
+                     DigitalInputsStatus                MpAxisDigitalIOStatusType    0 "                                                               *"    2   24    1    0    0    0         
+                             DriveEnable                                     BOOL    0 "                                                               *"    3    1    1    2    0    0         
+                              HomeSwitch                                     BOOL    0 "                                                               *"    3    1    1    2    0    0         
+                     PositiveLimitSwitch                                     BOOL    0 "                                                               *"    3    1    1    2    0    0         
+                     NegativeLimitSwitch                                     BOOL    0 "                                                               *"    3    1    1    2    0    0         
+                                Trigger1                                     BOOL    0 "                                                               *"    3    1    1    2    0    0         
+                                Trigger2                                     BOOL    0 "                                                               *"    3    1    1    2    0    0         
+                            HardwareInfo                MpAxisAddInfoHardwareType    0 "                                                               *"    2   24    1    0    0    0         
+                                  NodeID                                     UINT    0 "                                                               *"    3    6    1   10    0    0         
+                                 Channel                                    USINT    0 "                                                               *"    3    5    1   10    0    0         
+                             NetworkType                                     DINT    0 "                                                               *"    3    4    1   10    0    0 e,0,mpAX
+
+                              DeviceType                                     DINT    0 "                                                               *"    3    4    1   10    0    0 e,0,mpAX
+
+                                    Diag                        MpAxisDiagExtType    0 "                                                               *"    2   24    1    0    0    0         
+                                StatusID                       MpAxisStatusIDType    0 "                                                               *"    3   24    1    0    0    0         
+                                      ID                                     DINT    0 "                                                               *"    4    4    1   10    0    0 e,0,mpAX
+
+                                Severity                                     DINT    0 "                                                               *"    4    4    1   10    0    0 e,0,mpCO
+
+                                    Code                                     UINT    0 "                                                               *"    4    6    1   10    0    0         
+                                Internal                       MpAxisInternalType    0 "                                                               *"    3   24    1    0    0    0         
+                                      ID                                     DINT    0 "                                                               *"    4    4    1   10    0    0         
+                                Severity                                     DINT    0 "                                                               *"    4    4    1   10    0    0 e,0,mpCO
+
+                                Facility                                     DINT    0 "                                                               *"    4    4    1   10    0    0 e,-1,mpC
+
+                                    Code                                     UINT    0 "                                                               *"    4    6    1   10    0    0         
+                        ExecutingCommand                                     DINT    0 "                                                               *"    3    4    1   10    0    0 e,0,mpAX
+
+                                MoveDone                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                Internal                    MpComInternalDataType    0 "                                                               *"    1   24    1    0    0    0         
+                                 pObject                                    UDINT    0 "                                                               *"    2    7    1   10    0    0         
+                                   State                                    UDINT    0 "                                                               *"    2    7    1   10    0    0         
+                         BasicParameters                       MpAxisBasicParType    0 "                                                               *"    0   24    1    0    1    1         
+                            Acceleration                                     REAL    0 "                                                          1000.0"    1    8    1   10    0    0         
+                            Deceleration                                     REAL    0 "                                                           200.0"    1    8    1   10    0    0         
+                                Velocity                                     REAL    0 "                                                          5000.0"    1    8    1   10    0    0         
+                           sLogoConvStep                                     DINT    0 "                                                               4"    0    4    1   10    1    0 e,0,enWA
 
                          cmdMoveVelocity                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
                                iLogoConv                             LogoConv_typ    0 "                                                               *"    0   24    1    0    1    1         
-                                     DIs                              LogoConvDIs    0 "                                                               *"    1   24    1    0    0    1         
-                        LogoConvStart_IR                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
-                         LogoConvExit_IR                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
-                              LogoActPos                                     REAL    0 "                                                             0.0"    2    8    1   10    0    0         
-                                     AOs                              LogoConvAOs    0 "                                                               *"    1   24    1    0    0    1         
-                           LogoConvSpeed                                     REAL    0 "                                                             0.0"    2    8    1   10    0    0         
+                                     DIs                              LogoConvDIs    0 "                                                               *"    1   24    1    0    0    0         
+                        LogoConvStart_IR                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                         LogoConvExit_IR                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                              LogoActPos                                     REAL    0 "                                                               *"    2    8    1   10    0    0         
+                                     AOs                              LogoConvAOs    0 "                                                               *"    1   24    1    0    0    0         
+                           LogoConvSpeed                                     REAL    0 "                                                               *"    2    8    1   10    0    0         
                                      Cmd                              LogoConvCmd    0 "                                                               *"    1   24    1    0    0    1         
-                                   Start                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                   Start                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
                                     Stop                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
                                    Estop                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
                               ErrorReset                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
                                   Status                           LogoConvStatus    0 "                                                               *"    1   24    1    0    0    1         
                                  Running                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
-                                   Error                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                   Error                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         

@@ -11,6 +11,7 @@
     <Module Name="&lt;Default&gt;">
       <GlobalVariables Name="Global Variables">
         <Variable Name="gMainCmd" RecursiveEnable="2" />
+        <Variable Name="gManuelMode" />
       </GlobalVariables>
       <Task Name="CapPush">
         <Variable Name="iCapPush">
@@ -19,6 +20,9 @@
           </Variable>
           <Variable Name="Status">
             <Variable Name="Running" />
+          </Variable>
+          <Variable Name="DIs">
+            <Variable Name="PickUp_IR" />
           </Variable>
         </Variable>
       </Task>
@@ -40,6 +44,11 @@
           <Variable Name="Status">
             <Variable Name="Running" />
           </Variable>
+        </Variable>
+        <Variable Name="BasicParameters">
+          <Variable Name="Acceleration" />
+          <Variable Name="Velocity" />
+          <Variable Name="Deceleration" />
         </Variable>
       </Task>
       <Task Name="ClrDetect">
@@ -73,6 +82,11 @@
           <Variable Name="Status">
             <Variable Name="Running" />
           </Variable>
+        </Variable>
+        <Variable Name="BasicParameters">
+          <Variable Name="Acceleration" />
+          <Variable Name="Velocity" />
+          <Variable Name="Deceleration" />
         </Variable>
       </Task>
     </Module>
